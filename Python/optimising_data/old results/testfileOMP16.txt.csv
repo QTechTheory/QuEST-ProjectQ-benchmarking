@@ -1,0 +1,2 @@
+numQubits,circDepth,numReps,avgDur(s),varDur(s^2)
+20,5000,1,20.044442176818848,0.0

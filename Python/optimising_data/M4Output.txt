@@ -1,0 +1,608 @@
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads16/depth100/qubits25.txt
+numThreads:	16
+circuitDepth:	100
+numQubits:	25
+numRepetitions:	10
+instMode:	5
+dur: 29.702404s, error: 1e-14, realMem: 557212b (peak: 818280b), virtMem: 1590368b (peak: 1698856b)
+dur: 29.611830s, error: 1e-14, realMem: 557236b (peak: 818280b), virtMem: 1590368b (peak: 1698856b)
+dur: 29.611995s, error: 1e-14, realMem: 557236b (peak: 818280b), virtMem: 1590368b (peak: 1698856b)
+dur: 29.615274s, error: 1e-14, realMem: 557236b (peak: 818280b), virtMem: 1590368b (peak: 1698856b)
+dur: 29.613124s, error: 2e-14, realMem: 557236b (peak: 818280b), virtMem: 1590368b (peak: 1698856b)
+dur: 29.612236s, error: 1e-14, realMem: 557236b (peak: 818280b), virtMem: 1590368b (peak: 1698856b)
+dur: 29.601734s, error: 2e-14, realMem: 557236b (peak: 818280b), virtMem: 1590368b (peak: 1698856b)
+dur: 29.631732s, error: 2e-14, realMem: 557236b (peak: 818280b), virtMem: 1590368b (peak: 1698856b)
+dur: 29.623139s, error: 8e-15, realMem: 557236b (peak: 818280b), virtMem: 1590368b (peak: 1698856b)
+dur: 29.636956s, error: 1e-14, realMem: 557236b (peak: 818280b), virtMem: 1590368b (peak: 1698856b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads16/depth100/qubits26.txt
+numThreads:	16
+circuitDepth:	100
+numQubits:	26
+numRepetitions:	10
+instMode:	5
+dur: 143.331214s, error: 1e-14, realMem: 1086268b (peak: 1609480b), virtMem: 2114656b (peak: 2485288b)
+dur: 143.427461s, error: 1e-14, realMem: 1086288b (peak: 1609480b), virtMem: 2114656b (peak: 2485288b)
+dur: 143.838685s, error: 2e-14, realMem: 1086288b (peak: 1609480b), virtMem: 2114656b (peak: 2485288b)
+dur: 143.234830s, error: 2e-14, realMem: 1086292b (peak: 1609480b), virtMem: 2114912b (peak: 2485288b)
+dur: 143.236796s, error: 2e-14, realMem: 1086292b (peak: 1609480b), virtMem: 2114912b (peak: 2485288b)
+dur: 143.278933s, error: 1e-14, realMem: 1086292b (peak: 1609480b), virtMem: 2114912b (peak: 2485288b)
+dur: 143.257454s, error: 1e-14, realMem: 1086292b (peak: 1609480b), virtMem: 2114912b (peak: 2485288b)
+dur: 143.234746s, error: 4e-15, realMem: 1086292b (peak: 1609480b), virtMem: 2114912b (peak: 2485288b)
+dur: 143.351283s, error: 2e-14, realMem: 1086292b (peak: 1609480b), virtMem: 2114912b (peak: 2485288b)
+dur: 143.243572s, error: 2e-14, realMem: 1086292b (peak: 1609480b), virtMem: 2114912b (peak: 2485288b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode4_results/ARC_ProjectQ/threads16/depth100/qubits27.txt
+numThreads:	16
+circuitDepth:	100
+numQubits:	27
+numRepetitions:	10
+instMode:	4
+dur: 169.054257s, error: -7e-15, realMem: 2131464b (peak: 3179008b), virtMem: 3163232b (peak: 4058152b)
+dur: 168.845208s, error: -2e-15, realMem: 2131500b (peak: 3179008b), virtMem: 3163232b (peak: 4058152b)
+dur: 168.910148s, error: 2e-15, realMem: 2131500b (peak: 3179008b), virtMem: 3163232b (peak: 4058152b)
+dur: 168.820276s, error: 2e-14, realMem: 2131500b (peak: 3179008b), virtMem: 3163232b (peak: 4058152b)
+dur: 168.890395s, error: 1e-14, realMem: 2131500b (peak: 3179008b), virtMem: 3163232b (peak: 4058152b)
+dur: 168.875022s, error: 2e-14, realMem: 2131500b (peak: 3179008b), virtMem: 3163232b (peak: 4058152b)
+dur: 168.816716s, error: 1e-14, realMem: 2131500b (peak: 3179008b), virtMem: 3163232b (peak: 4058152b)
+dur: 168.891479s, error: 4e-15, realMem: 2131500b (peak: 3179008b), virtMem: 3163232b (peak: 4058152b)
+dur: 168.810286s, error: 3e-15, realMem: 2131500b (peak: 3179008b), virtMem: 3163232b (peak: 4058152b)
+dur: 168.860426s, error: 2e-14, realMem: 2131500b (peak: 3179008b), virtMem: 3163232b (peak: 4058152b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads1/depth100/qubits25.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	25
+numRepetitions:	10
+instMode:	5
+dur: 107.167875s, error: -9e-16, realMem: 554444b (peak: 816280b), virtMem: 791520b (peak: 1053668b)
+dur: 107.201694s, error: 5e-15, realMem: 554468b (peak: 816280b), virtMem: 791520b (peak: 1053668b)
+dur: 107.174408s, error: 9e-14, realMem: 554468b (peak: 816280b), virtMem: 791520b (peak: 1053668b)
+dur: 107.137327s, error: -7e-14, realMem: 554468b (peak: 816280b), virtMem: 791520b (peak: 1053668b)
+dur: 107.128384s, error: -1e-15, realMem: 554468b (peak: 816280b), virtMem: 791520b (peak: 1053668b)
+dur: 107.159519s, error: 2e-13, realMem: 554468b (peak: 816280b), virtMem: 791520b (peak: 1053668b)
+dur: 107.190639s, error: 3e-14, realMem: 554468b (peak: 816280b), virtMem: 791520b (peak: 1053668b)
+dur: 107.185675s, error: 2e-14, realMem: 554468b (peak: 816280b), virtMem: 791520b (peak: 1053668b)
+dur: 107.133045s, error: -5e-14, realMem: 554468b (peak: 816280b), virtMem: 791520b (peak: 1053668b)
+dur: 107.126538s, error: 2e-14, realMem: 554468b (peak: 816280b), virtMem: 791520b (peak: 1053668b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode4_results/ARC_ProjectQ/threads1/depth100/qubits25.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	25
+numRepetitions:	10
+instMode:	4
+dur: 212.973094s, error: -4e-14, realMem: 554352b (peak: 816284b), virtMem: 791524b (peak: 1053672b)
+dur: 213.027249s, error: -3e-14, realMem: 554396b (peak: 816284b), virtMem: 791524b (peak: 1053672b)
+dur: 213.067441s, error: 2e-14, realMem: 554396b (peak: 816284b), virtMem: 791524b (peak: 1053672b)
+dur: 212.974615s, error: -1e-13, realMem: 554396b (peak: 816284b), virtMem: 791524b (peak: 1053672b)
+dur: 213.027543s, error: 1e-13, realMem: 554396b (peak: 816284b), virtMem: 791524b (peak: 1053672b)
+dur: 213.040797s, error: -8e-14, realMem: 554396b (peak: 816284b), virtMem: 791524b (peak: 1053672b)
+dur: 212.964423s, error: 1e-13, realMem: 554396b (peak: 816284b), virtMem: 791524b (peak: 1053672b)
+dur: 213.058330s, error: 4e-14, realMem: 554396b (peak: 816284b), virtMem: 791524b (peak: 1053672b)
+dur: 212.979936s, error: 2e-14, realMem: 554396b (peak: 816284b), virtMem: 791524b (peak: 1053672b)
+dur: 212.984548s, error: 6e-14, realMem: 554396b (peak: 816284b), virtMem: 791524b (peak: 1053672b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads16/depth100/qubits26.txt
+numThreads:	16
+circuitDepth:	100
+numQubits:	26
+numRepetitions:	10
+instMode:	5
+dur: 143.625955s, error: 2e-14, realMem: 1083976b (peak: 1607188b), virtMem: 2114660b (peak: 2485292b)
+dur: 143.611754s, error: 2e-14, realMem: 1083996b (peak: 1607188b), virtMem: 2114660b (peak: 2485292b)
+dur: 144.005994s, error: 2e-14, realMem: 1083996b (peak: 1607188b), virtMem: 2114660b (peak: 2485292b)
+dur: 143.432717s, error: 2e-14, realMem: 1084000b (peak: 1607188b), virtMem: 2114916b (peak: 2485292b)
+dur: 143.433224s, error: 2e-14, realMem: 1084000b (peak: 1607188b), virtMem: 2114916b (peak: 2485292b)
+dur: 143.426552s, error: 3e-14, realMem: 1084000b (peak: 1607188b), virtMem: 2114916b (peak: 2485292b)
+dur: 143.465027s, error: 1e-14, realMem: 1084000b (peak: 1607188b), virtMem: 2114916b (peak: 2485292b)
+dur: 143.437630s, error: 1e-14, realMem: 1084000b (peak: 1607188b), virtMem: 2114916b (peak: 2485292b)
+dur: 143.446056s, error: 1e-14, realMem: 1084000b (peak: 1607188b), virtMem: 2114916b (peak: 2485292b)
+dur: 143.484688s, error: 2e-14, realMem: 1084000b (peak: 1607188b), virtMem: 2114916b (peak: 2485292b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads1/depth100/qubits26.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	26
+numRepetitions:	10
+instMode:	5
+dur: 283.141781s, error: 4e-14, realMem: 1078736b (peak: 1602712b), virtMem: 1315808b (peak: 1840100b)
+dur: 283.118269s, error: -1e-13, realMem: 1078756b (peak: 1602712b), virtMem: 1315808b (peak: 1840100b)
+dur: 283.193948s, error: 7e-14, realMem: 1078756b (peak: 1602712b), virtMem: 1315808b (peak: 1840100b)
+dur: 283.076986s, error: 6e-14, realMem: 1078760b (peak: 1602712b), virtMem: 1316064b (peak: 1840100b)
+dur: 282.997508s, error: 1e-13, realMem: 1078760b (peak: 1602712b), virtMem: 1316064b (peak: 1840100b)
+dur: 283.052284s, error: 4e-14, realMem: 1078760b (peak: 1602712b), virtMem: 1316064b (peak: 1840100b)
+dur: 283.003459s, error: 9e-14, realMem: 1078760b (peak: 1602712b), virtMem: 1316064b (peak: 1840100b)
+dur: 283.075099s, error: -3e-14, realMem: 1078760b (peak: 1602712b), virtMem: 1316064b (peak: 1840100b)
+dur: 282.995994s, error: -4e-14, realMem: 1078760b (peak: 1602712b), virtMem: 1316064b (peak: 1840100b)
+dur: 283.081250s, error: 3e-15, realMem: 1078760b (peak: 1602712b), virtMem: 1316064b (peak: 1840100b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads16/depth100/qubits27.txt
+numThreads:	16
+circuitDepth:	100
+numQubits:	27
+numRepetitions:	10
+instMode:	5
+dur: 312.292215s, error: 1e-14, realMem: 2130348b (peak: 3177848b), virtMem: 3163240b (peak: 4058160b)
+dur: 312.384562s, error: 2e-14, realMem: 2130368b (peak: 3177848b), virtMem: 3163240b (peak: 4058160b)
+dur: 312.735197s, error: 2e-14, realMem: 2130368b (peak: 3177848b), virtMem: 3163240b (peak: 4058160b)
+dur: 312.230658s, error: 2e-14, realMem: 2130372b (peak: 3177848b), virtMem: 3163496b (peak: 4058160b)
+dur: 312.309530s, error: 1e-14, realMem: 2130372b (peak: 3177848b), virtMem: 3163496b (peak: 4058160b)
+dur: 312.173840s, error: 1e-14, realMem: 2130372b (peak: 3177848b), virtMem: 3163496b (peak: 4058160b)
+dur: 312.311296s, error: 7e-15, realMem: 2132264b (peak: 3177848b), virtMem: 3163496b (peak: 4058160b)
+dur: 312.208689s, error: 1e-14, realMem: 2132264b (peak: 3177848b), virtMem: 3163496b (peak: 4058160b)
+dur: 312.079328s, error: 2e-14, realMem: 2132264b (peak: 3177848b), virtMem: 3163496b (peak: 4058160b)
+dur: 312.107297s, error: 3e-14, realMem: 2132264b (peak: 3177848b), virtMem: 3163496b (peak: 4058160b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads1/depth100/qubits26.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	26
+numRepetitions:	10
+instMode:	5
+dur: 283.798427s, error: -3e-14, realMem: 1078740b (peak: 1602716b), virtMem: 1315808b (peak: 1840100b)
+dur: 283.866999s, error: -1e-14, realMem: 1078760b (peak: 1602716b), virtMem: 1315808b (peak: 1840100b)
+dur: 283.929474s, error: 2e-13, realMem: 1078760b (peak: 1602716b), virtMem: 1315808b (peak: 1840100b)
+dur: 283.804486s, error: 2e-14, realMem: 1078764b (peak: 1602716b), virtMem: 1316064b (peak: 1840100b)
+dur: 283.749016s, error: 8e-15, realMem: 1078764b (peak: 1602716b), virtMem: 1316064b (peak: 1840100b)
+dur: 283.763950s, error: -2e-14, realMem: 1078764b (peak: 1602716b), virtMem: 1316064b (peak: 1840100b)
+dur: 283.736561s, error: 6e-15, realMem: 1078764b (peak: 1602716b), virtMem: 1316064b (peak: 1840100b)
+dur: 283.778322s, error: 1e-13, realMem: 1078764b (peak: 1602716b), virtMem: 1316064b (peak: 1840100b)
+dur: 283.707055s, error: 2e-13, realMem: 1078764b (peak: 1602716b), virtMem: 1316064b (peak: 1840100b)
+dur: 283.758392s, error: 2e-13, realMem: 1078764b (peak: 1602716b), virtMem: 1316064b (peak: 1840100b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode4_results/ARC_ProjectQ/threads16/depth100/qubits28.txt
+numThreads:	16
+circuitDepth:	100
+numQubits:	28
+numRepetitions:	10
+instMode:	4
+dur: 373.237166s, error: 2e-14, realMem: 4233516b (peak: 6330204b), virtMem: 5260384b (peak: 7203880b)
+dur: 373.215751s, error: -4e-15, realMem: 4233548b (peak: 6330204b), virtMem: 5260384b (peak: 7203880b)
+dur: 373.117327s, error: -5e-15, realMem: 4233548b (peak: 6330204b), virtMem: 5260384b (peak: 7203880b)
+dur: 373.008141s, error: -3e-15, realMem: 4233552b (peak: 6330204b), virtMem: 5260384b (peak: 7203880b)
+dur: 373.166234s, error: 3e-14, realMem: 4233552b (peak: 6330204b), virtMem: 5260384b (peak: 7203880b)
+dur: 373.096529s, error: 2e-14, realMem: 4233552b (peak: 6330204b), virtMem: 5260384b (peak: 7203880b)
+dur: 373.255294s, error: -3e-14, realMem: 4233552b (peak: 6330204b), virtMem: 5260384b (peak: 7203880b)
+dur: 373.373457s, error: 2e-14, realMem: 4233552b (peak: 6330204b), virtMem: 5260384b (peak: 7203880b)
+dur: 373.351383s, error: -5e-15, realMem: 4233552b (peak: 6330204b), virtMem: 5260384b (peak: 7203880b)
+dur: 373.306499s, error: 3e-14, realMem: 4233552b (peak: 6330204b), virtMem: 5260384b (peak: 7203880b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode4_results/ARC_ProjectQ/threads1/depth100/qubits26.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	26
+numRepetitions:	10
+instMode:	4
+dur: 423.756798s, error: -2e-14, realMem: 1078644b (peak: 1602716b), virtMem: 1315808b (peak: 1840100b)
+dur: 423.782474s, error: 7e-14, realMem: 1078684b (peak: 1602716b), virtMem: 1315808b (peak: 1840100b)
+dur: 423.812925s, error: 7e-14, realMem: 1078684b (peak: 1602716b), virtMem: 1315808b (peak: 1840100b)
+dur: 423.712800s, error: -9e-14, realMem: 1078684b (peak: 1602716b), virtMem: 1315808b (peak: 1840100b)
+dur: 423.721508s, error: 6e-14, realMem: 1078684b (peak: 1602716b), virtMem: 1315808b (peak: 1840100b)
+dur: 423.819198s, error: -3e-14, realMem: 1078684b (peak: 1602716b), virtMem: 1315808b (peak: 1840100b)
+dur: 423.776315s, error: -1e-13, realMem: 1078684b (peak: 1602716b), virtMem: 1315808b (peak: 1840100b)
+dur: 423.736269s, error: 3e-14, realMem: 1078684b (peak: 1602716b), virtMem: 1315808b (peak: 1840100b)
+dur: 423.728832s, error: -6e-14, realMem: 1078684b (peak: 1602716b), virtMem: 1315808b (peak: 1840100b)
+dur: 423.784815s, error: 8e-14, realMem: 1078684b (peak: 1602716b), virtMem: 1315808b (peak: 1840100b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads16/depth100/qubits27.txt
+numThreads:	16
+circuitDepth:	100
+numQubits:	27
+numRepetitions:	10
+instMode:	5
+dur: 311.526143s, error: 1e-14, realMem: 2129488b (peak: 3176972b), virtMem: 3163236b (peak: 4058156b)
+dur: 311.520169s, error: 1e-14, realMem: 2129508b (peak: 3176972b), virtMem: 3163236b (peak: 4058156b)
+dur: 311.852334s, error: 8e-15, realMem: 2129508b (peak: 3176972b), virtMem: 3163236b (peak: 4058156b)
+dur: 311.267919s, error: 8e-15, realMem: 2129512b (peak: 3176972b), virtMem: 3163492b (peak: 4058156b)
+dur: 311.230273s, error: 2e-14, realMem: 2129512b (peak: 3176972b), virtMem: 3163492b (peak: 4058156b)
+dur: 311.128617s, error: 2e-14, realMem: 2129512b (peak: 3176972b), virtMem: 3163492b (peak: 4058156b)
+dur: 311.330168s, error: 9e-15, realMem: 2129512b (peak: 3176972b), virtMem: 3163492b (peak: 4058156b)
+dur: 311.063850s, error: 2e-14, realMem: 2129512b (peak: 3176972b), virtMem: 3163492b (peak: 4058156b)
+dur: 311.254540s, error: 1e-14, realMem: 2129512b (peak: 3176972b), virtMem: 3163492b (peak: 4058156b)
+dur: 311.275252s, error: 7e-15, realMem: 2129512b (peak: 3176972b), virtMem: 3163492b (peak: 4058156b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads1/depth100/qubits27.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	27
+numRepetitions:	10
+instMode:	5
+dur: 475.797270s, error: 3e-13, realMem: 2127320b (peak: 3175588b), virtMem: 2364388b (peak: 3412968b)
+dur: 475.838964s, error: 9e-14, realMem: 2127340b (peak: 3175588b), virtMem: 2364388b (peak: 3412968b)
+dur: 475.977975s, error: 1e-13, realMem: 2127340b (peak: 3175588b), virtMem: 2364388b (peak: 3412968b)
+dur: 475.765850s, error: 1e-13, realMem: 2127344b (peak: 3175588b), virtMem: 2364644b (peak: 3412968b)
+dur: 475.723603s, error: 3e-13, realMem: 2127344b (peak: 3175588b), virtMem: 2364644b (peak: 3412968b)
+dur: 475.711506s, error: -3e-14, realMem: 2127344b (peak: 3175588b), virtMem: 2364644b (peak: 3412968b)
+dur: 475.734574s, error: -6e-14, realMem: 2127344b (peak: 3175588b), virtMem: 2364644b (peak: 3412968b)
+dur: 475.789430s, error: -2e-13, realMem: 2127344b (peak: 3175588b), virtMem: 2364644b (peak: 3412968b)
+dur: 475.800365s, error: -1e-13, realMem: 2127344b (peak: 3175588b), virtMem: 2364644b (peak: 3412968b)
+dur: 475.798350s, error: 1e-14, realMem: 2127344b (peak: 3175588b), virtMem: 2364644b (peak: 3412968b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads1/depth100/qubits27.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	27
+numRepetitions:	10
+instMode:	5
+dur: 475.578564s, error: -3e-13, realMem: 2127312b (peak: 3175580b), virtMem: 2364380b (peak: 3412960b)
+dur: 475.636636s, error: -2e-13, realMem: 2127332b (peak: 3175580b), virtMem: 2364380b (peak: 3412960b)
+dur: 475.735225s, error: 2e-13, realMem: 2127332b (peak: 3175580b), virtMem: 2364380b (peak: 3412960b)
+dur: 475.527325s, error: -2e-13, realMem: 2127336b (peak: 3175580b), virtMem: 2364636b (peak: 3412960b)
+dur: 475.624091s, error: 2e-13, realMem: 2127336b (peak: 3175580b), virtMem: 2364636b (peak: 3412960b)
+dur: 475.598748s, error: 9e-14, realMem: 2127336b (peak: 3175580b), virtMem: 2364636b (peak: 3412960b)
+dur: 475.521082s, error: 1e-13, realMem: 2127336b (peak: 3175580b), virtMem: 2364636b (peak: 3412960b)
+dur: 475.521945s, error: -3e-14, realMem: 2127336b (peak: 3175580b), virtMem: 2364636b (peak: 3412960b)
+dur: 475.566851s, error: 1e-13, realMem: 2127336b (peak: 3175580b), virtMem: 2364636b (peak: 3412960b)
+dur: 475.576110s, error: 2e-14, realMem: 2127336b (peak: 3175580b), virtMem: 2364636b (peak: 3412960b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads16/depth100/qubits29.txt
+numThreads:	16
+circuitDepth:	100
+numQubits:	29
+numRepetitions:	10
+instMode:	5
+dur: 512.292014s, error: 6e-15, realMem: 8426248b (peak: 12619476b), virtMem: 9454700b (peak: 13495348b)
+dur: 512.309150s, error: -2e-14, realMem: 8426268b (peak: 12619476b), virtMem: 9454700b (peak: 13495348b)
+dur: 512.757380s, error: 3e-14, realMem: 8426268b (peak: 12619476b), virtMem: 9454700b (peak: 13495348b)
+dur: 512.030602s, error: 9e-16, realMem: 8426272b (peak: 12619476b), virtMem: 9454956b (peak: 13495348b)
+dur: 512.222569s, error: 8e-15, realMem: 8426272b (peak: 12619476b), virtMem: 9454956b (peak: 13495348b)
+dur: 512.283118s, error: 3e-14, realMem: 8426272b (peak: 12619476b), virtMem: 9454956b (peak: 13495348b)
+dur: 512.195135s, error: 3e-14, realMem: 8426272b (peak: 12619476b), virtMem: 9454956b (peak: 13495348b)
+dur: 512.231179s, error: 3e-14, realMem: 8426272b (peak: 12619476b), virtMem: 9454956b (peak: 13495348b)
+dur: 512.347470s, error: 5e-14, realMem: 8426272b (peak: 12619476b), virtMem: 9454956b (peak: 13495348b)
+dur: 512.169161s, error: 8e-15, realMem: 8426272b (peak: 12619476b), virtMem: 9454956b (peak: 13495348b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads16/depth100/qubits28.txt
+numThreads:	16
+circuitDepth:	100
+numQubits:	28
+numRepetitions:	10
+instMode:	5
+dur: 717.906889s, error: 2e-14, realMem: 4232728b (peak: 6328804b), virtMem: 5260380b (peak: 7203876b)
+dur: 717.928894s, error: 2e-14, realMem: 4232748b (peak: 6328804b), virtMem: 5260380b (peak: 7203876b)
+dur: 717.964322s, error: 6e-15, realMem: 4232748b (peak: 6328804b), virtMem: 5260380b (peak: 7203876b)
+dur: 717.400765s, error: 2e-14, realMem: 4232752b (peak: 6328804b), virtMem: 5260636b (peak: 7203876b)
+dur: 717.547979s, error: 2e-14, realMem: 4232752b (peak: 6328804b), virtMem: 5260636b (peak: 7203876b)
+dur: 717.607266s, error: 2e-14, realMem: 4232752b (peak: 6328804b), virtMem: 5260636b (peak: 7203876b)
+dur: 717.638405s, error: 3e-14, realMem: 4232752b (peak: 6328804b), virtMem: 5260636b (peak: 7203876b)
+dur: 717.848666s, error: 2e-14, realMem: 4232752b (peak: 6328804b), virtMem: 5260636b (peak: 7203876b)
+dur: 717.668720s, error: 3e-14, realMem: 4232752b (peak: 6328804b), virtMem: 5260636b (peak: 7203876b)
+dur: 717.685826s, error: 2e-14, realMem: 4232752b (peak: 6328804b), virtMem: 5260636b (peak: 7203876b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode4_results/ARC_ProjectQ/threads16/depth100/qubits29.txt
+numThreads:	16
+circuitDepth:	100
+numQubits:	29
+numRepetitions:	10
+instMode:	4
+dur: 771.247733s, error: 2e-15, realMem: 8423580b (peak: 12616828b), virtMem: 9454692b (peak: 13495340b)
+dur: 770.815239s, error: -4e-15, realMem: 8423608b (peak: 12616828b), virtMem: 9454692b (peak: 13495340b)
+dur: 770.651029s, error: -3e-14, realMem: 8423608b (peak: 12616828b), virtMem: 9454692b (peak: 13495340b)
+dur: 770.647869s, error: 2e-14, realMem: 8423612b (peak: 12616828b), virtMem: 9454692b (peak: 13495340b)
+dur: 770.808363s, error: -3e-15, realMem: 8423612b (peak: 12616828b), virtMem: 9454692b (peak: 13495340b)
+dur: 771.028902s, error: -2e-15, realMem: 8423612b (peak: 12616828b), virtMem: 9454692b (peak: 13495340b)
+dur: 770.952471s, error: -5e-14, realMem: 8423612b (peak: 12616828b), virtMem: 9454692b (peak: 13495340b)
+dur: 770.673105s, error: 2e-14, realMem: 8423612b (peak: 12616828b), virtMem: 9454692b (peak: 13495340b)
+dur: 770.376119s, error: 3e-14, realMem: 8423612b (peak: 12616828b), virtMem: 9454692b (peak: 13495340b)
+dur: 770.491336s, error: -1e-14, realMem: 8423612b (peak: 12616828b), virtMem: 9454692b (peak: 13495340b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads16/depth100/qubits28.txt
+numThreads:	16
+circuitDepth:	100
+numQubits:	28
+numRepetitions:	10
+instMode:	5
+dur: 717.334532s, error: 3e-14, realMem: 4231272b (peak: 6327332b), virtMem: 5260388b (peak: 7203884b)
+dur: 716.869330s, error: 1e-14, realMem: 4231292b (peak: 6327332b), virtMem: 5260388b (peak: 7203884b)
+dur: 717.916672s, error: 2e-14, realMem: 4231292b (peak: 6327332b), virtMem: 5260388b (peak: 7203884b)
+dur: 717.293505s, error: 1e-14, realMem: 4231296b (peak: 6327332b), virtMem: 5260644b (peak: 7203884b)
+dur: 717.339725s, error: 5e-14, realMem: 4231296b (peak: 6327332b), virtMem: 5260644b (peak: 7203884b)
+dur: 717.209853s, error: 1e-14, realMem: 4231296b (peak: 6327332b), virtMem: 5260644b (peak: 7203884b)
+dur: 717.250566s, error: 2e-14, realMem: 4231296b (peak: 6327332b), virtMem: 5260644b (peak: 7203884b)
+dur: 716.941986s, error: 3e-14, realMem: 4231296b (peak: 6327332b), virtMem: 5260644b (peak: 7203884b)
+dur: 717.152080s, error: 2e-14, realMem: 4231296b (peak: 6327332b), virtMem: 5260644b (peak: 7203884b)
+dur: 717.432179s, error: 1e-14, realMem: 4231296b (peak: 6327332b), virtMem: 5260644b (peak: 7203884b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode4_results/ARC_ProjectQ/threads1/depth100/qubits27.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	27
+numRepetitions:	10
+instMode:	4
+dur: 905.187991s, error: -8e-15, realMem: 2127272b (peak: 3175584b), virtMem: 2364376b (peak: 3412956b)
+dur: 905.135878s, error: 5e-14, realMem: 2127308b (peak: 3175584b), virtMem: 2364376b (peak: 3412956b)
+dur: 905.068907s, error: -3e-14, realMem: 2127308b (peak: 3175584b), virtMem: 2364376b (peak: 3412956b)
+dur: 905.066196s, error: -2e-13, realMem: 2127308b (peak: 3175584b), virtMem: 2364376b (peak: 3412956b)
+dur: 905.021286s, error: 9e-16, realMem: 2127308b (peak: 3175584b), virtMem: 2364376b (peak: 3412956b)
+dur: 905.080832s, error: 3e-13, realMem: 2127308b (peak: 3175584b), virtMem: 2364376b (peak: 3412956b)
+dur: 905.096943s, error: -1e-13, realMem: 2127308b (peak: 3175584b), virtMem: 2364376b (peak: 3412956b)
+dur: 905.097537s, error: 3e-13, realMem: 2127308b (peak: 3175584b), virtMem: 2364376b (peak: 3412956b)
+dur: 905.149750s, error: -2e-13, realMem: 2127308b (peak: 3175584b), virtMem: 2364376b (peak: 3412956b)
+dur: 905.099256s, error: 1e-13, realMem: 2127308b (peak: 3175584b), virtMem: 2364376b (peak: 3412956b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads1/depth100/qubits28.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	28
+numRepetitions:	10
+instMode:	5
+dur: 948.724371s, error: -2e-13, realMem: 4224496b (peak: 6321340b), virtMem: 4461536b (peak: 6558692b)
+dur: 948.672809s, error: -7e-14, realMem: 4224516b (peak: 6321340b), virtMem: 4461536b (peak: 6558692b)
+dur: 948.782512s, error: -7e-14, realMem: 4224516b (peak: 6321340b), virtMem: 4461536b (peak: 6558692b)
+dur: 948.583598s, error: 2e-13, realMem: 4224520b (peak: 6321340b), virtMem: 4461792b (peak: 6558692b)
+dur: 948.651570s, error: 3e-13, realMem: 4224520b (peak: 6321340b), virtMem: 4461792b (peak: 6558692b)
+dur: 948.596210s, error: -2e-13, realMem: 4224520b (peak: 6321340b), virtMem: 4461792b (peak: 6558692b)
+dur: 948.596147s, error: -6e-14, realMem: 4224520b (peak: 6321340b), virtMem: 4461792b (peak: 6558692b)
+dur: 948.678494s, error: 2e-14, realMem: 4224520b (peak: 6321340b), virtMem: 4461792b (peak: 6558692b)
+dur: 948.616496s, error: 7e-14, realMem: 4224520b (peak: 6321340b), virtMem: 4461792b (peak: 6558692b)
+dur: 948.653295s, error: 2e-14, realMem: 4224520b (peak: 6321340b), virtMem: 4461792b (peak: 6558692b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads1/depth100/qubits28.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	28
+numRepetitions:	10
+instMode:	5
+dur: 969.161534s, error: 6e-14, realMem: 4224476b (peak: 6321320b), virtMem: 4461540b (peak: 6558696b)
+dur: 969.100058s, error: 1e-13, realMem: 4224496b (peak: 6321320b), virtMem: 4461540b (peak: 6558696b)
+dur: 969.206170s, error: -2e-14, realMem: 4224496b (peak: 6321320b), virtMem: 4461540b (peak: 6558696b)
+dur: 969.142075s, error: 3e-13, realMem: 4224500b (peak: 6321320b), virtMem: 4461796b (peak: 6558696b)
+dur: 969.064526s, error: 5e-14, realMem: 4224500b (peak: 6321320b), virtMem: 4461796b (peak: 6558696b)
+dur: 969.072701s, error: -3e-13, realMem: 4224500b (peak: 6321320b), virtMem: 4461796b (peak: 6558696b)
+dur: 969.104981s, error: -1e-13, realMem: 4224500b (peak: 6321320b), virtMem: 4461796b (peak: 6558696b)
+dur: 968.994501s, error: -3e-13, realMem: 4224500b (peak: 6321320b), virtMem: 4461796b (peak: 6558696b)
+dur: 969.106699s, error: 6e-14, realMem: 4224500b (peak: 6321320b), virtMem: 4461796b (peak: 6558696b)
+dur: 968.964137s, error: 3e-13, realMem: 4224500b (peak: 6321320b), virtMem: 4461796b (peak: 6558696b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads16/depth100/qubits29.txt
+numThreads:	16
+circuitDepth:	100
+numQubits:	29
+numRepetitions:	10
+instMode:	5
+dur: 1358.958357s, error: 2e-14, realMem: 8425860b (peak: 12619088b), virtMem: 9454692b (peak: 13495340b)
+dur: 1358.592847s, error: 4e-14, realMem: 8425880b (peak: 12619088b), virtMem: 9454692b (peak: 13495340b)
+dur: 1358.950582s, error: 3e-14, realMem: 8425880b (peak: 12619088b), virtMem: 9454692b (peak: 13495340b)
+dur: 1356.484437s, error: 2e-14, realMem: 8425884b (peak: 12619088b), virtMem: 9454948b (peak: 13495340b)
+dur: 1357.218832s, error: 3e-14, realMem: 8425884b (peak: 12619088b), virtMem: 9454948b (peak: 13495340b)
+dur: 1358.666009s, error: 2e-14, realMem: 8425884b (peak: 12619088b), virtMem: 9454948b (peak: 13495340b)
+dur: 1358.367988s, error: 3e-14, realMem: 8425884b (peak: 12619088b), virtMem: 9454948b (peak: 13495340b)
+dur: 1355.044648s, error: 5e-15, realMem: 8425884b (peak: 12619088b), virtMem: 9454948b (peak: 13495340b)
+dur: 1358.587457s, error: 2e-14, realMem: 8425884b (peak: 12619088b), virtMem: 9454948b (peak: 13495340b)
+dur: 1354.685988s, error: -3e-14, realMem: 8425884b (peak: 12619088b), virtMem: 9454948b (peak: 13495340b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode4_results/ARC_ProjectQ/threads16/depth100/qubits30.txt
+numThreads:	16
+circuitDepth:	100
+numQubits:	30
+numRepetitions:	10
+instMode:	4
+dur: 1568.015647s, error: 2e-14, realMem: 16811228b (peak: 25198780b), virtMem: 17843292b (peak: 26078244b)
+dur: 1567.605357s, error: 2e-14, realMem: 16811256b (peak: 25198780b), virtMem: 17843292b (peak: 26078244b)
+dur: 1565.567485s, error: -5e-15, realMem: 16811256b (peak: 25198780b), virtMem: 17843292b (peak: 26078244b)
+dur: 1566.257466s, error: 1e-14, realMem: 16811260b (peak: 25198780b), virtMem: 17843292b (peak: 26078244b)
+dur: 1567.994014s, error: 3e-14, realMem: 16811260b (peak: 25198780b), virtMem: 17843292b (peak: 26078244b)
+dur: 1568.290615s, error: 6e-14, realMem: 16811260b (peak: 25198780b), virtMem: 17843292b (peak: 26078244b)
+dur: 1569.025830s, error: 1e-14, realMem: 16811260b (peak: 25198780b), virtMem: 17843292b (peak: 26078244b)
+dur: 1568.792672s, error: 1e-14, realMem: 16811260b (peak: 25198780b), virtMem: 17843292b (peak: 26078244b)
+dur: 1569.804046s, error: -1e-14, realMem: 16811260b (peak: 25198780b), virtMem: 17843292b (peak: 26078244b)
+dur: 1569.194041s, error: -2e-14, realMem: 16811260b (peak: 25198780b), virtMem: 17843292b (peak: 26078244b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode4_results/ARC_ProjectQ/threads1/depth100/qubits28.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	28
+numRepetitions:	10
+instMode:	4
+dur: 1847.010745s, error: -4e-13, realMem: 4224364b (peak: 6321288b), virtMem: 4461528b (peak: 6558684b)
+dur: 1847.008557s, error: 1e-14, realMem: 4224396b (peak: 6321288b), virtMem: 4461528b (peak: 6558684b)
+dur: 1846.911913s, error: 1e-13, realMem: 4224396b (peak: 6321288b), virtMem: 4461528b (peak: 6558684b)
+dur: 1847.047559s, error: -3e-14, realMem: 4224396b (peak: 6321288b), virtMem: 4461528b (peak: 6558684b)
+dur: 1847.015214s, error: -3e-14, realMem: 4224396b (peak: 6321288b), virtMem: 4461528b (peak: 6558684b)
+dur: 1846.957681s, error: 5e-13, realMem: 4224396b (peak: 6321288b), virtMem: 4461528b (peak: 6558684b)
+dur: 1846.969788s, error: 4e-13, realMem: 4224396b (peak: 6321288b), virtMem: 4461528b (peak: 6558684b)
+dur: 1847.026169s, error: 2e-13, realMem: 4224396b (peak: 6321288b), virtMem: 4461528b (peak: 6558684b)
+dur: 1846.971310s, error: -1e-13, realMem: 4224396b (peak: 6321288b), virtMem: 4461528b (peak: 6558684b)
+dur: 1846.942444s, error: 3e-13, realMem: 4224396b (peak: 6321288b), virtMem: 4461528b (peak: 6558684b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads1/depth100/qubits29.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	29
+numRepetitions:	10
+instMode:	5
+dur: 2466.394576s, error: 2e-13, realMem: 8418776b (peak: 12612772b), virtMem: 8655844b (peak: 12850152b)
+dur: 2466.274327s, error: -2e-13, realMem: 8418796b (peak: 12612772b), virtMem: 8655844b (peak: 12850152b)
+dur: 2466.308940s, error: 9e-13, realMem: 8418796b (peak: 12612772b), virtMem: 8655844b (peak: 12850152b)
+dur: 2466.216368s, error: 6e-13, realMem: 8418800b (peak: 12612772b), virtMem: 8656100b (peak: 12850152b)
+dur: 2466.305094s, error: 5e-13, realMem: 8418800b (peak: 12612772b), virtMem: 8656100b (peak: 12850152b)
+dur: 2466.179067s, error: 4e-14, realMem: 8418800b (peak: 12612772b), virtMem: 8656100b (peak: 12850152b)
+dur: 2466.347641s, error: -3e-13, realMem: 8418800b (peak: 12612772b), virtMem: 8656100b (peak: 12850152b)
+dur: 2466.251503s, error: 1e-13, realMem: 8418800b (peak: 12612772b), virtMem: 8656100b (peak: 12850152b)
+dur: 2466.305667s, error: 8e-14, realMem: 8418800b (peak: 12612772b), virtMem: 8656100b (peak: 12850152b)
+dur: 2466.211747s, error: -4e-13, realMem: 8418800b (peak: 12612772b), virtMem: 8656100b (peak: 12850152b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads1/depth100/qubits29.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	29
+numRepetitions:	10
+instMode:	5
+dur: 2449.843874s, error: -3e-13, realMem: 8418772b (peak: 12612768b), virtMem: 8655840b (peak: 12850148b)
+dur: 2449.802499s, error: 3e-13, realMem: 8418792b (peak: 12612768b), virtMem: 8655840b (peak: 12850148b)
+dur: 2449.908903s, error: 3e-13, realMem: 8418792b (peak: 12612768b), virtMem: 8655840b (peak: 12850148b)
+dur: 2449.674525s, error: 1e-13, realMem: 8418796b (peak: 12612768b), virtMem: 8656096b (peak: 12850148b)
+dur: 2449.635339s, error: 1e-13, realMem: 8418796b (peak: 12612768b), virtMem: 8656096b (peak: 12850148b)
+dur: 2449.659328s, error: 5e-14, realMem: 8418796b (peak: 12612768b), virtMem: 8656096b (peak: 12850148b)
+dur: 2449.668103s, error: 2e-13, realMem: 8418796b (peak: 12612768b), virtMem: 8656096b (peak: 12850148b)
+dur: 2449.701192s, error: -8e-14, realMem: 8418796b (peak: 12612768b), virtMem: 8656096b (peak: 12850148b)
+dur: 2449.802992s, error: -2e-13, realMem: 8418796b (peak: 12612768b), virtMem: 8656096b (peak: 12850148b)
+dur: 2449.632007s, error: -4e-13, realMem: 8418796b (peak: 12612768b), virtMem: 8656096b (peak: 12850148b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads16/depth100/qubits30.txt
+numThreads:	16
+circuitDepth:	100
+numQubits:	30
+numRepetitions:	10
+instMode:	5
+dur: 2950.198575s, error: 5e-14, realMem: 16809928b (peak: 25197444b), virtMem: 17843304b (peak: 26078256b)
+dur: 2943.263580s, error: 1e-14, realMem: 16809948b (peak: 25197444b), virtMem: 17843304b (peak: 26078256b)
+dur: 2944.342255s, error: -8e-15, realMem: 16809948b (peak: 25197444b), virtMem: 17843304b (peak: 26078256b)
+dur: 2952.186413s, error: 5e-14, realMem: 16809952b (peak: 25197444b), virtMem: 17843560b (peak: 26078256b)
+dur: 2941.802486s, error: -1e-14, realMem: 16809952b (peak: 25197444b), virtMem: 17843560b (peak: 26078256b)
+dur: 2953.858303s, error: 3e-14, realMem: 16809952b (peak: 25197444b), virtMem: 17843560b (peak: 26078256b)
+dur: 2951.986582s, error: 7e-14, realMem: 16809952b (peak: 25197444b), virtMem: 17843560b (peak: 26078256b)
+dur: 2948.115986s, error: 4e-14, realMem: 16809952b (peak: 25197444b), virtMem: 17843560b (peak: 26078256b)
+dur: 2945.680871s, error: 2e-14, realMem: 16809952b (peak: 25197444b), virtMem: 17843560b (peak: 26078256b)
+dur: 2945.623976s, error: 6e-14, realMem: 16809952b (peak: 25197444b), virtMem: 17843560b (peak: 26078256b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads16/depth100/qubits30.txt
+numThreads:	16
+circuitDepth:	100
+numQubits:	30
+numRepetitions:	10
+instMode:	5
+dur: 2877.154090s, error: 2e-14, realMem: 16810444b (peak: 25198036b), virtMem: 17843304b (peak: 26078256b)
+dur: 2883.699270s, error: 2e-14, realMem: 16810464b (peak: 25198036b), virtMem: 17843304b (peak: 26078256b)
+dur: 2885.849492s, error: 2e-14, realMem: 16810464b (peak: 25198036b), virtMem: 17843304b (peak: 26078256b)
+dur: 2885.748710s, error: 1e-14, realMem: 16810468b (peak: 25198036b), virtMem: 17843560b (peak: 26078256b)
+dur: 2877.590181s, error: 2e-14, realMem: 16810468b (peak: 25198036b), virtMem: 17843560b (peak: 26078256b)
+dur: 2884.238155s, error: 4e-14, realMem: 16810468b (peak: 25198036b), virtMem: 17843560b (peak: 26078256b)
+dur: 2878.326783s, error: 7e-14, realMem: 16810468b (peak: 25198036b), virtMem: 17843560b (peak: 26078256b)
+dur: 2876.261680s, error: -1e-14, realMem: 16810468b (peak: 25198036b), virtMem: 17843560b (peak: 26078256b)
+dur: 2879.461405s, error: -1e-14, realMem: 16810468b (peak: 25198036b), virtMem: 17843560b (peak: 26078256b)
+dur: 2876.139560s, error: 5e-14, realMem: 16810468b (peak: 25198036b), virtMem: 17843560b (peak: 26078256b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode4_results/ARC_ProjectQ/threads1/depth100/qubits29.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	29
+numRepetitions:	10
+instMode:	4
+dur: 4308.379246s, error: 2e-13, realMem: 8418724b (peak: 12612756b), virtMem: 8655832b (peak: 12850140b)
+dur: 4307.966569s, error: -4e-13, realMem: 8418752b (peak: 12612756b), virtMem: 8655832b (peak: 12850140b)
+dur: 4308.146719s, error: 7e-14, realMem: 8418752b (peak: 12612756b), virtMem: 8655832b (peak: 12850140b)
+dur: 4307.968680s, error: 4e-13, realMem: 8418756b (peak: 12612756b), virtMem: 8655832b (peak: 12850140b)
+dur: 4307.985853s, error: -4e-13, realMem: 8418756b (peak: 12612756b), virtMem: 8655832b (peak: 12850140b)
+dur: 4308.050215s, error: 8e-14, realMem: 8418756b (peak: 12612756b), virtMem: 8655832b (peak: 12850140b)
+dur: 4308.169766s, error: -3e-13, realMem: 8418756b (peak: 12612756b), virtMem: 8655832b (peak: 12850140b)
+dur: 4307.949087s, error: 1e-13, realMem: 8418756b (peak: 12612756b), virtMem: 8655832b (peak: 12850140b)
+dur: 4308.150527s, error: 3e-13, realMem: 8418756b (peak: 12612756b), virtMem: 8655832b (peak: 12850140b)
+dur: 4308.013721s, error: -8e-14, realMem: 8418756b (peak: 12612756b), virtMem: 8655832b (peak: 12850140b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads1/depth100/qubits30.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	30
+numRepetitions:	10
+instMode:	5
+dur: 4318.470797s, error: -3e-13, realMem: 16807376b (peak: 25195676b), virtMem: 17044452b (peak: 25433064b)
+dur: 4318.639432s, error: 1e-13, realMem: 16807396b (peak: 25195676b), virtMem: 17044452b (peak: 25433064b)
+dur: 4318.558856s, error: -6e-13, realMem: 16807396b (peak: 25195676b), virtMem: 17044452b (peak: 25433064b)
+dur: 4318.388254s, error: 7e-13, realMem: 16807400b (peak: 25195676b), virtMem: 17044708b (peak: 25433064b)
+dur: 4318.339891s, error: -1e-13, realMem: 16807400b (peak: 25195676b), virtMem: 17044708b (peak: 25433064b)
+dur: 4318.191223s, error: -2e-13, realMem: 16807400b (peak: 25195676b), virtMem: 17044708b (peak: 25433064b)
+dur: 4318.535461s, error: 5e-13, realMem: 16807400b (peak: 25195676b), virtMem: 17044708b (peak: 25433064b)
+dur: 4318.284493s, error: -1e-13, realMem: 16807400b (peak: 25195676b), virtMem: 17044708b (peak: 25433064b)
+dur: 4318.390738s, error: 4e-13, realMem: 16807400b (peak: 25195676b), virtMem: 17044708b (peak: 25433064b)
+dur: 4318.276277s, error: -3e-13, realMem: 16807400b (peak: 25195676b), virtMem: 17044708b (peak: 25433064b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode5_results/ARC_ProjectQ/threads1/depth100/qubits30.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	30
+numRepetitions:	10
+instMode:	5
+dur: 4253.787078s, error: -7e-14, realMem: 16807384b (peak: 25195684b), virtMem: 17044452b (peak: 25433064b)
+dur: 4253.813727s, error: 8e-14, realMem: 16807404b (peak: 25195684b), virtMem: 17044452b (peak: 25433064b)
+dur: 4253.963451s, error: -5e-14, realMem: 16807404b (peak: 25195684b), virtMem: 17044452b (peak: 25433064b)
+dur: 4253.621152s, error: 4e-13, realMem: 16807408b (peak: 25195684b), virtMem: 17044708b (peak: 25433064b)
+dur: 4253.699853s, error: -7e-14, realMem: 16807408b (peak: 25195684b), virtMem: 17044708b (peak: 25433064b)
+dur: 4253.711871s, error: -6e-13, realMem: 16807408b (peak: 25195684b), virtMem: 17044708b (peak: 25433064b)
+dur: 4253.829675s, error: 2e-13, realMem: 16807408b (peak: 25195684b), virtMem: 17044708b (peak: 25433064b)
+dur: 4253.638365s, error: -4e-13, realMem: 16807408b (peak: 25195684b), virtMem: 17044708b (peak: 25433064b)
+dur: 4253.538565s, error: -2e-13, realMem: 16807408b (peak: 25195684b), virtMem: 17044708b (peak: 25433064b)
+dur: 4253.638560s, error: 1e-13, realMem: 16807408b (peak: 25195684b), virtMem: 17044708b (peak: 25433064b)
+Simulating random circuit with params:
+platform:	ARC
+framework:	ProjectQ
+filename:	instMode4_results/ARC_ProjectQ/threads1/depth100/qubits30.txt
+numThreads:	1
+circuitDepth:	100
+numQubits:	30
+numRepetitions:	10
+instMode:	4
+dur: 9039.598126s, error: -1e-13, realMem: 16807336b (peak: 25195668b), virtMem: 17044448b (peak: 25433060b)
+dur: 9039.635773s, error: 5e-14, realMem: 16807364b (peak: 25195668b), virtMem: 17044448b (peak: 25433060b)
+dur: 9039.853572s, error: -4e-13, realMem: 16807364b (peak: 25195668b), virtMem: 17044448b (peak: 25433060b)
+dur: 9040.005850s, error: 1e-12, realMem: 16807364b (peak: 25195668b), virtMem: 17044448b (peak: 25433060b)
+dur: 9039.900705s, error: -4e-13, realMem: 16807364b (peak: 25195668b), virtMem: 17044448b (peak: 25433060b)
+dur: 9039.864326s, error: 4e-13, realMem: 16807364b (peak: 25195668b), virtMem: 17044448b (peak: 25433060b)
+dur: 9040.014289s, error: -2e-13, realMem: 16807364b (peak: 25195668b), virtMem: 17044448b (peak: 25433060b)
+dur: 9039.926936s, error: -2e-13, realMem: 16807364b (peak: 25195668b), virtMem: 17044448b (peak: 25433060b)
+dur: 9039.818356s, error: 3e-13, realMem: 16807364b (peak: 25195668b), virtMem: 17044448b (peak: 25433060b)
+dur: 9040.135007s, error: 3e-13, realMem: 16807364b (peak: 25195668b), virtMem: 17044448b (peak: 25433060b)

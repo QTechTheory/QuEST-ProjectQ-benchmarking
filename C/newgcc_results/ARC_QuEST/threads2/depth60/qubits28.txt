@@ -1,0 +1,10 @@
+<|
+"platform" -> "ARC",
+"framework" -> "QuEST",
+"filename" -> "newgcc_results/ARC_QuEST/threads2/depth60/qubits28.txt",
+"numThreads" -> 2,
+"circuitDepth" -> 60,
+"numQubits" -> 28,
+"numRepetitions" -> 10,
+"randomSeed" -> 13601604864563084324
+|>

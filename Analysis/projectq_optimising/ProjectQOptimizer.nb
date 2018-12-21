@@ -1,0 +1,1131 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     41207,       1123]
+NotebookOptionsPosition[     39426,       1087]
+NotebookOutlinePosition[     39783,       1103]
+CellTagsIndexPosition[     39740,       1100]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Get", "[", "\"\<filegrabber.m\>\"", "]"}]}], "Input",ExpressionUUID-\
+>"594aefe7-c711-4249-aec7-68d14073d73d"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dirPrefs", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<instMode0_\>\"", ",", " ", "\"\<instMode1_\>\"", ",", " ", 
+     "\"\<\>\"", ",", " ", "\"\<fused_\>\"", ",", " ", "\"\<instMode4_\>\"", 
+     ",", " ", "\"\<instMode5_\>\"", ",", " ", "\"\<instMode6_\>\""}], 
+    "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dirLabels", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<all compilers, no fusion (default)\>\"", ",", " ", 
+     "\"\<all compilers, fusion\>\"", ",", " ", 
+     "\"\<no compilers, no fusion\>\"", ",", " ", 
+     "\"\<no compilers, fusion\>\"", ",", " ", "\"\<1 gate opt, fusion\>\"", 
+     ",", " ", "\"\<5 gate opt, fusion\>\"", ",", " ", 
+     "\"\<10 gate opt, fusion\>\""}], "}"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.721475566039682*^9, 3.721475817836102*^9}, 
+   3.721476894998378*^9},ExpressionUUID->"ff98c831-8498-4f45-b2e9-\
+10f6dafa0eb6"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"getProjQFN", "[", 
+    RowBox[{
+    "dirInd_Integer", ",", " ", "nThreads_Integer", ",", " ", 
+     "numQubits_Integer"}], "]"}], " ", ":=", "\n", "\t", 
+   RowBox[{"getFilename", "[", 
+    RowBox[{"\"\<ProjectQ\>\"", ",", " ", 
+     RowBox[{"StringJoin", "[", 
+      RowBox[{
+       RowBox[{"dirPrefs", "[", 
+        RowBox[{"[", "dirInd", "]"}], "]"}], ",", " ", "\"\<results\>\""}], 
+      "]"}], ",", " ", "nThreads", ",", " ", "100", ",", " ", "numQubits"}], 
+    "]"}]}], "\n"}], "\n", 
+ RowBox[{
+  RowBox[{"getAvDur", "[", 
+   RowBox[{
+   "dirInd_Integer", ",", " ", "nThreads_Integer", ",", " ", 
+    "numQubits_Integer"}], "]"}], " ", ":=", "\n", "\t", 
+  RowBox[{
+   RowBox[{"getAvDur", "[", 
+    RowBox[{"dirInd", ",", " ", "nThreads", ",", " ", "numQubits"}], "]"}], 
+   " ", "=", " ", 
+   RowBox[{"Mean", " ", "@", " ", 
+    RowBox[{
+     RowBox[{"Get", "[", 
+      RowBox[{"getProjQFN", "[", 
+       RowBox[{"dirInd", ",", " ", "nThreads", ",", " ", "numQubits"}], "]"}],
+       "]"}], "[", "\"\<durations\>\"", "]"}]}]}]}]}], "Code",
+ CellChangeTimes->{{3.721476107761098*^9, 3.72147616895988*^9}, {
+  3.721476283278776*^9, 3.7214764027927837`*^9}, {3.721476465420643*^9, 
+  3.721476498096191*^9}, {3.721480280585342*^9, 3.7214803309040117`*^9}, {
+  3.724927264877837*^9, 3.724927267680026*^9}, {3.724927304134293*^9, 
+  3.7249273049143867`*^9}},ExpressionUUID->"2373c61c-3dc5-41a9-abc3-\
+c8aa5b5aa621"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"getProjQFN", "[", 
+  RowBox[{"1", ",", " ", "16", ",", " ", "20"}], "]"}]], "Input",
+ CellChangeTimes->{{3.724927278752556*^9, 
+  3.724927289004629*^9}},ExpressionUUID->"5061f11c-681f-401a-8cda-\
+212ca3085c3a"],
+
+Cell[BoxData["\<\"Python/instMode0_optimising_data/ARC_ProjectQ/threads16/\
+depth100/qubits20.txt\"\>"], "Output",
+ CellChangeTimes->{
+  3.724927289339511*^9},ExpressionUUID->"9b9e1fd1-66f3-45d9-9e5f-\
+f8bd3f070d8f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\t\t\t", 
+  RowBox[{"Table", "[", "\n", "\t\t\t\t", 
+   RowBox[{
+    RowBox[{"Transpose", " ", "@", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Range", "[", 
+        RowBox[{"15", ",", "30"}], "]"}], ",", "\n", "\t\t\t\t\t", 
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{"getAvDur", "[", 
+          RowBox[{"dirInd", ",", " ", "16", ",", " ", "numQb"}], "]"}], ",", 
+         " ", 
+         RowBox[{"{", 
+          RowBox[{"numQb", ",", " ", 
+           RowBox[{"Range", "[", 
+            RowBox[{"15", ",", "30"}], "]"}]}], "}"}]}], "]"}]}], "}"}]}], 
+    ",", "\n", "\t\t\t\t", 
+    RowBox[{"{", 
+     RowBox[{"dirInd", ",", " ", 
+      RowBox[{"Length", " ", "@", " ", "dirPrefs"}]}], "}"}]}], "\n", 
+   "\t\t\t", "]"}]}]], "Input",
+ CellChangeTimes->{{3.724926651305401*^9, 
+  3.7249266575787*^9}},ExpressionUUID->"df5fcbd8-9c9c-4881-b6b5-67f9f895ab91"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"15", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"17", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"18", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"19", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"20", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"21", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"22", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"23", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"24", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"25", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"26", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"27", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"28", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"29", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"30", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}]}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"15", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"17", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"18", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"19", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"20", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"21", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"22", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"23", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"24", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"25", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"26", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"27", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"28", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"29", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"30", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}]}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"15", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"17", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"18", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"19", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"20", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"21", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"22", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"23", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"24", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"25", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"26", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"27", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"28", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"29", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"30", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}]}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"15", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"17", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"18", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"19", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"20", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"21", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"22", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"23", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"24", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"25", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"26", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"27", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"28", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"29", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"30", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}]}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"15", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"17", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"18", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"19", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"20", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"21", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"22", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"23", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"24", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"25", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"26", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"27", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"28", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"29", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"30", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}]}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"15", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"17", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"18", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"19", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"20", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"21", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"22", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"23", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"24", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"25", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"26", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"27", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"28", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"29", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"30", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}]}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"15", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"17", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"18", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"19", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"20", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"21", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"22", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"23", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"24", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"25", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"26", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"27", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"28", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"29", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}], 
+     ",", 
+     RowBox[{"{", 
+      RowBox[{"30", ",", 
+       RowBox[{"Mean", "[", 
+        RowBox[{"$Failed", "[", "\<\"durations\"\>", "]"}], "]"}]}], "}"}]}], 
+    "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.7249266407845087`*^9, 3.724926658112768*^9}, 
+   3.724927269563588*^9},ExpressionUUID->"203cb41b-342d-415c-8fca-\
+449ff3dfdce3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"With", "[", "\n", "\t", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"qbRange", " ", "=", " ", 
+     RowBox[{"Range", "[", 
+      RowBox[{"15", ",", "30"}], "]"}]}], "}"}], ",", "\n", "\t", 
+   RowBox[{"Manipulate", "[", "\n", "\t\t", 
+    RowBox[{
+     RowBox[{"ListLogPlot", "[", "\n", "\t\t\t", 
+      RowBox[{
+       RowBox[{"Table", "[", "\n", "\t\t\t\t", 
+        RowBox[{
+         RowBox[{"Transpose", " ", "@", " ", 
+          RowBox[{"{", 
+           RowBox[{"qbRange", ",", "\n", "\t\t\t\t\t", 
+            RowBox[{"Table", "[", 
+             RowBox[{
+              RowBox[{"getAvDur", "[", 
+               RowBox[{"dirInd", ",", " ", "nThreads", ",", " ", "numQb"}], 
+               "]"}], ",", " ", 
+              RowBox[{"{", 
+               RowBox[{"numQb", ",", " ", "qbRange"}], "}"}]}], "]"}]}], 
+           "}"}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"{", 
+          RowBox[{"dirInd", ",", " ", 
+           RowBox[{"Length", " ", "@", " ", "dirPrefs"}]}], "}"}]}], "\n", 
+        "\t\t\t", "]"}], ",", "\n", "\t\t\t", 
+       RowBox[{"Joined", " ", "\[Rule]", " ", "True"}], ",", " ", 
+       RowBox[{"PlotStyle", " ", "\[Rule]", " ", "Dashed"}], ",", " ", 
+       RowBox[{"PlotLegends", " ", "\[Rule]", " ", "dirLabels"}]}], "\n", 
+      "\t\t", "]"}], ",", "\n", "\t\t", 
+     RowBox[{"{", 
+      RowBox[{"nThreads", ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", " ", "16"}], "}"}]}], "}"}]}], "\n", "\t", "]"}]}], 
+  "\n", "]"}]], "Code",
+ CellChangeTimes->{{3.721475909814726*^9, 3.721475930862493*^9}, {
+   3.721476066633512*^9, 3.72147608723199*^9}, 3.721476597138014*^9, {
+   3.7214766783181047`*^9, 3.721476814931485*^9}, 3.721476858308671*^9, {
+   3.7214769146179247`*^9, 3.721476931336944*^9}, {3.721476972737803*^9, 
+   3.7214771041201763`*^9}, {3.721477154576532*^9, 
+   3.72147716477042*^9}},ExpressionUUID->"1c4ca1cd-dc9a-4a7f-a3dd-\
+7915a93c07c9"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`nThreads$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`nThreads$$], {1, 16}}}, Typeset`size$$ = {
+    611., {114., 118.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`nThreads$34282$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`nThreads$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`nThreads$$, $CellContext`nThreads$34282$$, False]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListLogPlot[
+        Table[
+         Transpose[{{15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 
+           29, 30}, 
+           Table[
+            $CellContext`getAvDur[$CellContext`dirInd, \
+$CellContext`nThreads$$, $CellContext`numQb], {$CellContext`numQb, {15, 16, 
+             17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+             30}}]}], {$CellContext`dirInd, 
+          Length[$CellContext`dirPrefs]}], Joined -> True, PlotStyle -> 
+        Dashed, PlotLegends -> $CellContext`dirLabels], 
+      "Specifications" :> {{$CellContext`nThreads$$, {1, 16}}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{656., {157., 163.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.721475929780058*^9, 3.721475931626049*^9}, {
+   3.721476694103201*^9, 3.7214767178274117`*^9}, 3.721476773361827*^9, 
+   3.721476816749157*^9, 3.721476858810274*^9, 3.721476898231534*^9, 
+   3.721476934810553*^9, {3.721477006801255*^9, 3.7214770268068933`*^9}, {
+   3.721477076818033*^9, 3.721477106795086*^9}, 3.7214771652585907`*^9, {
+   3.7214798358653393`*^9, 3.721479845822393*^9}, 3.7214802069016323`*^9, {
+   3.7214803151881933`*^9, 3.721480340696622*^9}, 3.721484249133601*^9, 
+   3.724926565582107*^9, 
+   3.724926622904434*^9},ExpressionUUID->"db364e04-b04f-41ba-be00-\
+03573b46bd8e"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","noopen",
+   "\"Cannot open \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"Python/instMode0_results/ARC_ProjectQ/threads16/\
+depth100/qubits15.txt\\\\\\\"\\\"}]\\).\"",2,16,13,28692569935966338098,
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.724926625782164*^9},ExpressionUUID->"e4165bcf-2a6b-4f49-bd75-\
+9251246d3e4a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","noopen",
+   "\"Cannot open \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"Python/instMode0_results/ARC_ProjectQ/threads16/\
+depth100/qubits16.txt\\\\\\\"\\\"}]\\).\"",2,16,14,28692569935966338098,
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.72492662580692*^9},ExpressionUUID->"dbb67c1b-9d41-44e9-8469-e854273fef89"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","noopen",
+   "\"Cannot open \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"Python/instMode0_results/ARC_ProjectQ/threads16/\
+depth100/qubits17.txt\\\\\\\"\\\"}]\\).\"",2,16,15,28692569935966338098,
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.72492662583136*^9},ExpressionUUID->"259b898f-da2b-414b-bf6b-05716f99e373"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Get\\\", \\\"::\\\", \\\
+\"noopen\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,16,16,28692569935966338098,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.724926625854533*^9},ExpressionUUID->"8adbc7ea-b12e-41fd-9ef6-\
+73e141d2c6a2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"plotStyle", "[", "focus_Integer", "]"}], " ", ":=", " ", 
+   RowBox[{
+    RowBox[{"plotStyle", "[", "focus", "]"}], " ", "=", " ", 
+    RowBox[{"ReplacePart", "[", 
+     RowBox[{
+      RowBox[{"ConstantArray", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"Dashed", ",", " ", 
+          RowBox[{"Opacity", "[", ".5", "]"}]}], "}"}], ",", " ", 
+        RowBox[{"Length", " ", "@", " ", "dirPrefs"}]}], "]"}], ",", " ", 
+      RowBox[{"focus", " ", "\[Rule]", " ", 
+       RowBox[{"{", "Thick", "}"}]}]}], "]"}]}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"plotLegends", "[", "focus_Integer", "]"}], " ", ":=", " ", 
+  RowBox[{
+   RowBox[{"plotLegends", "[", "focus", "]"}], " ", "=", " ", 
+   RowBox[{"Placed", "[", 
+    RowBox[{
+     RowBox[{"MapAt", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"#", ",", " ", "Bold"}], "]"}], "&"}], ",", " ", "dirLabels",
+        ",", " ", "focus"}], "]"}], ",", " ", "Left"}], "]"}]}]}], "\n", 
+ RowBox[{
+  RowBox[{"rangeAndDurs", "[", 
+   RowBox[{
+   "nThreads_Integer", ",", " ", "qb0_Integer", ",", " ", "qb1_Integer"}], 
+   "]"}], " ", ":=", " ", 
+  RowBox[{
+   RowBox[{"rangeAndDurs", "[", 
+    RowBox[{"nThreads", ",", " ", "qb0", ",", " ", "qb1"}], "]"}], " ", "=", 
+   " ", 
+   RowBox[{"Table", "[", "\n", "\t", 
+    RowBox[{
+     RowBox[{"Transpose", " ", "@", " ", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Range", "[", 
+         RowBox[{"qb0", ",", " ", "qb1"}], "]"}], ",", " ", 
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{"getAvDur", "[", 
+           RowBox[{"dirInd", ",", " ", "nThreads", ",", " ", "numQb"}], "]"}],
+           ",", " ", 
+          RowBox[{"{", 
+           RowBox[{"numQb", ",", " ", "qb0", ",", " ", "qb1"}], "}"}]}], 
+         "]"}]}], "}"}]}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"dirInd", ",", " ", 
+       RowBox[{"Length", " ", "@", " ", "dirPrefs"}]}], "}"}]}], 
+    "]"}]}]}], "\n", 
+ RowBox[{
+  RowBox[{"minDurArr", "[", "nThreads_Integer", "]"}], " ", ":=", " ", 
+  RowBox[{
+   RowBox[{"minDurArr", "[", "nThreads", "]"}], " ", "=", " ", 
+   RowBox[{"Min", " ", "/@", " ", 
+    RowBox[{"Transpose", "[", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{"getAvDur", "[", 
+          RowBox[{"dirInd", ",", " ", "nThreads", ",", " ", "numQb"}], "]"}], 
+         ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"numQb", ",", " ", "15", ",", "30"}], "}"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"dirInd", ",", " ", 
+         RowBox[{"Length", " ", "@", " ", "dirPrefs"}]}], "}"}]}], "]"}], 
+     "]"}]}]}]}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"durFactors", "[", "nThreads_Integer", "]"}], " ", ":=", " ", 
+   RowBox[{
+    RowBox[{"durFactors", "[", "nThreads", "]"}], " ", "=", " ", 
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"Transpose", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Range", "[", 
+          RowBox[{"15", ",", "30"}], "]"}], ",", 
+         RowBox[{
+          RowBox[{"Table", "[", 
+           RowBox[{
+            RowBox[{"getAvDur", "[", 
+             RowBox[{"dirInd", ",", " ", "nThreads", ",", " ", "numQb"}], 
+             "]"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"numQb", ",", " ", "15", ",", " ", "30"}], "}"}]}], 
+           "]"}], "/", 
+          RowBox[{"minDurArr", "[", "nThreads", "]"}]}]}], "}"}], "]"}], ",", 
+      " ", 
+      RowBox[{"{", 
+       RowBox[{"dirInd", ",", " ", 
+        RowBox[{"Length", " ", "@", " ", "dirPrefs"}]}], "}"}]}], "]"}]}]}], 
+  "\n", "\n"}], "\n", 
+ RowBox[{"With", "[", "\n", "\t", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"imageSize", " ", "=", " ", "Medium"}], "}"}], ",", "\n", "\t", 
+   RowBox[{"Manipulate", "[", "\n", "\t\t", 
+    RowBox[{
+     RowBox[{"Row", " ", "@", " ", 
+      RowBox[{"{", "\n", "\t\t", 
+       RowBox[{
+        RowBox[{"ListLogPlot", "[", "\n", "\t\t\t", 
+         RowBox[{
+          RowBox[{"rangeAndDurs", "[", 
+           RowBox[{"nThreads", ",", " ", "15", ",", " ", "30"}], "]"}], ",", 
+          "\n", "\t\t\t", 
+          RowBox[{"Joined", " ", "\[Rule]", " ", "True"}], ",", " ", "\n", 
+          "\t\t\t", 
+          RowBox[{"PlotStyle", " ", "\[Rule]", " ", 
+           RowBox[{"plotStyle", "[", "focus", "]"}]}], ",", "\n", "\t\t\t", 
+          RowBox[{"PlotLegends", " ", "\[Rule]", " ", 
+           RowBox[{"plotLegends", "[", "focus", "]"}]}], ",", "\n", "\t\t\t", 
+          
+          RowBox[{"Filling", " ", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{"focus", " ", "\[Rule]", " ", "Axis"}], "}"}]}], ",", 
+          "\n", "\t\t\t", 
+          RowBox[{"ImageSize", " ", "\[Rule]", " ", "imageSize"}]}], "\n", 
+         "\t\t", "]"}], ",", "\n", "\t\t", 
+        RowBox[{"ListLinePlot", "[", "\n", "\t\t\t", 
+         RowBox[{
+          RowBox[{"durFactors", "[", "nThreads", "]"}], ",", "\n", "\t\t\t", 
+          RowBox[{"Joined", " ", "\[Rule]", " ", "True"}], ",", " ", "\n", 
+          "\t\t\t", 
+          RowBox[{"PlotStyle", " ", "\[Rule]", " ", 
+           RowBox[{"plotStyle", "[", "focus", "]"}]}], ",", "\n", "\t\t\t", 
+          RowBox[{"Filling", " ", "\[Rule]", " ", 
+           RowBox[{"{", 
+            RowBox[{"focus", " ", "\[Rule]", " ", "Axis"}], "}"}]}], ",", 
+          "\n", "\t\t\t", 
+          RowBox[{"ImageSize", " ", "\[Rule]", " ", "imageSize"}]}], "\n", 
+         "\t\t", "]"}]}], "}"}]}], ",", "\n", "\t\t", 
+     RowBox[{"{", 
+      RowBox[{"nThreads", ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", " ", "16"}], "}"}]}], "}"}], ",", "\n", "\t\t", 
+     RowBox[{"{", 
+      RowBox[{"focus", ",", " ", "1", ",", " ", 
+       RowBox[{"Length", " ", "@", " ", "dirPrefs"}], ",", " ", "1"}], 
+      "}"}]}], "\n", "\t", "]"}]}], "\n", "]"}]}], "Code",
+ CellChangeTimes->{{3.721475909814726*^9, 3.721475930862493*^9}, {
+   3.721476066633512*^9, 3.72147608723199*^9}, 3.721476597138014*^9, {
+   3.7214766783181047`*^9, 3.721476814931485*^9}, 3.721476858308671*^9, {
+   3.7214769146179247`*^9, 3.721476931336944*^9}, {3.721476972737803*^9, 
+   3.7214771041201763`*^9}, {3.721477154576532*^9, 3.72147716477042*^9}, {
+   3.7214804087362413`*^9, 3.7214804093396273`*^9}, {3.721480657520739*^9, 
+   3.721480663707127*^9}, {3.721480699694854*^9, 3.721480796886586*^9}, {
+   3.7214808596466513`*^9, 3.7214808719110727`*^9}, {3.7214809900312567`*^9, 
+   3.721481039887031*^9}, {3.721481151620865*^9, 3.721481207621138*^9}, {
+   3.7214814629943666`*^9, 3.721481463504507*^9}, {3.721482102986186*^9, 
+   3.721482110832241*^9}, {3.721482208927458*^9, 3.721482376977221*^9}, {
+   3.72148241327535*^9, 3.7214824644218073`*^9}, {3.721482517807354*^9, 
+   3.721482537386859*^9}, {3.721482628127412*^9, 3.721482670635685*^9}, {
+   3.721482715981683*^9, 3.721482749662919*^9}, {3.72148314521966*^9, 
+   3.7214831840372887`*^9}, {3.7214832416392183`*^9, 3.721483406454904*^9}, {
+   3.7214834550976877`*^9, 3.7214834857457533`*^9}, {3.721483527879417*^9, 
+   3.7214838823749723`*^9}, {3.7214839315407143`*^9, 3.721483934583962*^9}, {
+   3.7214843518568707`*^9, 
+   3.721484413390517*^9}},ExpressionUUID->"d611abe9-9cee-4a03-bdca-\
+9dd33987cab8"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`focus$$ = 7, $CellContext`nThreads$$ = 1, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`nThreads$$], {1, 16}}, {
+      Hold[$CellContext`focus$$], 1, 7, 1}}, Typeset`size$$ = {
+    974., {114., 118.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`nThreads$30698$$ = 
+    False, $CellContext`focus$30699$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`focus$$ = 1, $CellContext`nThreads$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`nThreads$$, $CellContext`nThreads$30698$$, False], 
+        Hold[$CellContext`focus$$, $CellContext`focus$30699$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Row[{
+         ListLogPlot[
+          $CellContext`rangeAndDurs[$CellContext`nThreads$$, 15, 30], Joined -> 
+          True, PlotStyle -> $CellContext`plotStyle[$CellContext`focus$$], 
+          PlotLegends -> $CellContext`plotLegends[$CellContext`focus$$], 
+          Filling -> {$CellContext`focus$$ -> Axis}, ImageSize -> Medium], 
+         ListLinePlot[
+          $CellContext`durFactors[$CellContext`nThreads$$], Joined -> True, 
+          PlotStyle -> $CellContext`plotStyle[$CellContext`focus$$], 
+          Filling -> {$CellContext`focus$$ -> Axis}, ImageSize -> Medium]}], 
+      "Specifications" :> {{$CellContext`nThreads$$, {1, 
+         16}}, {$CellContext`focus$$, 1, 7, 1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{1019., {171., 177.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.721484210796658*^9, 3.721484265977247*^9, 3.7214843539356833`*^9, {
+   3.721484414042307*^9, 3.721484430659038*^9}, 
+   3.724926566782043*^9},ExpressionUUID->"7cf40d28-76e6-4811-8ee5-\
+fb99804fb5fe"]
+}, Open  ]]
+},
+WindowSize->{720, 775},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 339, 7, 73, "Input",ExpressionUUID->"594aefe7-c711-4249-aec7-68d14073d73d"],
+Cell[900, 29, 943, 21, 115, "Input",ExpressionUUID->"ff98c831-8498-4f45-b2e9-10f6dafa0eb6"],
+Cell[1846, 52, 1466, 35, 129, "Code",ExpressionUUID->"2373c61c-3dc5-41a9-abc3-c8aa5b5aa621"],
+Cell[CellGroupData[{
+Cell[3337, 91, 234, 5, 30, "Input",ExpressionUUID->"5061f11c-681f-401a-8cda-212ca3085c3a"],
+Cell[3574, 98, 216, 4, 34, "Output",ExpressionUUID->"9b9e1fd1-66f3-45d9-9e5f-f8bd3f070d8f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3827, 107, 912, 24, 136, "Input",ExpressionUUID->"df5fcbd8-9c9c-4881-b6b5-67f9f895ab91"],
+Cell[4742, 133, 18614, 579, 1190, "Output",ExpressionUUID->"203cb41b-342d-415c-8fca-449ff3dfdce3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23393, 717, 1918, 43, 300, "Code",ExpressionUUID->"1c4ca1cd-dc9a-4a7f-a3dd-7915a93c07c9"],
+Cell[25314, 762, 2682, 51, 339, "Output",ExpressionUUID->"db364e04-b04f-41ba-be00-03573b46bd8e"],
+Cell[27999, 815, 374, 10, 24, "Message",ExpressionUUID->"e4165bcf-2a6b-4f49-bd75-9251246d3e4a"],
+Cell[28376, 827, 371, 9, 24, "Message",ExpressionUUID->"dbb67c1b-9d41-44e9-8469-e854273fef89"],
+Cell[28750, 838, 371, 9, 24, "Message",ExpressionUUID->"259b898f-da2b-414b-bf6b-05716f99e373"],
+Cell[29124, 849, 398, 9, 24, "Message",ExpressionUUID->"8adbc7ea-b12e-41fd-9ef6-73e141d2c6a2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29559, 863, 7242, 169, 623, "Code",ExpressionUUID->"d611abe9-9cee-4a03-bdca-9dd33987cab8"],
+Cell[36804, 1034, 2606, 50, 367, "Output",ExpressionUUID->"7cf40d28-76e6-4811-8ee5-fb99804fb5fe"]
+}, Open  ]]
+}
+]
+*)
+

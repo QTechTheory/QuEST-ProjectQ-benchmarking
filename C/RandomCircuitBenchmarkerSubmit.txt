@@ -1,0 +1,51 @@
+#!/bin/env bash
+
+#SBATCH --array=0-1799    ## total number of jobs: 6*30*10=1800
+#SBATCH --job-name=RC_C
+
+#SBATCH --time=100:00:00
+#SBATCH --output=slurmOutput.txt
+#SBATCH --mem=60Gb
+#SBATCH --reservation=nqit
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=16
+
+## parameter scopes
+numThreadsTrials=(16 8 4 2 1 32)
+numQubitsTrials=($(seq 1 30))
+circDepthTrials=($(seq 10 10 100))
+
+## array lengths
+nTL=${#numThreadsTrials[@]}
+nQL=${#numQubitsTrials[@]}
+cDL=${#circDepthTrials[@]}
+
+trialNum=${SLURM_ARRAY_TASK_ID}
+
+## param array indices
+numThreadsInd=$(( trialNum / nQL / cDL ))
+numQubitsInd=$(( ( trialNum % (nQL * cDL) ) / cDL ))
+circDepthInd=$(( trialNum % cDL ))
+
+## params
+numRepetitions=50
+platform="ARC"
+framework="QuEST"
+numThreads=${numThreadsTrials[numThreadsInd]}
+numQubits=${numQubitsTrials[numQubitsInd]}
+circDepth=${circDepthTrials[circDepthInd]}
+filename="benchmark_results/${platform}_${framework}/threads${numThreads}/depth${circDepth}/qubits${numQubits}.txt"
+
+## setup
+export OMP_NUM_THREADS=$numThreads
+export OMP_PROC_BIND=spread
+
+## load gcc/5.3.0 environment
+source ../../prep.sh
+
+## C is dumb
+mkdir -p $filename   ## makes dir and file
+rm -r $filename      ## removes file, keeps dir
+
+## start job
+./RandomCircuitBenchmarker $platform $framework $filename $numThreads $circDepth $numQubits $numRepetitions

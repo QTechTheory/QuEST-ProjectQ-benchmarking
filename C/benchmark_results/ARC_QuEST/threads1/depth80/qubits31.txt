@@ -1,0 +1,10 @@
+<|
+"platform" -> "ARC",
+"framework" -> "QuEST",
+"filename" -> "benchmark_results/ARC_QuEST/threads1/depth80/qubits31.txt",
+"numThreads" -> 1,
+"circuitDepth" -> 80,
+"numQubits" -> 31,
+"numRepetitions" -> 50,
+"randomSeed" -> 14655118944712781073
+|>

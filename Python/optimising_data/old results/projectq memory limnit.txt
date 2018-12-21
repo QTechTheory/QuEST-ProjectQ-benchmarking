@@ -1,0 +1,20 @@
+25/35 qubits
+26/35 qubits
+27/35 qubits
+28/35 qubits
+29/35 qubits
+30/35 qubits
+31/35 qubits
+32/35 qubits
+Traceback (most recent call last):
+  File "random_circuit.py", line 176, in <module>
+    time_random_circuit_over_num_qubits(minQB, maxQB, circDepth, numReps, filename)
+  File "random_circuit.py", line 157, in time_random_circuit_over_num_qubits
+    avgDur, varDur = repeatedly_time_random_circuit(engine, num_qb, circ_depth, num_reps)
+  File "random_circuit.py", line 133, in repeatedly_time_random_circuit
+    dur = apply_random_circuit(qubits, circ_depth, engine)
+  File "random_circuit.py", line 34, in apply_random_circuit
+    engine.backend.set_wavefunction([1] + [0]*(2**num_qubits - 1), qubits)
+  File "/home/oums-quantopo/corp2627/.local/lib/python3.5/site-packages/projectq/backends/_sim/_simulator.py", line 243, in set_wavefunction
+    [qb.id for qb in qureg])
+MemoryError: std::bad_alloc

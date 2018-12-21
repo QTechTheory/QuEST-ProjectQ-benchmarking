@@ -1,0 +1,2916 @@
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[         0,          0]
+NotebookDataLength[    134987,       2915]
+NotebookOptionsPosition[    127871,       2796]
+NotebookOutlinePosition[    128228,       2812]
+CellTagsIndexPosition[    128185,       2809]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Get", "[", "\"\<filegrabber.m\>\"", "]"}]}], "Input",
+ CellChangeTimes->{{3.7209419102225943`*^9, 3.720941910983169*^9}, {
+  3.721475520673367*^9, 
+  3.7214755210022097`*^9}},ExpressionUUID->"10d8c966-fa4f-4b92-b54d-\
+b3f10847ce88"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"getFilename", "[", 
+  RowBox[{
+  "\"\<ProjectQ\>\"", ",", " ", "16", ",", " ", "10", ",", " ", "30"}], 
+  "]"}]], "Input",ExpressionUUID->"73adbe0e-f7cb-4082-adc1-f4886654a42e"],
+
+Cell[BoxData["\<\"Python/results/ARC_ProjectQ/threads16/depth10/qubits30.txt\"\
+\>"], "Output",
+ CellChangeTimes->{{3.721461360344062*^9, 3.721461388082144*^9}, 
+   3.721475531220029*^9},ExpressionUUID->"0e2daff2-5f22-46d1-a111-\
+be4203cad28a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Get", "[", 
+  RowBox[{"getFilename", "[", 
+   RowBox[{
+   "\"\<ProjectQ\>\"", ",", " ", "16", ",", " ", "10", ",", " ", "30"}], 
+   "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.720947473857498*^9, 3.720947515436839*^9}, {
+   3.720947674639896*^9, 3.7209476756499043`*^9}, {3.7209477723285837`*^9, 
+   3.720947775437983*^9}, 
+   3.720947835187545*^9},ExpressionUUID->"136363a3-435b-4522-918a-\
+66d875e5b8d8"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"platform\"\>", "\[Rule]", "\<\"ARC\"\>"}], ",", 
+   RowBox[{"\<\"framework\"\>", "\[Rule]", "\<\"ProjectQ\"\>"}], ",", 
+   RowBox[{"\<\"filename\"\>", 
+    "\[Rule]", \
+"\<\"results/ARC_ProjectQ/threads16/depth10/qubits30.txt\"\>"}], ",", 
+   RowBox[{"\<\"numThreads\"\>", "\[Rule]", "16"}], ",", 
+   RowBox[{"\<\"circuitDepth\"\>", "\[Rule]", "10"}], ",", 
+   RowBox[{"\<\"numQubits\"\>", "\[Rule]", "30"}], ",", 
+   RowBox[{"\<\"numRepetitions\"\>", "\[Rule]", "10"}], ",", 
+   RowBox[{"\<\"durations\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "351.50100000000003`", ",", "351.411`", ",", "351.158`", ",", 
+      "351.60200000000003`", ",", "351.23199999999997`", ",", "351.345`", ",",
+       "351.491`", ",", "351.41200000000003`", ",", "351.449`", ",", 
+      "351.441`"}], "}"}]}], ",", 
+   RowBox[{"\<\"realMemories\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "17217753088", ",", "17217773568", ",", "17217785856", ",", 
+      "17217798144", ",", "17217810432", ",", "17217822720", ",", 
+      "17217835008", ",", "17217847296", ",", "17217855488", ",", 
+      "17217855488"}], "}"}]}], ",", 
+   RowBox[{"\<\"virtualMemories\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "18276605952", ",", "18276605952", ",", "18276605952", ",", 
+      "18276605952", ",", "18276605952", ",", "18276605952", ",", 
+      "18276605952", ",", "18276605952", ",", "18276868096", ",", 
+      "18276868096"}], "}"}]}], ",", 
+   RowBox[{"\<\"normErrors\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "6.132939999999999`*^-11"}], ",", "8.79552`*^-12", ",", 
+      RowBox[{"-", "2.27529`*^-12"}], ",", 
+      RowBox[{"-", "1.99574`*^-11"}], ",", "9.30334`*^-12", ",", 
+      RowBox[{"-", "2.10076`*^-12"}], ",", 
+      RowBox[{"-", "6.00497`*^-12"}], ",", 
+      RowBox[{"-", "1.90448`*^-12"}], ",", 
+      RowBox[{"-", "6.51168`*^-12"}], ",", "4.07322`*^-11"}], "}"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{{3.720947487521779*^9, 3.720947515775689*^9}, 
+   3.720947675907024*^9, {3.7209477731175003`*^9, 3.720947775872443*^9}, 
+   3.720947835890808*^9, 3.721030657475375*^9, 3.7210578567197943`*^9, 
+   3.721119948414543*^9, 3.7211262896670513`*^9, 3.721461350369482*^9, 
+   3.7214613906106*^9},ExpressionUUID->"b0880804-938f-4d77-8409-0fcff3da6f1a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Get", "[", 
+  RowBox[{"getFilename", "[", 
+   RowBox[{"\"\<QuEST\>\"", ",", " ", "16", ",", " ", "10", ",", " ", "30"}], 
+   "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.7209477323707743`*^9, 3.720947733049309*^9}, {
+   3.720947769804201*^9, 3.720947778121738*^9}, 
+   3.72094783116847*^9},ExpressionUUID->"879ae2a9-863b-404f-83d4-\
+2c1c8f0ad0ae"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"platform\"\>", "\[Rule]", "\<\"ARC\"\>"}], ",", 
+   RowBox[{"\<\"framework\"\>", "\[Rule]", "\<\"QuEST\"\>"}], ",", 
+   RowBox[{"\<\"filename\"\>", 
+    "\[Rule]", "\<\"results/ARC_QuEST/threads16/depth10/qubits30.txt\"\>"}], 
+   ",", 
+   RowBox[{"\<\"numThreads\"\>", "\[Rule]", "16"}], ",", 
+   RowBox[{"\<\"circuitDepth\"\>", "\[Rule]", "10"}], ",", 
+   RowBox[{"\<\"numQubits\"\>", "\[Rule]", "30"}], ",", 
+   RowBox[{"\<\"numRepetitions\"\>", "\[Rule]", "10"}], ",", 
+   RowBox[{"\<\"randomSeed\"\>", "\[Rule]", "15927612609277242709"}], ",", 
+   RowBox[{"\<\"durations\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "71.8843`", ",", "70.5821`", ",", "70.9378`", ",", "70.1798`", ",", 
+      "70.25319999999999`", ",", "70.6238`", ",", "70.22540000000001`", ",", 
+      "71.3527`", ",", "71.3355`", ",", "70.9521`"}], "}"}]}], ",", 
+   RowBox[{"\<\"normErrors\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "1.15463`*^-14", ",", "1.11022`*^-14", ",", "1.16573`*^-14", ",", 
+      "1.15463`*^-14", ",", "1.1435299999999999`*^-14", ",", "1.13243`*^-14", 
+      ",", "1.0991200000000001`*^-14", ",", "1.1435299999999999`*^-14", ",", 
+      "1.1768400000000001`*^-14", ",", "1.1435299999999999`*^-14"}], "}"}]}], 
+   ",", 
+   RowBox[{"\<\"currRealMemories\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "16779420000", ",", "16779456000", ",", "16779456000", ",", 
+      "16779456000", ",", "16779456000", ",", "16779456000", ",", 
+      "16779456000", ",", "16779456000", ",", "16779456000", ",", 
+      "16779456000"}], "}"}]}], ",", 
+   RowBox[{"\<\"peakRealMemories\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "16779420000", ",", "16779456000", ",", "16779460000", ",", 
+      "16779460000", ",", "16779460000", ",", "16779460000", ",", 
+      "16779460000", ",", "16779460000", ",", "16779460000", ",", 
+      "16779460000"}], "}"}]}], ",", 
+   RowBox[{"\<\"currVirtMemories\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "16943948000", ",", "16943948000", ",", "16943948000", ",", 
+      "16943948000", ",", "16943948000", ",", "16943948000", ",", 
+      "16943948000", ",", "16943948000", ",", "16943948000", ",", 
+      "16943948000"}], "}"}]}], ",", 
+   RowBox[{"\<\"peakVirtMemories\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "16943948000", ",", "16943948000", ",", "16943948000", ",", 
+      "16943948000", ",", "16943948000", ",", "16943948000", ",", 
+      "16943948000", ",", "16943948000", ",", "16943948000", ",", 
+      "16943948000"}], "}"}]}]}], "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.720947733389772*^9, 3.72094777854947*^9, 
+  3.720947832134684*^9, 3.721030657524127*^9, 3.721057856771398*^9, 
+  3.721119962972081*^9, 3.7211262897051067`*^9, 
+  3.72146139387845*^9},ExpressionUUID->"b57db019-e16b-4b3e-aa02-b8636f701586"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["How QuEST and ProjectQ speedup over threads", "Section",
+ CellChangeTimes->{{3.7214616819741573`*^9, 
+  3.721461690424342*^9}},ExpressionUUID->"a2bb3b4f-a345-4ab0-bca6-\
+6c3efd6d2afe"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"With", "[", "\n", "\t", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"threadVals", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{
+      "2", ",", " ", "4", ",", " ", "8", ",", " ", "16", ",", " ", "32"}], 
+      "}"}]}], "}"}], ",", "\n", "\t", 
+   RowBox[{"Manipulate", "[", "\n", "\t\t", 
+    RowBox[{
+     RowBox[{"ListLinePlot", "[", 
+      RowBox[{
+       RowBox[{"{", "\n", "\t\t\t", 
+        RowBox[{
+         RowBox[{"Transpose", "[", 
+          RowBox[{"{", "\n", "\t\t\t\t", 
+           RowBox[{"threadVals", ",", "\n", "\t\t\t\t", 
+            RowBox[{"Table", "[", "\[IndentingNewLine]", "\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"Mean", " ", "@", " ", 
+               RowBox[{
+                RowBox[{"Get", "[", 
+                 RowBox[{"getFilename", "[", 
+                  RowBox[{
+                  "\"\<instMode0_results\>\"", ",", " ", "\"\<ProjectQ\>\"", 
+                   ",", " ", "threads", ",", " ", "circuitDepth", ",", " ", 
+                   "numQubits"}], "]"}], "]"}], "[", "\"\<durations\>\"", 
+                "]"}]}], ",", "\[IndentingNewLine]", "\t\t\t\t\t", 
+              RowBox[{"{", 
+               RowBox[{"threads", ",", " ", "threadVals"}], "}"}]}], 
+             "\[IndentingNewLine]", "\t\t\t\t", "]"}]}], "\n", "\t\t\t", 
+           "}"}], "]"}], ",", "\n", "\t\t\t", 
+         RowBox[{"Transpose", "[", 
+          RowBox[{"{", "\n", "\t\t\t\t", 
+           RowBox[{"threadVals", ",", "\n", "\t\t\t\t", 
+            RowBox[{"Table", "[", "\[IndentingNewLine]", "\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"Mean", " ", "@", " ", 
+               RowBox[{
+                RowBox[{"Get", "[", 
+                 RowBox[{"getFilename", "[", 
+                  RowBox[{
+                  "\"\<results\>\"", ",", " ", "\"\<QuEST\>\"", ",", " ", 
+                   "threads", ",", " ", "circuitDepth", ",", " ", 
+                   "numQubits"}], "]"}], "]"}], "[", "\"\<durations\>\"", 
+                "]"}]}], ",", "\[IndentingNewLine]", "\t\t\t\t\t", 
+              RowBox[{"{", 
+               RowBox[{"threads", ",", " ", "threadVals"}], "}"}]}], 
+             "\[IndentingNewLine]", "\t\t\t\t", "]"}]}], "\n", "\t\t\t", 
+           "}"}], "]"}]}], "}"}], ",", "\n", "\t\t\t", 
+       RowBox[{"PlotStyle", " ", "\[Rule]", " ", "Dashed"}], ",", "\n", 
+       "\t\t\t", 
+       RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", "\n", 
+       "\t\t\t", 
+       RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<number of threads\>\"", ",", " ", "\"\<runtime (s)\>\""}], 
+         "}"}]}], ",", "\n", "\t\t\t", 
+       RowBox[{"PlotLegends", " ", "\[Rule]", " ", 
+        RowBox[{"Placed", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"\"\<ProjectQ\>\"", ",", " ", "\"\<QuEST\>\""}], "}"}], 
+          ",", "Above"}], "]"}]}]}], "\n", "\t\t", "]"}], ",", "\n", "\t\t", 
+     RowBox[{"{", 
+      RowBox[{
+      "circuitDepth", ",", " ", "10", ",", " ", "100", ",", " ", "10"}], 
+      "}"}], ",", "\n", "\t\t", 
+     RowBox[{"{", 
+      RowBox[{"numQubits", ",", " ", "2", ",", " ", "30", ",", " ", "1"}], 
+      "}"}]}], "\n", "\t", "]"}]}], "\n", "]"}]], "Code",
+ CellChangeTimes->{{3.7209435964338923`*^9, 3.720943676795947*^9}, {
+  3.720943743159711*^9, 3.720943770236231*^9}, {3.72094380165361*^9, 
+  3.7209438897640257`*^9}, {3.720944007046618*^9, 3.720944072113*^9}, {
+  3.7209441040624447`*^9, 3.720944266545924*^9}, {3.720944331006227*^9, 
+  3.720944331096224*^9}, {3.720944932164371*^9, 3.720945012021941*^9}, {
+  3.7209451367495823`*^9, 3.720945149418779*^9}, {3.721030808643384*^9, 
+  3.7210308814276667`*^9}, {3.721461406539495*^9, 
+  3.7214614405362177`*^9}},ExpressionUUID->"8b54b01d-e12a-49e4-b072-\
+199ccea6ffa0"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`circuitDepth$$ = 
+    100, $CellContext`numQubits$$ = 27, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`circuitDepth$$], 10, 100, 10}, {
+      Hold[$CellContext`numQubits$$], 2, 30, 1}}, Typeset`size$$ = {
+    360., {92., 127.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`circuitDepth$34818$$ = 
+    0, $CellContext`numQubits$34819$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`circuitDepth$$ = 
+        10, $CellContext`numQubits$$ = 2}, "ControllerVariables" :> {
+        Hold[$CellContext`circuitDepth$$, $CellContext`circuitDepth$34818$$, 
+         0], 
+        Hold[$CellContext`numQubits$$, $CellContext`numQubits$34819$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> ListLinePlot[{
+         Transpose[{{2, 4, 8, 16, 32}, 
+           Table[
+            Mean[
+             Get[
+              $CellContext`getFilename[
+              "instMode0_results", 
+               "ProjectQ", $CellContext`threads, $CellContext`circuitDepth$$, \
+$CellContext`numQubits$$]]["durations"]], {$CellContext`threads, {2, 4, 8, 16,
+              32}}]}], 
+         Transpose[{{2, 4, 8, 16, 32}, 
+           Table[
+            Mean[
+             Get[
+              $CellContext`getFilename[
+              "results", 
+               "QuEST", $CellContext`threads, $CellContext`circuitDepth$$, \
+$CellContext`numQubits$$]]["durations"]], {$CellContext`threads, {2, 4, 8, 16,
+              32}}]}]}, PlotStyle -> Dashed, PlotMarkers -> Automatic, 
+        AxesLabel -> {"number of threads", "runtime (s)"}, PlotLegends -> 
+        Placed[{"ProjectQ", "QuEST"}, Above]], 
+      "Specifications" :> {{$CellContext`circuitDepth$$, 10, 100, 
+         10}, {$CellContext`numQubits$$, 2, 30, 1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {180., 186.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.7209441549710712`*^9, 3.720944161075807*^9}, {
+   3.720944210627589*^9, 3.720944267142378*^9}, 3.720944331499454*^9, 
+   3.7209449403093452`*^9, {3.7209449724630423`*^9, 3.72094501261089*^9}, 
+   3.720945149782113*^9, 3.721030657763159*^9, {3.721030835349201*^9, 
+   3.721030843697885*^9}, {3.721030879959449*^9, 3.721030881860561*^9}, 
+   3.7210312076120377`*^9, 3.721057857054831*^9, 3.7211199633777437`*^9, 
+   3.721126290044073*^9, 3.72146131725424*^9, {3.721461396998062*^9, 
+   3.721461441241445*^9}},ExpressionUUID->"114a0480-cb18-478a-a255-\
+b082337d5ecf"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Global`getFilename","shdw",
+   "\"Symbol \\!\\(\\*RowBox[{\\\"\\\\\\\"getFilename\\\\\\\"\\\"}]\\) \
+appears in multiple contexts \\!\\(\\*RowBox[{\\\"{\\\", \
+RowBox[{\\\"\\\\\\\"Global`\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"fileGrabber`\\\\\\\"\\\"}], \\\"}\\\"}]\\); definitions in \
+context \\!\\(\\*RowBox[{\\\"\\\\\\\"Global`\\\\\\\"\\\"}]\\) may shadow or \
+be shadowed by other definitions.\"",2,9,1,28669952901389394401,$Failed,
+   "Global`getFilename"},
+  "MessageTemplate2"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721475532700323*^9},ExpressionUUID->"e64999d8-c724-4bdf-b316-\
+4feb9678e02d"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["full-param-comparison of QuEST, ProjectQ", "Section",
+ CellChangeTimes->{{3.721461704873822*^9, 
+  3.7214617156064672`*^9}},ExpressionUUID->"7030a006-087e-4f0f-9f2f-\
+52e2d9a46aef"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+gate_fusion=False (projectQ slow) and using intel gcc (QuEST imprecise)\
+\>", "Subsection",
+ CellChangeTimes->{{3.721461722615861*^9, 
+  3.721461747032261*^9}},ExpressionUUID->"37de60b4-50d1-4d8f-b627-\
+b93399464a1a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"With", "[", "\n", "\t", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"threadVals", " ", "=", " ", 
+      RowBox[{"{", 
+       RowBox[{
+       "1", ",", " ", "2", ",", " ", "4", ",", " ", "8", ",", " ", "16", ",", 
+        " ", "32"}], "}"}]}], ",", "\n", "\t", 
+     RowBox[{"qubitRange", " ", "=", " ", 
+      RowBox[{"Range", "[", 
+       RowBox[{"1", ",", "30"}], "]"}]}]}], "}"}], ",", "\n", "\t", 
+   RowBox[{"Manipulate", "[", "\n", "\t\t", 
+    RowBox[{
+     RowBox[{"With", "[", "\n", "\t\t\t", 
+      RowBox[{
+       RowBox[{"{", "\n", "\t\t\t\t", 
+        RowBox[{
+         RowBox[{"imsize", " ", "=", " ", "Medium"}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"projectQDurs", " ", "=", " ", 
+          RowBox[{"N", " ", "@", " ", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"Mean", " ", "@", " ", 
+              RowBox[{
+               RowBox[{"Get", "[", 
+                RowBox[{"getFilename", "[", 
+                 RowBox[{
+                 "\"\<ProjectQ\>\"", ",", " ", "numThreads", ",", " ", 
+                  "circuitDepth", ",", " ", "numQubits"}], "]"}], "]"}], "[", 
+               "\"\<durations\>\"", "]"}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"questDurs", " ", "=", " ", 
+          RowBox[{"N", " ", "@", " ", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"Mean", " ", "@", " ", 
+              RowBox[{
+               RowBox[{"Get", "[", 
+                RowBox[{"getFilename", "[", 
+                 RowBox[{
+                 "\"\<QuEST\>\"", ",", " ", "numThreads", ",", " ", 
+                  "circuitDepth", ",", " ", "numQubits"}], "]"}], "]"}], "[", 
+               "\"\<durations\>\"", "]"}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"projectQDurSD", " ", "=", " ", 
+          RowBox[{"N", " ", "@", " ", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"StandardDeviation", " ", "@", " ", 
+              RowBox[{
+               RowBox[{"Get", "[", 
+                RowBox[{"getFilename", "[", 
+                 RowBox[{
+                 "\"\<ProjectQ\>\"", ",", " ", "numThreads", ",", " ", 
+                  "circuitDepth", ",", " ", "numQubits"}], "]"}], "]"}], "[", 
+               "\"\<durations\>\"", "]"}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"questDurSD", " ", "=", " ", 
+          RowBox[{"N", " ", "@", " ", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"StandardDeviation", " ", "@", " ", 
+              RowBox[{
+               RowBox[{"Get", "[", 
+                RowBox[{"getFilename", "[", 
+                 RowBox[{
+                 "\"\<QuEST\>\"", ",", " ", "numThreads", ",", " ", 
+                  "circuitDepth", ",", " ", "numQubits"}], "]"}], "]"}], "[", 
+               "\"\<durations\>\"", "]"}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"projectQMems", " ", "=", " ", 
+          RowBox[{"N", " ", "@", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"Mean", " ", "@", " ", 
+              RowBox[{
+               RowBox[{"Get", "[", 
+                RowBox[{"getFilename", "[", 
+                 RowBox[{
+                 "\"\<ProjectQ\>\"", ",", " ", "numThreads", ",", " ", 
+                  "circuitDepth", ",", " ", "numQubits"}], "]"}], "]"}], "[", 
+               "\"\<realMemories\>\"", "]"}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"questMems", " ", "=", " ", 
+          RowBox[{"N", " ", "@", " ", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"Mean", " ", "@", " ", 
+              RowBox[{
+               RowBox[{"Get", "[", 
+                RowBox[{"getFilename", "[", 
+                 RowBox[{
+                 "\"\<QuEST\>\"", ",", " ", "numThreads", ",", " ", 
+                  "circuitDepth", ",", " ", "numQubits"}], "]"}], "]"}], "[", 
+               "\"\<currRealMemories\>\"", "]"}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"projectQErrors", " ", "=", " ", 
+          RowBox[{"N", " ", "@", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"Mean", " ", "@", " ", 
+              RowBox[{
+               RowBox[{"Get", "[", 
+                RowBox[{"getFilename", "[", 
+                 RowBox[{
+                 "\"\<ProjectQ\>\"", ",", " ", "numThreads", ",", " ", 
+                  "circuitDepth", ",", " ", "numQubits"}], "]"}], "]"}], "[", 
+               "\"\<normErrors\>\"", "]"}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"questErrors", " ", "=", " ", 
+          RowBox[{"N", " ", "@", " ", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"Mean", " ", "@", " ", 
+              RowBox[{
+               RowBox[{"Get", "[", 
+                RowBox[{"getFilename", "[", 
+                 RowBox[{
+                 "\"\<QuEST\>\"", ",", " ", "numThreads", ",", " ", 
+                  "circuitDepth", ",", " ", "numQubits"}], "]"}], "]"}], "[", 
+               "\"\<normErrors\>\"", "]"}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}]}], "\n", "\n", "\t\t\t ", "}"}], ",", "\n", "\t\t\t", 
+       RowBox[{"Grid", "[", 
+        RowBox[{"{", "\n", "\t\t\t\t", 
+         RowBox[{
+          RowBox[{"{", "\n", "\t\t\t\t\t", 
+           RowBox[{
+            RowBox[{"ListLogPlot", "[", "\n", "\t\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", "projectQDurs"}], "}"}], 
+                 "]"}], ",", "\n", "\t\t\t\t\t\t", 
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", "questDurs"}], "}"}], 
+                 "]"}]}], "}"}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"PlotStyle", " ", "\[Rule]", " ", "Dashed"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"\"\<qubits\>\"", ",", " ", "\"\<runtime (s)\>\""}], 
+                "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"Filling", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"1", " ", "\[Rule]", " ", 
+                 RowBox[{"{", "2", "}"}]}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"PlotLegends", " ", "\[Rule]", " ", 
+               RowBox[{"Placed", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"\"\<ProjectQ\>\"", ",", " ", "\"\<QuEST\>\""}], 
+                  "}"}], ",", "Above"}], "]"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}]}], "\n", 
+             "\t\t\t\t\t\t", 
+             RowBox[{"(*", " ", 
+              RowBox[{
+              "PlotLabel", " ", "\[Rule]", " ", "\"\<Performance\>\""}], " ", 
+              "*)"}], "\n", "\t\t\t\t\t", "]"}], ",", "\n", "\t\t\t\t\t", 
+            RowBox[{"ListLogPlot", "[", "\n", "\t\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"Transpose", "[", 
+               RowBox[{"{", 
+                RowBox[{"qubitRange", ",", " ", 
+                 RowBox[{"projectQDurs", "/", "questDurs"}]}], "}"}], "]"}], 
+              ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"PlotStyle", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"Dashed", ",", " ", "Black"}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"\"\<qubits\>\"", ",", " ", "\"\<runtime ratio\>\""}],
+                 "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{"PlotLegends", " ", "\[Rule]", " ", 
+               RowBox[{"Placed", "[", 
+                RowBox[{
+                 RowBox[{"{", "\"\<ProjectQ / QuEST\>\"", "}"}], ",", " ", 
+                 "Above"}], "]"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"GridLines", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", "}"}], ",", " ", 
+                 RowBox[{"{", 
+                  RowBox[{"1", ",", " ", "4"}], "}"}]}], "}"}]}]}], "\n", 
+             "\t\t\t\t\t", "]"}], ",", "\n", "\t\t\t\t\t", 
+            RowBox[{"ListLogPlot", "[", "\n", "\t\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", "projectQDurSD"}], "}"}], 
+                 "]"}], ",", "\n", "\t\t\t\t\t\t", 
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", "questDurSD"}], "}"}], 
+                 "]"}]}], "}"}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"PlotStyle", " ", "\[Rule]", " ", "Dashed"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{
+                "\"\<qubits\>\"", ",", " ", "\"\<sd(runtime) (s)\>\""}], 
+                "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"Filling", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"1", " ", "\[Rule]", " ", 
+                 RowBox[{"{", "2", "}"}]}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"PlotLegends", " ", "\[Rule]", " ", 
+               RowBox[{"Placed", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"\"\<ProjectQ\>\"", ",", " ", "\"\<QuEST\>\""}], 
+                  "}"}], ",", "Above"}], "]"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{
+              "PlotLabel", " ", "\[Rule]", " ", 
+               "\"\<standard deviation of runtime\>\""}]}], "\n", 
+             "\t\t\t\t\t", "]"}], ","}], "\n", "\t\t\t\t", "}"}], ",", "\n", 
+          "\t\t\t\t", 
+          RowBox[{"{", "\n", "\t\t\t\t\t", 
+           RowBox[{
+            RowBox[{"ListLogPlot", "[", "\n", "\t\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", 
+                   RowBox[{"projectQMems", "/", 
+                    RowBox[{"10", "^", "9"}]}]}], "}"}], "]"}], ",", "\n", 
+                "\t\t\t\t\t\t", 
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", 
+                   RowBox[{"questMems", "/", 
+                    RowBox[{"10", "^", "9"}]}]}], "}"}], "]"}]}], "}"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"PlotStyle", " ", "\[Rule]", " ", "Dashed"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"\"\<qubits\>\"", ",", " ", "\"\<memory (GB)\>\""}], 
+                "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"Filling", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"1", " ", "\[Rule]", " ", 
+                 RowBox[{"{", "2", "}"}]}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{
+              "PlotLabel", " ", "\[Rule]", " ", 
+               "\"\<Memory consumption (after allocation)\>\""}]}], "\n", 
+             "\t\t\t\t\t", "]"}], ",", "\n", "\t\t\t\t\t", 
+            RowBox[{"ListLogPlot", "[", "\n", "\t\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"Transpose", "[", 
+               RowBox[{"{", 
+                RowBox[{"qubitRange", ",", " ", 
+                 RowBox[{"projectQMems", "/", "questMems"}]}], "}"}], "]"}], 
+              ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"\"\<qubits\>\"", ",", " ", "\"\<memory ratio\>\""}], 
+                "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{"PlotStyle", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"Dashed", ",", " ", "Black"}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"GridLines", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", "}"}], ",", " ", 
+                 RowBox[{"{", "1", "}"}]}], "}"}]}]}], "\n", "\t\t\t\t\t", 
+             "]"}]}], "\n", "\t\t\t\t", "}"}], ",", "\n", "\t\t\t\t", 
+          RowBox[{"{", "\n", "\t\t\t\t\t", 
+           RowBox[{
+            RowBox[{"ListLinePlot", "[", "\n", "\t\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", "projectQErrors"}], "}"}], 
+                 "]"}], ",", "\n", "\t\t\t\t\t\t", 
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", "questErrors"}], "}"}], 
+                 "]"}]}], "}"}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{
+                "\"\<qubits\>\"", ",", " ", 
+                 "\"\<1 - |\[Psi]\!\(\*SuperscriptBox[\(|\), \(2\)]\)\>\""}], 
+                "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"Filling", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"2", " ", "\[Rule]", " ", 
+                 RowBox[{"{", "1", "}"}]}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"Joined", " ", "\[Rule]", " ", "False"}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{"PlotRange", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"0", ",", " ", "Automatic"}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{
+              "PlotLabel", " ", "\[Rule]", " ", 
+               "\"\<Normalisation Error\>\""}]}], "\n", "\t\t\t\t\t", "]"}], 
+            ",", "\n", "\t\t\t\t\t", 
+            RowBox[{"ListLinePlot", "[", "\n", "\t\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"Transpose", "[", 
+               RowBox[{"{", 
+                RowBox[{"qubitRange", ",", " ", 
+                 RowBox[{"projectQErrors", "/", "questErrors"}]}], "}"}], 
+               "]"}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"\"\<qubits\>\"", ",", " ", "\"\<error ratio\>\""}], 
+                "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"Joined", " ", "\[Rule]", " ", "False"}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{"PlotRange", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"0", ",", " ", "Automatic"}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"PlotStyle", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"Dashed", ",", " ", "Black"}], "}"}]}]}], "\n", 
+             "\t\t\t\t\t", "]"}]}], "\n", "\t\t\t\t", "}"}]}], "}"}], "\n", 
+        "\t\t\t", "]"}]}], "\n", "\t\t", "]"}], ",", "\n", "\t\t", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"circuitDepth", ",", " ", "100"}], "}"}], ",", " ", "10", ",",
+        " ", "100", ",", " ", "10"}], "}"}], ",", "\n", "\t\t", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"numThreads", ",", " ", "16"}], "}"}], ",", " ", 
+       "threadVals"}], "}"}], ",", "\n", "\t\t", 
+     RowBox[{"ContinuousAction", " ", "\[Rule]", " ", "False"}]}], "\n", "\t",
+     "]"}]}], "\n", "]"}]], "Code",
+ CellChangeTimes->{
+  3.72094521387598*^9, {3.720945244552471*^9, 3.720945308702098*^9}, {
+   3.7209454365302763`*^9, 3.720945472298861*^9}, {3.720945529830017*^9, 
+   3.720945530138376*^9}, {3.720945562691909*^9, 3.720945565170491*^9}, {
+   3.720945647359283*^9, 3.72094568917447*^9}, {3.7209457496745377`*^9, 
+   3.72094591846397*^9}, {3.720945990372806*^9, 3.7209460103943577`*^9}, {
+   3.720946071366345*^9, 3.720946083465419*^9}, {3.720946316938596*^9, 
+   3.720946321348361*^9}, {3.7209463577371187`*^9, 3.72094638759899*^9}, {
+   3.7209464653918953`*^9, 3.720946468073018*^9}, {3.720946974433565*^9, 
+   3.72094699787681*^9}, {3.7209470882899523`*^9, 3.72094719361998*^9}, {
+   3.720947244723193*^9, 3.720947372609483*^9}, {3.72094742586252*^9, 
+   3.7209474594053097`*^9}, {3.720947506187799*^9, 3.720947613478202*^9}, {
+   3.7209476949199047`*^9, 3.720947715130167*^9}, {3.720947926007071*^9, 
+   3.720947926520122*^9}, {3.720947969540495*^9, 3.7209479698641233`*^9}, {
+   3.720948171255728*^9, 3.7209481811804*^9}, {3.7209482273730707`*^9, 
+   3.720948236848885*^9}, {3.720948413516474*^9, 3.7209484566471663`*^9}, {
+   3.720948500803835*^9, 3.7209485013399763`*^9}, {3.7209485594007196`*^9, 
+   3.7209485821612663`*^9}, {3.7209488126944017`*^9, 3.720948814410956*^9}, {
+   3.720948848602313*^9, 3.7209488853600693`*^9}, {3.720948990060112*^9, 
+   3.720949030816258*^9}, {3.720949097245635*^9, 3.7209491355382633`*^9}, {
+   3.720949256086546*^9, 3.720949259922347*^9}, {3.720952206270293*^9, 
+   3.720952209250499*^9}, {3.720952718504924*^9, 3.720952762624136*^9}, {
+   3.7209588188166523`*^9, 3.720958907204297*^9}, {3.7209589496038523`*^9, 
+   3.720959084798711*^9}, {3.720959158295991*^9, 3.7209591783768997`*^9}, {
+   3.720959475594871*^9, 3.720959488770133*^9}, {3.720960215540763*^9, 
+   3.720960272803506*^9}, {3.720960350173805*^9, 3.720960351518962*^9}, {
+   3.720960388754076*^9, 3.720960453237102*^9}, {3.720960486765213*^9, 
+   3.720960650220997*^9}, {3.720960698275015*^9, 3.720960699844013*^9}, {
+   3.7209608202776117`*^9, 3.7209608483746443`*^9}, {3.720960884614821*^9, 
+   3.720960894316987*^9}, {3.720960929692533*^9, 3.720960942813067*^9}, {
+   3.721030995704624*^9, 3.721030996195551*^9}, {3.721031102859192*^9, 
+   3.72103110392338*^9}, {3.721032314779229*^9, 3.721032315782524*^9}, {
+   3.72103277148389*^9, 3.7210327728330584`*^9}, {3.721033013219002*^9, 
+   3.721033058376461*^9}, {3.7210581065705547`*^9, 3.721058133720853*^9}, {
+   3.721058795647849*^9, 3.721058803878023*^9}, {3.721068314265798*^9, 
+   3.721068337275257*^9}},ExpressionUUID->"a7370b33-71ce-4b85-bab4-\
+ea28aca576fc"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`circuitDepth$$ = 
+    100, $CellContext`numThreads$$ = 16, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`circuitDepth$$], 100}, 10, 100, 10}, {{
+       Hold[$CellContext`numThreads$$], 16}, {1, 2, 4, 8, 16, 32}}}, 
+    Typeset`size$$ = {1111., {375.634033203125, 381.365966796875}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`circuitDepth$42695$$ = 
+    0, $CellContext`numThreads$42696$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`circuitDepth$$ = 
+        100, $CellContext`numThreads$$ = 16}, "ControllerVariables" :> {
+        Hold[$CellContext`circuitDepth$$, $CellContext`circuitDepth$42695$$, 
+         0], 
+        Hold[$CellContext`numThreads$$, $CellContext`numThreads$42696$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      With[{$CellContext`imsize$ = Medium, $CellContext`projectQDurs$ = N[
+           Table[
+            Mean[
+             Get[
+              $CellContext`getFilename[
+              "ProjectQ", $CellContext`numThreads$$, \
+$CellContext`circuitDepth$$, $CellContext`numQubits]][
+             "durations"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 6, 7, 8, 
+             9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 
+             25, 26, 27, 28, 29, 30}}]], $CellContext`questDurs$ = N[
+           Table[
+            Mean[
+             Get[
+              $CellContext`getFilename[
+              "QuEST", $CellContext`numThreads$$, \
+$CellContext`circuitDepth$$, $CellContext`numQubits]][
+             "durations"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 6, 7, 8, 
+             9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 
+             25, 26, 27, 28, 29, 30}}]], $CellContext`projectQDurSD$ = N[
+           Table[
+            StandardDeviation[
+             Get[
+              $CellContext`getFilename[
+              "ProjectQ", $CellContext`numThreads$$, \
+$CellContext`circuitDepth$$, $CellContext`numQubits]][
+             "durations"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 6, 7, 8, 
+             9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 
+             25, 26, 27, 28, 29, 30}}]], $CellContext`questDurSD$ = N[
+           Table[
+            StandardDeviation[
+             Get[
+              $CellContext`getFilename[
+              "QuEST", $CellContext`numThreads$$, \
+$CellContext`circuitDepth$$, $CellContext`numQubits]][
+             "durations"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 6, 7, 8, 
+             9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 
+             25, 26, 27, 28, 29, 30}}]], $CellContext`projectQMems$ = N[
+           Table[
+            Mean[
+             Get[
+              $CellContext`getFilename[
+              "ProjectQ", $CellContext`numThreads$$, \
+$CellContext`circuitDepth$$, $CellContext`numQubits]][
+             "realMemories"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 6, 7, 
+             8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24,
+              25, 26, 27, 28, 29, 30}}]], $CellContext`questMems$ = N[
+           Table[
+            Mean[
+             Get[
+              $CellContext`getFilename[
+              "QuEST", $CellContext`numThreads$$, \
+$CellContext`circuitDepth$$, $CellContext`numQubits]][
+             "currRealMemories"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 6,
+              7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,
+              24, 25, 26, 27, 28, 29, 30}}]], $CellContext`projectQErrors$ = N[
+           Table[
+            Mean[
+             Get[
+              $CellContext`getFilename[
+              "ProjectQ", $CellContext`numThreads$$, \
+$CellContext`circuitDepth$$, $CellContext`numQubits]][
+             "normErrors"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 6, 7, 8,
+              9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 
+             25, 26, 27, 28, 29, 30}}]], $CellContext`questErrors$ = N[
+           Table[
+            Mean[
+             Get[
+              $CellContext`getFilename[
+              "QuEST", $CellContext`numThreads$$, \
+$CellContext`circuitDepth$$, $CellContext`numQubits]][
+             "normErrors"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 6, 7, 8,
+              9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 
+             25, 26, 27, 28, 29, 30}}]]}, 
+        Grid[{{
+           ListLogPlot[{
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`projectQDurs$}], 
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`questDurs$}]}, PlotStyle -> Dashed, 
+            PlotMarkers -> Automatic, AxesLabel -> {"qubits", "runtime (s)"}, 
+            Filling -> {1 -> {2}}, PlotLegends -> 
+            Placed[{"ProjectQ", "QuEST"}, Above], 
+            ImageSize -> $CellContext`imsize$], 
+           ListLogPlot[
+            
+            Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+               17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+              30}, $CellContext`projectQDurs$/$CellContext`questDurs$}], 
+            PlotStyle -> {Dashed, Black}, PlotMarkers -> Automatic, 
+            AxesLabel -> {"qubits", "runtime ratio"}, 
+            ImageSize -> $CellContext`imsize$, PlotLegends -> 
+            Placed[{"ProjectQ / QuEST"}, Above], GridLines -> {{}, {1, 4}}], 
+           ListLogPlot[{
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`projectQDurSD$}], 
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`questDurSD$}]}, PlotStyle -> Dashed, 
+            PlotMarkers -> Automatic, 
+            AxesLabel -> {"qubits", "sd(runtime) (s)"}, Filling -> {1 -> {2}},
+             PlotLegends -> Placed[{"ProjectQ", "QuEST"}, Above], 
+            ImageSize -> $CellContext`imsize$, PlotLabel -> 
+            "standard deviation of runtime"], Null}, {
+           ListLogPlot[{
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`projectQMems$/10^9}], 
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`questMems$/10^9}]}, PlotStyle -> Dashed, 
+            PlotMarkers -> Automatic, AxesLabel -> {"qubits", "memory (GB)"}, 
+            Filling -> {1 -> {2}}, ImageSize -> $CellContext`imsize$, 
+            PlotLabel -> "Memory consumption (after allocation)"], 
+           ListLogPlot[
+            
+            Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+               17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+              30}, $CellContext`projectQMems$/$CellContext`questMems$}], 
+            PlotMarkers -> Automatic, AxesLabel -> {"qubits", "memory ratio"},
+             ImageSize -> $CellContext`imsize$, PlotStyle -> {Dashed, Black}, 
+            GridLines -> {{}, {1}}]}, {
+           ListLinePlot[{
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`projectQErrors$}], 
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`questErrors$}]}, PlotMarkers -> Automatic, 
+            AxesLabel -> {
+             "qubits", "1 - |\[Psi]\!\(\*SuperscriptBox[\(|\), \(2\)]\)"}, 
+            Filling -> {2 -> {1}}, Joined -> False, 
+            ImageSize -> $CellContext`imsize$, PlotRange -> {0, Automatic}, 
+            PlotLabel -> "Normalisation Error"], 
+           ListLinePlot[
+            
+            Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+               17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+              30}, $CellContext`projectQErrors$/$CellContext`questErrors$}], 
+            PlotMarkers -> Automatic, AxesLabel -> {"qubits", "error ratio"}, 
+            Joined -> False, ImageSize -> $CellContext`imsize$, 
+            PlotRange -> {0, Automatic}, PlotStyle -> {Dashed, Black}]}}]], 
+      "Specifications" :> {{{$CellContext`circuitDepth$$, 100}, 10, 100, 
+         10}, {{$CellContext`numThreads$$, 16}, {1, 2, 4, 8, 16, 32}}}, 
+      "Options" :> {ContinuousAction -> False}, "DefaultOptions" :> {}],
+     ImageSizeCache->{1156., {435., 441.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.7210581365174637`*^9, 3.721058762273652*^9, 3.721058807020541*^9, 
+   3.7210615971121798`*^9, 3.721064094444874*^9, {3.7210641371612387`*^9, 
+   3.721064223048015*^9}, {3.7210675915140553`*^9, 3.7210676142398453`*^9}, {
+   3.721067694641836*^9, 3.7210677096024237`*^9}, {3.721067746336816*^9, 
+   3.7210677706503563`*^9}, {3.721068319666944*^9, 3.721068338286879*^9}, 
+   3.721119963916457*^9, {3.7211255012581167`*^9, 3.721125556806525*^9}, 
+   3.72112629033997*^9, 
+   3.721461540646921*^9},ExpressionUUID->"746b37cf-9395-425a-adc1-\
+67784c918c3d"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \
+\\\"100\\\", \\\",\\\", \\\"1\\\"}], \\\"]\\\"}]\\) is not a string, \
+SocketObject, InputStream[ ], or OutputStream[ ].\"",2,22,2,
+   28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721475893306984*^9},ExpressionUUID->"c1c84631-6610-4545-93ee-\
+cb75e1cb4f8b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \
+\\\"100\\\", \\\",\\\", \\\"2\\\"}], \\\"]\\\"}]\\) is not a string, \
+SocketObject, InputStream[ ], or OutputStream[ ].\"",2,22,3,
+   28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7214758933627872`*^9},ExpressionUUID->"ce1df922-dd38-45b4-895d-\
+597715f92014"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \
+\\\"100\\\", \\\",\\\", \\\"3\\\"}], \\\"]\\\"}]\\) is not a string, \
+SocketObject, InputStream[ ], or OutputStream[ ].\"",2,22,4,
+   28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721475893414649*^9},ExpressionUUID->"f6fcae85-2fb7-474e-8b64-\
+78dddbb19fe6"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Get\\\", \\\"::\\\", \\\
+\"stream\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,22,5,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721475893437387*^9},ExpressionUUID->"06dba2b3-c5e0-4734-85fc-\
+562332bb1e0a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \
+\\\"100\\\", \\\",\\\", \\\"1\\\"}], \\\"]\\\"}]\\) is not a string, \
+SocketObject, InputStream[ ], or OutputStream[ ].\"",2,27,27,
+   28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721476186715361*^9},ExpressionUUID->"ecb32abe-50b5-41e8-9e10-\
+797fa57b37d7"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \
+\\\"100\\\", \\\",\\\", \\\"2\\\"}], \\\"]\\\"}]\\) is not a string, \
+SocketObject, InputStream[ ], or OutputStream[ ].\"",2,27,28,
+   28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721476186737739*^9},ExpressionUUID->"121db330-d570-4de1-8e35-\
+36dd77515c99"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \
+\\\"100\\\", \\\",\\\", \\\"3\\\"}], \\\"]\\\"}]\\) is not a string, \
+SocketObject, InputStream[ ], or OutputStream[ ].\"",2,27,29,
+   28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721476186794635*^9},ExpressionUUID->"cf01770d-160f-49b3-9ce2-\
+dbab87d7585b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Get\\\", \\\"::\\\", \\\
+\"stream\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,27,30,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721476186849609*^9},ExpressionUUID->"493dd14f-7f7e-4fd1-9bb4-\
+70e52e353a39"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Demo of ProjectQ (gate_fusion=False) 22qb growth", "Section",
+ CellChangeTimes->{{3.721461645694713*^9, 
+  3.721461666937353*^9}},ExpressionUUID->"054d8c12-06aa-4d47-9daa-\
+1bd52826ac63"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\n", "\t", 
+  RowBox[{
+   RowBox[{"Grid", "[", "\n", "\t\t", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Partition", "[", 
+       RowBox[{"#", ",", " ", "3"}], "]"}], "&"}], " ", "@", "\n", "\t\t", 
+     RowBox[{"Table", "[", "\n", "\t\t\t", 
+      RowBox[{
+       RowBox[{"ListLogPlot", "[", "\n", "\t\t\t\t", 
+        RowBox[{
+         RowBox[{"{", "\n", "\t\t\t\t\t", 
+          RowBox[{
+           RowBox[{"Transpose", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"Range", "[", 
+               RowBox[{"1", ",", "30"}], "]"}], ",", " ", 
+              RowBox[{"N", " ", "@", " ", 
+               RowBox[{"Table", "[", 
+                RowBox[{
+                 RowBox[{"Mean", " ", "@", " ", 
+                  RowBox[{
+                   RowBox[{"Get", "[", 
+                    RowBox[{"getFilename", "[", 
+                    RowBox[{
+                    "\"\<ProjectQ\>\"", ",", " ", "numThreads", ",", " ", 
+                    "circuitDepth", ",", " ", "numQubits"}], "]"}], "]"}], 
+                   "[", "\"\<durations\>\"", "]"}]}], ",", " ", 
+                 RowBox[{"{", 
+                  RowBox[{"numQubits", ",", " ", 
+                   RowBox[{"Range", "[", 
+                    RowBox[{"1", ",", "30"}], "]"}]}], "}"}]}], "]"}]}]}], 
+             "}"}], "]"}], ",", "\n", "\t\t\t\t\t", 
+           RowBox[{"Transpose", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"Range", "[", 
+               RowBox[{"20", ",", "30"}], "]"}], ",", " ", 
+              RowBox[{"N", " ", "@", " ", 
+               RowBox[{"Table", "[", 
+                RowBox[{
+                 RowBox[{"Mean", " ", "@", " ", 
+                  RowBox[{
+                   RowBox[{"Get", "[", 
+                    RowBox[{"getFilename", "[", 
+                    RowBox[{
+                    "\"\<QuEST\>\"", ",", " ", "numThreads", ",", " ", 
+                    "circuitDepth", ",", " ", "numQubits"}], "]"}], "]"}], 
+                   "[", "\"\<durations\>\"", "]"}]}], ",", " ", 
+                 RowBox[{"{", 
+                  RowBox[{"numQubits", ",", " ", 
+                   RowBox[{"Range", "[", 
+                    RowBox[{"20", ",", "30"}], "]"}]}], "}"}]}], "]"}]}]}], 
+             "}"}], "]"}]}], "\n", "\t\t\t\t", "}"}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"PlotLabel", " ", "\[Rule]", " ", 
+          RowBox[{"Style", "[", 
+           RowBox[{
+            RowBox[{"StringJoin", "[", 
+             RowBox[{
+              RowBox[{"ToString", "[", "numThreads", "]"}], ",", " ", 
+              RowBox[{"If", "[", 
+               RowBox[{
+                RowBox[{"numThreads", " ", ">", " ", "1"}], ",", " ", 
+                "\"\< threads\>\"", ",", " ", "\"\< thread\>\""}], "]"}]}], 
+             "]"}], ",", " ", 
+            RowBox[{"Switch", "[", 
+             RowBox[{"numThreads", ",", " ", "16", ",", " ", 
+              InterpretationBox[
+               ButtonBox[
+                TooltipBox[
+                 GraphicsBox[{
+                   {GrayLevel[0], RectangleBox[{0, 0}]}, 
+                   {GrayLevel[0], RectangleBox[{1, -1}]}, 
+                   {RGBColor[0., 0.5019607843137255, 0.25098039215686274`], 
+                    RectangleBox[{0, -1}, {2, 1}]}},
+                  AspectRatio->1,
+                  DefaultBaseStyle->"ColorSwatchGraphics",
+                  Frame->True,
+                  
+                  FrameStyle->RGBColor[
+                   0., 0.334640522875817, 0.1673202614379085],
+                  FrameTicks->None,
+                  
+                  ImageSize->
+                   Dynamic[{
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}],
+                  PlotRangePadding->None],
+                 "RGBColor[0., 0.5019607843137255, 0.25098039215686274]"],
+                Appearance->None,
+                BaseStyle->{},
+                BaselinePosition->Baseline,
+                ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+                  If[
+                   Not[
+                    AbsoluteCurrentValue["Deployed"]], 
+                   SelectionMove[Typeset`box$, All, Expression]; 
+                   FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+                   FrontEnd`Private`$ColorSelectorInitialColor = 
+                    RGBColor[0., 0.5019607843137255, 0.25098039215686274`]; 
+                   FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+                   MathLink`CallFrontEnd[
+                    FrontEnd`AttachCell[Typeset`box$, 
+                    FrontEndResource["RGBColorValueSelector"], {
+                    0, {Left, Bottom}}, {Left, Top}, 
+                    "ClosingActions" -> {
+                    "SelectionDeparture", "ParentChanged", 
+                    "EvaluatorQuit"}]]]],
+                DefaultBaseStyle->{},
+                Evaluator->Automatic,
+                Method->"Preemptive"],
+               RGBColor[0., 0.5019607843137255, 0.25098039215686274`],
+               Editable->False,
+               Selectable->False], ",", " ", "32", ",", " ", "Red", ",", " ", 
+              "_", ",", " ", "Black"}], "]"}]}], "]"}]}], ",", "\n", 
+         "\t\t\t\t", 
+         RowBox[{"ImageSize", " ", "\[Rule]", " ", "Medium"}], ",", "\n", 
+         "\t\t\t\t", 
+         RowBox[{"Joined", " ", "\[Rule]", " ", 
+          RowBox[{"{", 
+           RowBox[{"False", ",", " ", "True"}], "}"}]}], ",", "\n", 
+         "\t\t\t\t", 
+         RowBox[{"PlotStyle", " ", "\[Rule]", " ", 
+          RowBox[{"{", "Dashed", "}"}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{"numThreads", "===", "8"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"\"\<qubits\>\"", ",", " ", "\"\<runtime (s)\>\""}], 
+             "}"}]}], "]"}]}]}], "\n", "\t\t\t", "]"}], ",", " ", "\n", 
+       "\t\t\t", 
+       RowBox[{"{", 
+        RowBox[{"numThreads", ",", " ", 
+         RowBox[{"{", 
+          RowBox[{
+          "1", ",", " ", "2", ",", " ", "4", ",", " ", "8", ",", " ", "16", 
+           ",", " ", "32"}], "}"}]}], "}"}]}], "\n", "\t\t", "]"}]}], "\n", 
+    "\t", "]"}], ",", "\n", "\t", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"circuitDepth", ",", " ", "100"}], "}"}], ",", " ", "10", ",", 
+     " ", "100", ",", " ", "10"}], "}"}]}], "\n", "]"}]], "Code",
+ CellChangeTimes->{{3.721064025844521*^9, 3.7210640549230967`*^9}, 
+   3.721064086935959*^9, {3.7210642446975*^9, 3.721064321701255*^9}, {
+   3.7210643829481087`*^9, 3.721064429410145*^9}, {3.7210646821051083`*^9, 
+   3.7210647072928*^9}, {3.721064744294969*^9, 3.721064748854807*^9}, {
+   3.721064803857242*^9, 3.721064872231566*^9}, {3.721065036969194*^9, 
+   3.721065069468943*^9}, {3.721065244548072*^9, 3.721065262779406*^9}, {
+   3.721065312487824*^9, 3.721065331044297*^9}, {3.72106543554731*^9, 
+   3.721065436054055*^9}, {3.721065499694297*^9, 3.721065539238562*^9}, {
+   3.721065577814753*^9, 3.721065603111185*^9}, 3.72106650166912*^9, {
+   3.721066580355269*^9, 3.7210667027604523`*^9}, {3.7210667398101482`*^9, 
+   3.721066770542388*^9}, {3.7210668244452143`*^9, 3.721066854315536*^9}, {
+   3.721066885733253*^9, 3.7210669684470797`*^9}, {3.7210678077467012`*^9, 
+   3.7210678079364147`*^9}, {3.721067926739888*^9, 3.721067937237247*^9}, {
+   3.7210698609561987`*^9, 
+   3.721070014120949*^9}},ExpressionUUID->"1fd7aabc-867e-4560-9033-\
+704a3e822f5a"],
+
+Cell[CellGroupData[{
+
+Cell["number of caches required", "Subsection",
+ CellChangeTimes->{{3.7214617897454844`*^9, 
+  3.7214617961180487`*^9}},ExpressionUUID->"2fe897cf-0a20-4b89-8eef-\
+9ccacc34a2da"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"projectQReqMem", "[", "qb_", "]"}], " ", "=", " ", 
+   RowBox[{"16", " ", "*", " ", 
+    RowBox[{"2", "^", "qb"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"With", "[", "\[IndentingNewLine]", "\t", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"cacheSize", " ", "=", " ", 
+      RowBox[{"20480", "*", "1000"}]}], ",", " ", 
+     RowBox[{"range", "=", 
+      RowBox[{"Range", "[", 
+       RowBox[{"18", ",", "25"}], "]"}]}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\t", 
+   RowBox[{"ListLogPlot", "[", "\n", "\t\t", 
+    RowBox[{
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{"range", ",", " ", 
+        RowBox[{"Ceiling", "[", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"projectQReqMem", " ", "/@", " ", "range"}], ")"}], " ", 
+          "/", " ", "cacheSize"}], "]"}]}], "}"}], "]"}], ",", "\n", "\t\t", 
+     RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+      RowBox[{"{", 
+       RowBox[{"\"\<qubits\>\"", ",", " ", "\"\<L3 caches required\>\""}], 
+       "}"}]}]}], "\n", "\t", "]"}]}], "\[IndentingNewLine]", "]"}]}], "Code",\
+
+ CellChangeTimes->{{3.721120107137842*^9, 3.721120383461217*^9}, {
+  3.721120809819632*^9, 3.721120863018528*^9}, {3.721121153146805*^9, 
+  3.721121185855291*^9}, {3.7214652720285892`*^9, 
+  3.72146527229665*^9}},ExpressionUUID->"fe62422a-ae24-4489-becb-\
+a3bd8a04daa8"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
+      AbsoluteThickness[1.6], 
+     PointBox[{{18., 0.}, {19., 0.}, {20., 0.}, {21., 0.6931471805599453}, {
+      22., 1.3862943611198906`}, {23., 1.9459101490553132`}, {24., 
+      2.6390573296152584`}, {25., 3.295836866004329}}]}, {}}, {}, {}, {}, {}},
+  
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{
+    FormBox["\"qubits\"", TraditionalForm], 
+    FormBox["\"L3 caches required\"", TraditionalForm]},
+  AxesOrigin->{17.890625, -0.23921396608095943`},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{
+     Charting`ScaledTicks[{Log, Exp}], 
+     Charting`ScaledFrameTicks[{Log, Exp}]}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  Method->{"CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Exp[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Exp[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{18., 25.}, {-0.18310204811135164`, 3.295836866004329}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->FrontEndValueCache[{Automatic, 
+     Charting`ScaledTicks[{Log, Exp}]}, {Automatic, {{0., 
+       FormBox["1", TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {1.6094379124341003`, 
+       FormBox["5", TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {2.302585092994046, 
+       FormBox["10", TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.6931471805599453, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.5108256237659907, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.35667494393873245`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.2231435513142097, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.10536051565782628`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {0.6931471805599453, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {1.0986122886681098`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {1.3862943611198906`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {1.791759469228055, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {1.9459101490553132`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {2.0794415416798357`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {2.1972245773362196`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {2.995732273553991, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {3.4011973816621555`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {3.6888794541139363`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {3.912023005428146, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {4.0943445622221, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {4.248495242049359, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {4.382026634673881, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {4.499809670330265, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {4.605170185988092, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}}}]]], "Output",
+ CellChangeTimes->{
+  3.721120327298513*^9, {3.721120370911983*^9, 3.7211203837940073`*^9}, {
+   3.721120818905734*^9, 3.721120863400651*^9}, {3.721121154226419*^9, 
+   3.721121186546021*^9}, 
+   3.721126297616407*^9},ExpressionUUID->"f7323c5a-bf0d-4afb-abc4-\
+c066c1ee831e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"projectQReqMem", "[", "qb_", "]"}], " ", "=", " ", 
+   RowBox[{"16", " ", "*", " ", 
+    RowBox[{"2", "^", "qb"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"With", "[", "\[IndentingNewLine]", "\t", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"cacheSize", " ", "=", " ", 
+      RowBox[{"4000", "*", "1000"}]}], ",", " ", 
+     RowBox[{"range", "=", 
+      RowBox[{"Range", "[", 
+       RowBox[{"15", ",", "25"}], "]"}]}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\t", 
+   RowBox[{"ListLogPlot", "[", "\n", "\t\t", 
+    RowBox[{
+     RowBox[{"Transpose", "[", 
+      RowBox[{"{", 
+       RowBox[{"range", ",", " ", 
+        RowBox[{"Ceiling", "[", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"projectQReqMem", " ", "/@", " ", "range"}], ")"}], " ", 
+          "/", " ", "cacheSize"}], "]"}]}], "}"}], "]"}], ",", "\n", "\t\t", 
+     RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+      RowBox[{"{", 
+       RowBox[{"\"\<qubits\>\"", ",", " ", "\"\<L3 caches required\>\""}], 
+       "}"}]}]}], "\n", "\t", "]"}]}], "\[IndentingNewLine]", "]"}]}], "Code",\
+
+ CellChangeTimes->{{3.721120107137842*^9, 3.721120383461217*^9}, {
+  3.721120809819632*^9, 3.721120863018528*^9}, {3.721121153146805*^9, 
+  3.721121185855291*^9}, {3.7214652720285892`*^9, 
+  3.721465295747911*^9}},ExpressionUUID->"841e50d7-f894-42e3-bdbc-\
+510e41a49d7c"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{}, 
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
+      AbsoluteThickness[1.6], 
+     PointBox[{{15., 0.}, {16., 0.}, {17., 0.}, {18., 0.6931471805599453}, {
+      19., 1.0986122886681098`}, {20., 1.6094379124341003`}, {21., 
+      2.1972245773362196`}, {22., 2.833213344056216}, {23., 
+      3.5263605246161616`}, {24., 4.219507705176107}, {25., 
+      4.90527477843843}}]}, {}}, {}, {}, {}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{
+    FormBox["\"qubits\"", TraditionalForm], 
+    FormBox["\"L3 caches required\"", TraditionalForm]},
+  AxesOrigin->{14.843750000000002`, -0.35602800811246677`},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{
+     Charting`ScaledTicks[{Log, Exp}], 
+     Charting`ScaledFrameTicks[{Log, Exp}]}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  Method->{"CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Exp[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Exp[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{15., 25.}, {-0.27251526546880167`, 4.90527477843843}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.02], 
+     Scaled[0.05]}},
+  Ticks->FrontEndValueCache[{Automatic, 
+     Charting`ScaledTicks[{Log, Exp}]}, {Automatic, {{0., 
+       FormBox["1", TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {1.6094379124341003`, 
+       FormBox["5", TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {2.302585092994046, 
+       FormBox["10", TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {3.912023005428146, 
+       FormBox["50", TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {4.605170185988092, 
+       FormBox["100", TraditionalForm], {0.01, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.6931471805599453, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.5108256237659907, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.35667494393873245`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.2231435513142097, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {-0.10536051565782628`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {0.6931471805599453, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {1.0986122886681098`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {1.3862943611198906`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {1.791759469228055, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {1.9459101490553132`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {2.0794415416798357`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {2.1972245773362196`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {2.995732273553991, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {3.4011973816621555`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {3.6888794541139363`, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {4.0943445622221, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {4.248495242049359, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {4.382026634673881, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {4.499809670330265, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {5.298317366548036, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {5.703782474656201, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {5.991464547107982, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {6.214608098422191, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {6.396929655216146, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {6.551080335043404, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {6.684611727667927, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {6.802394763324311, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}, {6.907755278982137, 
+       FormBox[
+        TemplateBox[{0., 0.}, "Spacer2"], TraditionalForm], {0.005, 0.}, {
+        AbsoluteThickness[0.1]}}}}]]], "Output",
+ CellChangeTimes->{{3.721465288128734*^9, 
+  3.721465296127857*^9}},ExpressionUUID->"9afa433b-2e92-4025-b762-\
+e820545af503"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["resim with gate_fusion=True runtime over threads, 15-30qb", "Section",
+ CellChangeTimes->{{3.7211261202256203`*^9, 3.721126144648857*^9}, {
+  3.721461809261827*^9, 
+  3.721461830746519*^9}},ExpressionUUID->"67b1bdf8-0404-4398-8e80-\
+d21164675f60"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"getFilename", "[", 
+  RowBox[{"\"\<ProjectQ\>\"", ",", " ", "16", ",", " ", "100", ",", "10"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7211266290828943`*^9, 
+  3.72112663325167*^9}},ExpressionUUID->"6ce76a6e-fd0c-46d0-ac85-\
+b80642f5f400"],
+
+Cell[BoxData["\<\"Python/results/ARC_ProjectQ/threads16/depth100/qubits10.txt\
+\"\>"], "Output",
+ CellChangeTimes->{{3.721126627128119*^9, 
+  3.721126633731503*^9}},ExpressionUUID->"d9f34cba-aae6-4571-b205-\
+a32da221e672"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\n", 
+  RowBox[{
+   RowBox[{"With", "[", "\n", "\t", 
+    RowBox[{
+     RowBox[{"{", "\n", "\t\t", 
+      RowBox[{
+       RowBox[{"imsize", " ", "=", " ", "Medium"}], ",", "\n", "\t\t", 
+       RowBox[{"projectQDurs", " ", "=", " ", 
+        RowBox[{"N", " ", "@", " ", 
+         RowBox[{"Table", "[", 
+          RowBox[{
+           RowBox[{"Mean", " ", "@", " ", 
+            RowBox[{
+             RowBox[{"Get", "[", "\n", "\t\t\t", 
+              RowBox[{"getFilename", "[", 
+               RowBox[{
+               "\"\<instMode5_results\>\"", ",", " ", "\"\<ProjectQ\>\"", ",",
+                 " ", "numThreads", ",", " ", "100", ",", " ", "numQubits"}], 
+               "]"}], "\n", "\t\t\t", "]"}], "[", "\"\<durations\>\"", 
+             "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"numQubits", ",", " ", "15", ",", "30"}], "}"}]}], 
+          "]"}]}]}], ",", "\n", "\t\t", 
+       RowBox[{"questDurs", " ", "=", " ", 
+        RowBox[{"N", " ", "@", " ", 
+         RowBox[{"Table", "[", 
+          RowBox[{
+           RowBox[{"Mean", " ", "@", " ", 
+            RowBox[{
+             RowBox[{"Get", "[", 
+              RowBox[{"getFilename", "[", 
+               RowBox[{
+               "\"\<QuEST\>\"", ",", " ", "numThreads", ",", " ", "100", ",", 
+                " ", "numQubits"}], "]"}], "]"}], "[", "\"\<durations\>\"", 
+             "]"}]}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"numQubits", ",", " ", "15", ",", "30"}], "}"}]}], 
+          "]"}]}]}]}], "\n", "\t", "}"}], ",", "\n", "\t", 
+     RowBox[{"Grid", "[", 
+      RowBox[{"{", 
+       RowBox[{"{", "\n", "\t\t\t\t\t", 
+        RowBox[{
+         RowBox[{"ListLogPlot", "[", "\n", "\t\t\t\t\t\t", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"Transpose", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Range", "[", 
+                 RowBox[{"15", ",", "30"}], "]"}], ",", " ", "projectQDurs"}],
+                "}"}], "]"}], ",", "\n", "\t\t\t\t\t\t", 
+             RowBox[{"Transpose", "[", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Range", "[", 
+                 RowBox[{"15", ",", "30"}], "]"}], ",", " ", "questDurs"}], 
+               "}"}], "]"}]}], "}"}], ",", "\n", "\t\t\t\t\t\t", 
+           RowBox[{"PlotStyle", " ", "\[Rule]", " ", "Dashed"}], ",", "\n", 
+           "\t\t\t\t\t\t", 
+           RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+           "\n", "\t\t\t\t\t\t", 
+           RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+            RowBox[{"{", 
+             RowBox[{"\"\<qubits\>\"", ",", " ", "\"\<runtime (s)\>\""}], 
+             "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+           RowBox[{"Filling", " ", "\[Rule]", " ", 
+            RowBox[{"{", 
+             RowBox[{"1", " ", "\[Rule]", " ", 
+              RowBox[{"{", "2", "}"}]}], "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+           RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}], ",", "\n", 
+           "\t\t\t\t\t\t", 
+           RowBox[{"PlotLegends", " ", "\[Rule]", " ", 
+            RowBox[{"Placed", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"\"\<ProjectQ\>\"", ",", " ", "\"\<QuEST\>\""}], "}"}],
+               ",", "Above"}], "]"}]}]}], "\n", "\t\t\t\t\t", "]"}], ",", 
+         "\n", "\t\t\t\t\t", 
+         RowBox[{"ListLogPlot", "[", "\n", "\t\t\t\t\t\t", 
+          RowBox[{
+           RowBox[{"Transpose", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"Range", "[", 
+               RowBox[{"15", ",", "30"}], "]"}], ",", " ", 
+              RowBox[{"projectQDurs", "/", "questDurs"}]}], "}"}], "]"}], ",",
+            "\n", "\t\t\t\t\t\t", 
+           RowBox[{"PlotStyle", " ", "\[Rule]", " ", "Black"}], ",", "\n", 
+           "\t\t\t\t\t\t", 
+           RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+           "\n", "\t\t\t\t\t\t", 
+           RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+            RowBox[{"{", 
+             RowBox[{"\"\<qubits\>\"", ",", " ", "\"\<runtime (s)\>\""}], 
+             "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+           RowBox[{"GridLines", " ", "\[Rule]", " ", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", "}"}], ",", " ", 
+              RowBox[{"{", 
+               RowBox[{"1", ",", " ", "2"}], "}"}]}], "}"}]}], ",", "\n", 
+           "\t\t\t\t\t\t", 
+           RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}]}], "\n", 
+          "\t\t\t\t\t", "]"}]}], "\n", "\t", "}"}], "}"}], "\n", "\t", 
+      "]"}]}], "\n", "]"}], ",", "\n", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"numThreads", ",", "16"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2", ",", "4", ",", "8", ",", "16"}], "}"}]}], 
+    "}"}]}], "\n", "]"}]], "Code",
+ CellChangeTimes->{{3.721126170328288*^9, 3.721126235804308*^9}, {
+  3.721126316013939*^9, 3.721126324680855*^9}, {3.7211263681981087`*^9, 
+  3.721126397301202*^9}, {3.721126469229659*^9, 3.721126481725099*^9}, {
+  3.721126524001656*^9, 3.7211265356345243`*^9}, {3.7211265797685623`*^9, 
+  3.721126611347084*^9}, {3.7211266489172297`*^9, 3.721126704805503*^9}, {
+  3.721127378131692*^9, 3.7211273888891363`*^9}, {3.721127422598723*^9, 
+  3.721127596403466*^9}, {3.72112778166569*^9, 3.7211279207640676`*^9}, {
+  3.7211280442791433`*^9, 3.721128068902269*^9}, {3.7214643306041*^9, 
+  3.721464339754119*^9}, {3.721464385039996*^9, 3.72146438767978*^9}, {
+  3.721464432700081*^9, 3.7214644636660767`*^9}, {3.721464650512567*^9, 
+  3.7214647125585012`*^9}},ExpressionUUID->"ce96f5cb-1208-4819-8fdb-\
+ec47c7b563c6"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`numThreads$$ = 16, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`numThreads$$], 16}, {1, 2, 4, 8, 16}}}, 
+    Typeset`size$$ = {729., {125.134033203125, 130.865966796875}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`numThreads$89345$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`numThreads$$ = 16}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`numThreads$$, $CellContext`numThreads$89345$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      With[{$CellContext`imsize = Medium, $CellContext`projectQDurs = N[
+           Table[
+            Mean[
+             Get[
+              $CellContext`getFilename[
+              "instMode5_results", "ProjectQ", $CellContext`numThreads$$, 
+               100, $CellContext`numQubits]][
+             "durations"]], {$CellContext`numQubits, 15, 
+             30}]], $CellContext`questDurs = N[
+           Table[
+            Mean[
+             Get[
+              $CellContext`getFilename[
+              "QuEST", $CellContext`numThreads$$, 
+               100, $CellContext`numQubits]][
+             "durations"]], {$CellContext`numQubits, 15, 30}]]}, 
+        Grid[{{
+           ListLogPlot[{
+             Transpose[{
+               Range[15, 30], $CellContext`projectQDurs}], 
+             Transpose[{
+               Range[15, 30], $CellContext`questDurs}]}, PlotStyle -> Dashed, 
+            PlotMarkers -> Automatic, AxesLabel -> {"qubits", "runtime (s)"}, 
+            Filling -> {1 -> {2}}, ImageSize -> $CellContext`imsize, 
+            PlotLegends -> Placed[{"ProjectQ", "QuEST"}, Above]], 
+           ListLogPlot[
+            Transpose[{
+              Range[
+              15, 30], $CellContext`projectQDurs/$CellContext`questDurs}], 
+            PlotStyle -> Black, PlotMarkers -> Automatic, 
+            AxesLabel -> {"qubits", "runtime (s)"}, GridLines -> {{}, {1, 2}},
+             ImageSize -> $CellContext`imsize]}}]], 
+      "Specifications" :> {{{$CellContext`numThreads$$, 16}, {1, 2, 4, 8, 
+         16}}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{774., {170., 176.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.7211275096951447`*^9, 3.721127535449265*^9}, 
+   3.7211275972522078`*^9, {3.721127793976425*^9, 3.721127921076769*^9}, {
+   3.721128048198576*^9, 3.721128069970417*^9}, 3.721128421490705*^9, 
+   3.721464340825425*^9, 3.721464388380013*^9, {3.7214644333213*^9, 
+   3.721464464636299*^9}, {3.721464651139224*^9, 
+   3.721464714042448*^9}},ExpressionUUID->"f80628fa-e919-475f-8d4d-\
+ce3d42e14092"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"instMode5_results\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \\\"100\\\
+\", \\\",\\\", \\\"15\\\"}], \\\"]\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"",2,22,6,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7214758988160543`*^9},ExpressionUUID->"6b721e0c-3d94-48e8-baf7-\
+0c7b1fcc2eb6"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"instMode5_results\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \\\"100\\\
+\", \\\",\\\", \\\"16\\\"}], \\\"]\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"",2,22,7,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.72147589885261*^9},ExpressionUUID->"813f0616-ca4b-45c0-8e84-43b1dbbb5625"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"instMode5_results\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \\\"100\\\
+\", \\\",\\\", \\\"17\\\"}], \\\"]\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"",2,22,8,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7214758989047337`*^9},ExpressionUUID->"77fc13ba-ec3f-4abe-9e4d-\
+19d465858b92"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Get\\\", \\\"::\\\", \\\
+\"stream\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,22,9,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721475898953333*^9},ExpressionUUID->"b5911c51-731d-4a5b-9f50-\
+5c9c0b68420f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"instMode5_results\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \\\"100\\\
+\", \\\",\\\", \\\"15\\\"}], \\\"]\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"",2,27,23,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721476185783634*^9},ExpressionUUID->"e8024951-1f79-462e-9288-\
+3432bb908eb2"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"instMode5_results\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \\\"100\\\
+\", \\\",\\\", \\\"16\\\"}], \\\"]\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"",2,27,24,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721476185837078*^9},ExpressionUUID->"2e8c8095-5dd8-4f51-8d05-\
+2ebb40e257c4"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"instMode5_results\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \\\"100\\\
+\", \\\",\\\", \\\"17\\\"}], \\\"]\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"",2,27,25,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721476185894264*^9},ExpressionUUID->"767e724b-a6d5-46f6-9ab1-\
+db7d612b4e39"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Get\\\", \\\"::\\\", \\\
+\"stream\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,27,26,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721476185915564*^9},ExpressionUUID->"ce103801-a7ff-478d-83e3-\
+ec2d9bd2575f"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["limited comparison of QuEST, ProjectQ", "Section",
+ CellChangeTimes->{{3.721461704873822*^9, 3.7214617156064672`*^9}, {
+  3.721461837631648*^9, 
+  3.7214618387873173`*^9}},ExpressionUUID->"00c38c55-dfbb-4034-b48a-\
+f47157749d89"],
+
+Cell[CellGroupData[{
+
+Cell["gate_fusion=True, localopt=5  and using GNU gcc ", "Subsection",
+ CellChangeTimes->{{3.721461722615861*^9, 3.721461747032261*^9}, {
+  3.721461841753603*^9, 3.721461853860097*^9}, {3.721461896415485*^9, 
+  3.72146189828176*^9}},ExpressionUUID->"7fc8755d-d301-4bf6-b57b-\
+13d592488043"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"With", "[", "\n", "\t", 
+  RowBox[{
+   RowBox[{"{", "\n", "\t\t", 
+    RowBox[{
+     RowBox[{"threadVals", " ", "=", " ", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", " ", "16"}], "}"}]}], ",", "\n", "\t\t", 
+     RowBox[{"circuitDepth", " ", "=", " ", "100"}], ",", "\n", "\t\t", 
+     RowBox[{"pydir", " ", "=", " ", "\"\<instMode6_results\>\""}], ",", "\n",
+      "\t\t", 
+     RowBox[{"cdir", " ", "=", " ", "\"\<newgcc_results\>\""}], ",", "\n", 
+     "\t\t", 
+     RowBox[{"qubitRange", " ", "=", " ", 
+      RowBox[{"Range", "[", 
+       RowBox[{"1", ",", "30"}], "]"}]}]}], "\n", "\t", "}"}], ",", "\n", 
+   "\t", 
+   RowBox[{"Manipulate", "[", "\n", "\t\t", 
+    RowBox[{
+     RowBox[{"With", "[", "\n", "\t\t\t", 
+      RowBox[{
+       RowBox[{"{", "\n", "\t\t\t\t", 
+        RowBox[{
+         RowBox[{"imsize", " ", "=", " ", "Medium"}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"projectQDurs", " ", "=", " ", 
+          RowBox[{"N", " ", "@", " ", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"Mean", " ", "@", " ", 
+              RowBox[{
+               RowBox[{"Get", "[", 
+                RowBox[{"getFilename", "[", 
+                 RowBox[{
+                 "pydir", ",", " ", "\"\<ProjectQ\>\"", ",", " ", 
+                  "numThreads", ",", " ", "circuitDepth", ",", " ", 
+                  "numQubits"}], "]"}], "]"}], "[", "\"\<durations\>\"", 
+               "]"}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"questDurs", " ", "=", " ", 
+          RowBox[{"N", " ", "@", " ", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"Mean", " ", "@", " ", 
+              RowBox[{
+               RowBox[{"Get", "[", 
+                RowBox[{"getFilename", "[", 
+                 RowBox[{
+                 "cdir", ",", " ", "\"\<QuEST\>\"", ",", " ", "numThreads", 
+                  ",", " ", "circuitDepth", ",", " ", "numQubits"}], "]"}], 
+                "]"}], "[", "\"\<durations\>\"", "]"}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"projectQDurSD", " ", "=", " ", 
+          RowBox[{"N", " ", "@", " ", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"StandardDeviation", " ", "@", " ", 
+              RowBox[{
+               RowBox[{"Get", "[", 
+                RowBox[{"getFilename", "[", 
+                 RowBox[{
+                 "pydir", ",", " ", "\"\<ProjectQ\>\"", ",", " ", 
+                  "numThreads", ",", " ", "circuitDepth", ",", " ", 
+                  "numQubits"}], "]"}], "]"}], "[", "\"\<durations\>\"", 
+               "]"}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"questDurSD", " ", "=", " ", 
+          RowBox[{"N", " ", "@", " ", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"StandardDeviation", " ", "@", " ", 
+              RowBox[{
+               RowBox[{"Get", "[", 
+                RowBox[{"getFilename", "[", 
+                 RowBox[{
+                 "cdir", ",", " ", "\"\<QuEST\>\"", ",", " ", "numThreads", 
+                  ",", " ", "circuitDepth", ",", " ", "numQubits"}], "]"}], 
+                "]"}], "[", "\"\<durations\>\"", "]"}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"projectQMems", " ", "=", " ", 
+          RowBox[{"N", " ", "@", " ", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"1000", " ", "*", " ", 
+              RowBox[{"Mean", " ", "@", " ", 
+               RowBox[{
+                RowBox[{"Get", "[", 
+                 RowBox[{"getFilename", "[", 
+                  RowBox[{
+                  "pydir", ",", " ", "\"\<ProjectQ\>\"", ",", " ", 
+                   "numThreads", ",", " ", "circuitDepth", ",", " ", 
+                   "numQubits"}], "]"}], "]"}], "[", 
+                "\"\<currRealMemories\>\"", "]"}]}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"questMems", " ", "=", " ", 
+          RowBox[{"N", " ", "@", " ", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"Mean", " ", "@", " ", 
+              RowBox[{
+               RowBox[{"Get", "[", 
+                RowBox[{"getFilename", "[", 
+                 RowBox[{
+                 "cdir", ",", " ", "\"\<QuEST\>\"", ",", " ", "numThreads", 
+                  ",", " ", "circuitDepth", ",", " ", "numQubits"}], "]"}], 
+                "]"}], "[", "\"\<currRealMemories\>\"", "]"}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"projectQErrors", " ", "=", " ", 
+          RowBox[{"N", " ", "@", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"Mean", " ", "@", " ", 
+              RowBox[{
+               RowBox[{"Get", "[", 
+                RowBox[{"getFilename", "[", 
+                 RowBox[{
+                 "pydir", ",", " ", "\"\<ProjectQ\>\"", ",", " ", 
+                  "numThreads", ",", " ", "circuitDepth", ",", " ", 
+                  "numQubits"}], "]"}], "]"}], "[", "\"\<normErrors\>\"", 
+               "]"}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}], ",", "\n", "\t\t\t\t", 
+         RowBox[{"questErrors", " ", "=", " ", 
+          RowBox[{"N", " ", "@", " ", 
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"Mean", " ", "@", " ", 
+              RowBox[{
+               RowBox[{"Get", "[", 
+                RowBox[{"getFilename", "[", 
+                 RowBox[{
+                 "cdir", ",", " ", "\"\<QuEST\>\"", ",", " ", "numThreads", 
+                  ",", " ", "circuitDepth", ",", " ", "numQubits"}], "]"}], 
+                "]"}], "[", "\"\<normErrors\>\"", "]"}]}], ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"numQubits", ",", " ", "qubitRange"}], "}"}]}], 
+            "]"}]}]}]}], "\n", "\t\t\t ", "}"}], ",", "\n", "\t\t\t", 
+       RowBox[{"Grid", "[", 
+        RowBox[{"{", "\n", "\t\t\t\t", 
+         RowBox[{
+          RowBox[{"{", "\n", "\t\t\t\t\t", 
+           RowBox[{
+            RowBox[{"ListLogPlot", "[", "\n", "\t\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", "projectQDurs"}], "}"}], 
+                 "]"}], ",", "\n", "\t\t\t\t\t\t", 
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", "questDurs"}], "}"}], 
+                 "]"}]}], "}"}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"PlotStyle", " ", "\[Rule]", " ", "Dashed"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"\"\<qubits\>\"", ",", " ", "\"\<runtime (s)\>\""}], 
+                "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"Filling", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"1", " ", "\[Rule]", " ", 
+                 RowBox[{"{", "2", "}"}]}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"PlotLegends", " ", "\[Rule]", " ", 
+               RowBox[{"Placed", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"\"\<ProjectQ\>\"", ",", " ", "\"\<QuEST\>\""}], 
+                  "}"}], ",", "Above"}], "]"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}]}], "\n", 
+             "\t\t\t\t\t\t", 
+             RowBox[{"(*", " ", 
+              RowBox[{
+              "PlotLabel", " ", "\[Rule]", " ", "\"\<Performance\>\""}], " ", 
+              "*)"}], "\n", "\t\t\t\t\t", "]"}], ",", "\n", "\t\t\t\t\t", 
+            RowBox[{"ListLogPlot", "[", "\n", "\t\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"Transpose", "[", 
+               RowBox[{"{", 
+                RowBox[{"qubitRange", ",", " ", 
+                 RowBox[{"projectQDurs", "/", "questDurs"}]}], "}"}], "]"}], 
+              ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"PlotStyle", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"Dashed", ",", " ", "Black"}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"\"\<qubits\>\"", ",", " ", "\"\<runtime ratio\>\""}],
+                 "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{"PlotLegends", " ", "\[Rule]", " ", 
+               RowBox[{"Placed", "[", 
+                RowBox[{
+                 RowBox[{"{", "\"\<ProjectQ / QuEST\>\"", "}"}], ",", " ", 
+                 "Above"}], "]"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"GridLines", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", "}"}], ",", " ", 
+                 RowBox[{"{", 
+                  RowBox[{"1", ",", " ", "2"}], "}"}]}], "}"}]}]}], "\n", 
+             "\t\t\t\t\t", "]"}], ",", "\n", "\t\t\t\t\t", 
+            RowBox[{"ListLogPlot", "[", "\n", "\t\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", "projectQDurSD"}], "}"}], 
+                 "]"}], ",", "\n", "\t\t\t\t\t\t", 
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", "questDurSD"}], "}"}], 
+                 "]"}]}], "}"}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"PlotStyle", " ", "\[Rule]", " ", "Dashed"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{
+                "\"\<qubits\>\"", ",", " ", "\"\<sd(runtime) (s)\>\""}], 
+                "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"Filling", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"1", " ", "\[Rule]", " ", 
+                 RowBox[{"{", "2", "}"}]}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"PlotLegends", " ", "\[Rule]", " ", 
+               RowBox[{"Placed", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"\"\<ProjectQ\>\"", ",", " ", "\"\<QuEST\>\""}], 
+                  "}"}], ",", "Above"}], "]"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{
+              "PlotLabel", " ", "\[Rule]", " ", 
+               "\"\<standard deviation of runtime\>\""}]}], "\n", 
+             "\t\t\t\t\t", "]"}], ","}], "\n", "\t\t\t\t", "}"}], ",", "\n", 
+          "\t\t\t\t", 
+          RowBox[{"{", "\n", "\t\t\t\t\t", 
+           RowBox[{
+            RowBox[{"ListLogPlot", "[", "\n", "\t\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", 
+                   RowBox[{"projectQMems", "/", 
+                    RowBox[{"10", "^", "9"}]}]}], "}"}], "]"}], ",", "\n", 
+                "\t\t\t\t\t\t", 
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", 
+                   RowBox[{"questMems", "/", 
+                    RowBox[{"10", "^", "9"}]}]}], "}"}], "]"}]}], "}"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"PlotStyle", " ", "\[Rule]", " ", "Dashed"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"\"\<qubits\>\"", ",", " ", "\"\<memory (GB)\>\""}], 
+                "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"Filling", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"1", " ", "\[Rule]", " ", 
+                 RowBox[{"{", "2", "}"}]}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{
+              "PlotLabel", " ", "\[Rule]", " ", 
+               "\"\<Memory consumption (after allocation)\>\""}]}], "\n", 
+             "\t\t\t\t\t", "]"}], ",", "\n", "\t\t\t\t\t", 
+            RowBox[{"ListLogPlot", "[", "\n", "\t\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"Transpose", "[", 
+               RowBox[{"{", 
+                RowBox[{"qubitRange", ",", " ", 
+                 RowBox[{"projectQMems", "/", "questMems"}]}], "}"}], "]"}], 
+              ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"\"\<qubits\>\"", ",", " ", "\"\<memory ratio\>\""}], 
+                "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{"PlotStyle", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"Dashed", ",", " ", "Black"}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"GridLines", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", "}"}], ",", " ", 
+                 RowBox[{"{", "1", "}"}]}], "}"}]}]}], "\n", "\t\t\t\t\t", 
+             "]"}]}], "\n", "\t\t\t\t", "}"}], ",", "\n", "\t\t\t\t", 
+          RowBox[{"{", "\n", "\t\t\t\t\t", 
+           RowBox[{
+            RowBox[{"ListLinePlot", "[", "\n", "\t\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", "projectQErrors"}], "}"}], 
+                 "]"}], ",", "\n", "\t\t\t\t\t\t", 
+                RowBox[{"Transpose", "[", 
+                 RowBox[{"{", 
+                  RowBox[{"qubitRange", ",", " ", "questErrors"}], "}"}], 
+                 "]"}]}], "}"}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{
+                "\"\<qubits\>\"", ",", " ", 
+                 "\"\<1 - |\[Psi]\!\(\*SuperscriptBox[\(|\), \(2\)]\)\>\""}], 
+                "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"Filling", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"2", " ", "\[Rule]", " ", 
+                 RowBox[{"{", "1", "}"}]}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"Joined", " ", "\[Rule]", " ", "False"}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{"PlotRange", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"0", ",", " ", "Automatic"}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{
+              "PlotLabel", " ", "\[Rule]", " ", 
+               "\"\<Normalisation Error\>\""}]}], "\n", "\t\t\t\t\t", "]"}], 
+            ",", "\n", "\t\t\t\t\t", 
+            RowBox[{"ListLinePlot", "[", "\n", "\t\t\t\t\t\t", 
+             RowBox[{
+              RowBox[{"Transpose", "[", 
+               RowBox[{"{", 
+                RowBox[{"qubitRange", ",", " ", 
+                 RowBox[{"projectQErrors", "/", "questErrors"}]}], "}"}], 
+               "]"}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"PlotMarkers", " ", "\[Rule]", " ", "Automatic"}], ",", 
+              "\n", "\t\t\t\t\t\t", 
+              RowBox[{"AxesLabel", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"\"\<qubits\>\"", ",", " ", "\"\<error ratio\>\""}], 
+                "}"}]}], ",", "\n", "\t\t\t\t\t\t", 
+              RowBox[{"Joined", " ", "\[Rule]", " ", "False"}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"ImageSize", " ", "\[Rule]", " ", "imsize"}], ",", "\n",
+               "\t\t\t\t\t\t", 
+              RowBox[{"PlotRange", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"0", ",", " ", "Automatic"}], "}"}]}], ",", "\n", 
+              "\t\t\t\t\t\t", 
+              RowBox[{"PlotStyle", " ", "\[Rule]", " ", 
+               RowBox[{"{", 
+                RowBox[{"Dashed", ",", " ", "Black"}], "}"}]}]}], "\n", 
+             "\t\t\t\t\t", "]"}]}], "\n", "\t\t\t\t", "}"}]}], "}"}], "\n", 
+        "\t\t\t", "]"}]}], "\n", "\t\t", "]"}], ",", "\n", "\t\t", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"numThreads", ",", " ", "16"}], "}"}], ",", " ", 
+       "threadVals"}], "}"}], ",", "\n", "\t\t", 
+     RowBox[{"ContinuousAction", " ", "\[Rule]", " ", "False"}]}], "\n", "\t",
+     "]"}]}], "\n", "]"}]], "Code",
+ CellChangeTimes->{
+  3.72094521387598*^9, {3.720945244552471*^9, 3.720945308702098*^9}, {
+   3.7209454365302763`*^9, 3.720945472298861*^9}, {3.720945529830017*^9, 
+   3.720945530138376*^9}, {3.720945562691909*^9, 3.720945565170491*^9}, {
+   3.720945647359283*^9, 3.72094568917447*^9}, {3.7209457496745377`*^9, 
+   3.72094591846397*^9}, {3.720945990372806*^9, 3.7209460103943577`*^9}, {
+   3.720946071366345*^9, 3.720946083465419*^9}, {3.720946316938596*^9, 
+   3.720946321348361*^9}, {3.7209463577371187`*^9, 3.72094638759899*^9}, {
+   3.7209464653918953`*^9, 3.720946468073018*^9}, {3.720946974433565*^9, 
+   3.72094699787681*^9}, {3.7209470882899523`*^9, 3.72094719361998*^9}, {
+   3.720947244723193*^9, 3.720947372609483*^9}, {3.72094742586252*^9, 
+   3.7209474594053097`*^9}, {3.720947506187799*^9, 3.720947613478202*^9}, {
+   3.7209476949199047`*^9, 3.720947715130167*^9}, {3.720947926007071*^9, 
+   3.720947926520122*^9}, {3.720947969540495*^9, 3.7209479698641233`*^9}, {
+   3.720948171255728*^9, 3.7209481811804*^9}, {3.7209482273730707`*^9, 
+   3.720948236848885*^9}, {3.720948413516474*^9, 3.7209484566471663`*^9}, {
+   3.720948500803835*^9, 3.7209485013399763`*^9}, {3.7209485594007196`*^9, 
+   3.7209485821612663`*^9}, {3.7209488126944017`*^9, 3.720948814410956*^9}, {
+   3.720948848602313*^9, 3.7209488853600693`*^9}, {3.720948990060112*^9, 
+   3.720949030816258*^9}, {3.720949097245635*^9, 3.7209491355382633`*^9}, {
+   3.720949256086546*^9, 3.720949259922347*^9}, {3.720952206270293*^9, 
+   3.720952209250499*^9}, {3.720952718504924*^9, 3.720952762624136*^9}, {
+   3.7209588188166523`*^9, 3.720958907204297*^9}, {3.7209589496038523`*^9, 
+   3.720959084798711*^9}, {3.720959158295991*^9, 3.7209591783768997`*^9}, {
+   3.720959475594871*^9, 3.720959488770133*^9}, {3.720960215540763*^9, 
+   3.720960272803506*^9}, {3.720960350173805*^9, 3.720960351518962*^9}, {
+   3.720960388754076*^9, 3.720960453237102*^9}, {3.720960486765213*^9, 
+   3.720960650220997*^9}, {3.720960698275015*^9, 3.720960699844013*^9}, {
+   3.7209608202776117`*^9, 3.7209608483746443`*^9}, {3.720960884614821*^9, 
+   3.720960894316987*^9}, {3.720960929692533*^9, 3.720960942813067*^9}, {
+   3.721030995704624*^9, 3.721030996195551*^9}, {3.721031102859192*^9, 
+   3.72103110392338*^9}, {3.721032314779229*^9, 3.721032315782524*^9}, {
+   3.72103277148389*^9, 3.7210327728330584`*^9}, {3.721033013219002*^9, 
+   3.721033058376461*^9}, {3.7210581065705547`*^9, 3.721058133720853*^9}, {
+   3.721058795647849*^9, 3.721058803878023*^9}, {3.721068314265798*^9, 
+   3.721068337275257*^9}, {3.721461914476512*^9, 3.7214620016811028`*^9}, {
+   3.7214621821969833`*^9, 3.721462201791972*^9}, {3.721462259053402*^9, 
+   3.721462260723249*^9}, {3.7214623520103893`*^9, 3.721462361440404*^9}, 
+   3.721462409566929*^9, {3.721463341376481*^9, 3.721463341490376*^9}, 
+   3.721463680556612*^9},ExpressionUUID->"4dc1f321-809d-4a1c-9feb-\
+c9ef11977e0d"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`numThreads$$ = 16, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`numThreads$$], 16}, {1, 16}}}, Typeset`size$$ = {
+    1111., {375.634033203125, 381.365966796875}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`numThreads$73915$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`numThreads$$ = 16}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`numThreads$$, $CellContext`numThreads$73915$$, 
+         False]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      With[{$CellContext`imsize$ = Medium, $CellContext`projectQDurs$ = N[
+           Table[
+            Mean[
+             Get[
+              $CellContext`getFilename[
+              "instMode6_results", "ProjectQ", $CellContext`numThreads$$, 
+               100, $CellContext`numQubits]][
+             "durations"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 6, 7, 8, 
+             9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 
+             25, 26, 27, 28, 29, 30}}]], $CellContext`questDurs$ = N[
+           Table[
+            Mean[
+             Get[
+              $CellContext`getFilename[
+              "newgcc_results", "QuEST", $CellContext`numThreads$$, 
+               100, $CellContext`numQubits]][
+             "durations"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 6, 7, 8, 
+             9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 
+             25, 26, 27, 28, 29, 30}}]], $CellContext`projectQDurSD$ = N[
+           Table[
+            StandardDeviation[
+             Get[
+              $CellContext`getFilename[
+              "instMode6_results", "ProjectQ", $CellContext`numThreads$$, 
+               100, $CellContext`numQubits]][
+             "durations"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 6, 7, 8, 
+             9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 
+             25, 26, 27, 28, 29, 30}}]], $CellContext`questDurSD$ = N[
+           Table[
+            StandardDeviation[
+             Get[
+              $CellContext`getFilename[
+              "newgcc_results", "QuEST", $CellContext`numThreads$$, 
+               100, $CellContext`numQubits]][
+             "durations"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 6, 7, 8, 
+             9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 
+             25, 26, 27, 28, 29, 30}}]], $CellContext`projectQMems$ = N[
+           Table[1000 Mean[
+              Get[
+               $CellContext`getFilename[
+               "instMode6_results", "ProjectQ", $CellContext`numThreads$$, 
+                100, $CellContext`numQubits]][
+              "currRealMemories"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 
+             6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 
+             23, 24, 25, 26, 27, 28, 29, 30}}]], $CellContext`questMems$ = N[
+           Table[
+            Mean[
+             Get[
+              $CellContext`getFilename[
+              "newgcc_results", "QuEST", $CellContext`numThreads$$, 
+               100, $CellContext`numQubits]][
+             "currRealMemories"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 6,
+              7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,
+              24, 25, 26, 27, 28, 29, 30}}]], $CellContext`projectQErrors$ = N[
+           Table[
+            Mean[
+             Get[
+              $CellContext`getFilename[
+              "instMode6_results", "ProjectQ", $CellContext`numThreads$$, 
+               100, $CellContext`numQubits]][
+             "normErrors"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 6, 7, 8,
+              9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 
+             25, 26, 27, 28, 29, 30}}]], $CellContext`questErrors$ = N[
+           Table[
+            Mean[
+             Get[
+              $CellContext`getFilename[
+              "newgcc_results", "QuEST", $CellContext`numThreads$$, 
+               100, $CellContext`numQubits]][
+             "normErrors"]], {$CellContext`numQubits, {1, 2, 3, 4, 5, 6, 7, 8,
+              9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 
+             25, 26, 27, 28, 29, 30}}]]}, 
+        Grid[{{
+           ListLogPlot[{
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`projectQDurs$}], 
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`questDurs$}]}, PlotStyle -> Dashed, 
+            PlotMarkers -> Automatic, AxesLabel -> {"qubits", "runtime (s)"}, 
+            Filling -> {1 -> {2}}, PlotLegends -> 
+            Placed[{"ProjectQ", "QuEST"}, Above], 
+            ImageSize -> $CellContext`imsize$], 
+           ListLogPlot[
+            
+            Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+               17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+              30}, $CellContext`projectQDurs$/$CellContext`questDurs$}], 
+            PlotStyle -> {Dashed, Black}, PlotMarkers -> Automatic, 
+            AxesLabel -> {"qubits", "runtime ratio"}, 
+            ImageSize -> $CellContext`imsize$, PlotLegends -> 
+            Placed[{"ProjectQ / QuEST"}, Above], GridLines -> {{}, {1, 2}}], 
+           ListLogPlot[{
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`projectQDurSD$}], 
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`questDurSD$}]}, PlotStyle -> Dashed, 
+            PlotMarkers -> Automatic, 
+            AxesLabel -> {"qubits", "sd(runtime) (s)"}, Filling -> {1 -> {2}},
+             PlotLegends -> Placed[{"ProjectQ", "QuEST"}, Above], 
+            ImageSize -> $CellContext`imsize$, PlotLabel -> 
+            "standard deviation of runtime"], Null}, {
+           ListLogPlot[{
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`projectQMems$/10^9}], 
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`questMems$/10^9}]}, PlotStyle -> Dashed, 
+            PlotMarkers -> Automatic, AxesLabel -> {"qubits", "memory (GB)"}, 
+            Filling -> {1 -> {2}}, ImageSize -> $CellContext`imsize$, 
+            PlotLabel -> "Memory consumption (after allocation)"], 
+           ListLogPlot[
+            
+            Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+               17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+              30}, $CellContext`projectQMems$/$CellContext`questMems$}], 
+            PlotMarkers -> Automatic, AxesLabel -> {"qubits", "memory ratio"},
+             ImageSize -> $CellContext`imsize$, PlotStyle -> {Dashed, Black}, 
+            GridLines -> {{}, {1}}]}, {
+           ListLinePlot[{
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`projectQErrors$}], 
+             
+             Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
+               16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+               30}, $CellContext`questErrors$}]}, PlotMarkers -> Automatic, 
+            AxesLabel -> {
+             "qubits", "1 - |\[Psi]\!\(\*SuperscriptBox[\(|\), \(2\)]\)"}, 
+            Filling -> {2 -> {1}}, Joined -> False, 
+            ImageSize -> $CellContext`imsize$, PlotRange -> {0, Automatic}, 
+            PlotLabel -> "Normalisation Error"], 
+           ListLinePlot[
+            
+            Transpose[{{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+               17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 
+              30}, $CellContext`projectQErrors$/$CellContext`questErrors$}], 
+            PlotMarkers -> Automatic, AxesLabel -> {"qubits", "error ratio"}, 
+            Joined -> False, ImageSize -> $CellContext`imsize$, 
+            PlotRange -> {0, Automatic}, PlotStyle -> {Dashed, Black}]}}]], 
+      "Specifications" :> {{{$CellContext`numThreads$$, 16}, {1, 16}}}, 
+      "Options" :> {ContinuousAction -> False}, "DefaultOptions" :> {}],
+     ImageSizeCache->{1156., {420., 426.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.721462014289461*^9, 3.7214620434826593`*^9}, {
+   3.721462141137072*^9, 3.721462141334594*^9}, 3.721462202836956*^9, 
+   3.721462262497179*^9, 3.72146236801019*^9, 3.721462410473196*^9, 
+   3.7214633421770678`*^9, 
+   3.7214636813908253`*^9},ExpressionUUID->"a9222142-d138-41e3-a7d1-\
+28fefa108787"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","noopen",
+   "\"Cannot open \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"C/newgcc_results/ARC_QuEST/threads1/depth100/\
+qubits26.txt\\\\\\\"\\\"}]\\).\"",2,70,70,28669836882109473454,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.72146418990062*^9},ExpressionUUID->"deb567c5-0192-407c-a008-42551682d69e"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","noopen",
+   "\"Cannot open \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"C/newgcc_results/ARC_QuEST/threads1/depth100/\
+qubits27.txt\\\\\\\"\\\"}]\\).\"",2,70,71,28669836882109473454,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721464189917645*^9},ExpressionUUID->"98e54151-76d8-44db-aa9e-\
+bdb50dfc15fd"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","noopen",
+   "\"Cannot open \
+\\!\\(\\*RowBox[{\\\"\\\\\\\"C/newgcc_results/ARC_QuEST/threads1/depth100/\
+qubits28.txt\\\\\\\"\\\"}]\\).\"",2,70,72,28669836882109473454,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.72146418993469*^9},ExpressionUUID->"26603281-aecb-4cd9-8d32-fba4b5bcf4e9"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Get\\\", \\\"::\\\", \\\
+\"noopen\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,70,73,28669836882109473454,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.72146418995019*^9},ExpressionUUID->"dc85d40d-8734-453e-b5a2-42c1885775da"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"instMode6_results\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \\\"100\\\
+\", \\\",\\\", \\\"1\\\"}], \\\"]\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"",2,22,10,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721475899139585*^9},ExpressionUUID->"afbc24a7-e589-4aea-8c20-\
+22208a27d4ab"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"instMode6_results\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \\\"100\\\
+\", \\\",\\\", \\\"2\\\"}], \\\"]\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"",2,22,11,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721475899155151*^9},ExpressionUUID->"ffb89273-d33c-4d4d-9a6b-\
+6ce66de57b90"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"instMode6_results\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \\\"100\\\
+\", \\\",\\\", \\\"3\\\"}], \\\"]\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"",2,22,12,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7214758991675663`*^9},ExpressionUUID->"c4d57a62-bdc4-4f17-9af7-\
+150beeed3b4c"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Get\\\", \\\"::\\\", \\\
+\"stream\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,22,13,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.72147589917988*^9},ExpressionUUID->"689a2ebc-1bb7-4123-a449-40357adf1557"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"instMode6_results\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \\\"100\\\
+\", \\\",\\\", \\\"1\\\"}], \\\"]\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"",2,23,14,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721475929972061*^9},ExpressionUUID->"638def6f-75ac-4907-a9f8-\
+ecd56199c639"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"instMode6_results\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \\\"100\\\
+\", \\\",\\\", \\\"2\\\"}], \\\"]\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"",2,23,15,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721475929983345*^9},ExpressionUUID->"dfd8e935-119a-480d-abf3-\
+ba3ac47f1f3c"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"instMode6_results\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \\\"100\\\
+\", \\\",\\\", \\\"3\\\"}], \\\"]\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"",2,23,16,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7214759299973383`*^9},ExpressionUUID->"cdee1328-feb8-4d48-923a-\
+c772e30d6c6f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Get\\\", \\\"::\\\", \\\
+\"stream\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,23,17,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721475930011817*^9},ExpressionUUID->"9e001478-2bed-43a0-a6de-\
+ed949764f6a9"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"instMode6_results\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \\\"100\\\
+\", \\\",\\\", \\\"1\\\"}], \\\"]\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"",2,24,18,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721475931911111*^9},ExpressionUUID->"5e79b432-6cbc-4947-a403-\
+cacb86f89611"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"instMode6_results\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \\\"100\\\
+\", \\\",\\\", \\\"2\\\"}], \\\"]\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"",2,24,19,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721475931924621*^9},ExpressionUUID->"3d7171d5-64af-4a52-b110-\
+e49b679e9830"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Get","stream",
+   "\"\\!\\(\\*RowBox[{\\\"Global`getFilename\\\", \\\"[\\\", \
+RowBox[{\\\"\\\\\\\"instMode6_results\\\\\\\"\\\", \\\",\\\", \
+\\\"\\\\\\\"ProjectQ\\\\\\\"\\\", \\\",\\\", \\\"16\\\", \\\",\\\", \\\"100\\\
+\", \\\",\\\", \\\"3\\\"}], \\\"]\\\"}]\\) is not a string, SocketObject, \
+InputStream[ ], or OutputStream[ ].\"",2,24,20,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.7214759319359217`*^9},ExpressionUUID->"f5452909-fc21-4b17-8c7c-\
+de1b58d65539"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Get\\\", \\\"::\\\", \\\
+\"stream\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,24,21,28669952901389394401,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{
+  3.721475932005498*^9},ExpressionUUID->"41f8397a-b9f1-4a6a-a567-\
+321e87e59f9b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{720, 775},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[400, 13, 461, 10, 73, "Input",ExpressionUUID->"10d8c966-fa4f-4b92-b54d-b3f10847ce88"],
+Cell[CellGroupData[{
+Cell[886, 27, 201, 4, 30, "Input",ExpressionUUID->"73adbe0e-f7cb-4082-adc1-f4886654a42e"],
+Cell[1090, 33, 244, 4, 34, "Output",ExpressionUUID->"0e2daff2-5f22-46d1-a111-be4203cad28a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1371, 42, 432, 10, 30, "Input",ExpressionUUID->"136363a3-435b-4522-918a-66d875e5b8d8"],
+Cell[1806, 54, 2384, 48, 292, "Output",ExpressionUUID->"b0880804-938f-4d77-8409-0fcff3da6f1a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4227, 107, 372, 8, 30, "Input",ExpressionUUID->"879ae2a9-863b-404f-83d4-2c1c8f0ad0ae"],
+Cell[4602, 117, 2888, 58, 399, "Output",ExpressionUUID->"b57db019-e16b-4b3e-aa02-b8636f701586"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7527, 180, 190, 3, 67, "Section",ExpressionUUID->"a2bb3b4f-a345-4ab0-bca6-6c3efd6d2afe"],
+Cell[CellGroupData[{
+Cell[7742, 187, 3809, 81, 547, "Code",ExpressionUUID->"8b54b01d-e12a-49e4-b072-199ccea6ffa0"],
+Cell[11554, 270, 3342, 67, 385, "Output",ExpressionUUID->"114a0480-cb18-478a-a255-b082337d5ecf"],
+Cell[14899, 339, 639, 13, 42, "Message",ExpressionUUID->"e64999d8-c724-4bdf-b316-4feb9678e02d"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15587, 358, 187, 3, 67, "Section",ExpressionUUID->"7030a006-087e-4f0f-9f2f-52e2d9a46aef"],
+Cell[CellGroupData[{
+Cell[15799, 365, 227, 5, 54, "Subsection",ExpressionUUID->"37de60b4-50d1-4d8f-b627-b93399464a1a"],
+Cell[CellGroupData[{
+Cell[16051, 374, 20904, 427, 1972, "Code",ExpressionUUID->"a7370b33-71ce-4b85-bab4-ea28aca576fc"],
+Cell[36958, 803, 10520, 201, 895, "Output",ExpressionUUID->"746b37cf-9395-425a-adc1-67784c918c3d"],
+Cell[47481, 1006, 497, 11, 24, "Message",ExpressionUUID->"c1c84631-6610-4545-93ee-cb75e1cb4f8b"],
+Cell[47981, 1019, 499, 11, 24, "Message",ExpressionUUID->"ce1df922-dd38-45b4-895d-597715f92014"],
+Cell[48483, 1032, 497, 11, 24, "Message",ExpressionUUID->"f6fcae85-2fb7-474e-8b64-78dddbb19fe6"],
+Cell[48983, 1045, 397, 9, 24, "Message",ExpressionUUID->"06dba2b3-c5e0-4734-85fc-562332bb1e0a"],
+Cell[49383, 1056, 498, 11, 24, "Message",ExpressionUUID->"ecb32abe-50b5-41e8-9e10-797fa57b37d7"],
+Cell[49884, 1069, 498, 11, 24, "Message",ExpressionUUID->"121db330-d570-4de1-8e35-36dd77515c99"],
+Cell[50385, 1082, 498, 11, 24, "Message",ExpressionUUID->"cf01770d-160f-49b3-9ce2-dbab87d7585b"],
+Cell[50886, 1095, 398, 9, 24, "Message",ExpressionUUID->"493dd14f-7f7e-4fd1-9bb4-70e52e353a39"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[51345, 1111, 193, 3, 67, "Section",ExpressionUUID->"054d8c12-06aa-4d47-9daa-1bd52826ac63"],
+Cell[51541, 1116, 7586, 162, 414, "Code",ExpressionUUID->"1fd7aabc-867e-4560-9033-704a3e822f5a"],
+Cell[CellGroupData[{
+Cell[59152, 1282, 177, 3, 54, "Subsection",ExpressionUUID->"2fe897cf-0a20-4b89-8eef-9ccacc34a2da"],
+Cell[CellGroupData[{
+Cell[59354, 1289, 1403, 35, 186, "Code",ExpressionUUID->"fe62422a-ae24-4489-becb-a3bd8a04daa8"],
+Cell[60760, 1326, 5243, 116, 227, "Output",ExpressionUUID->"f7323c5a-bf0d-4afb-abc4-c066c1ee831e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[66040, 1447, 1403, 35, 186, "Code",ExpressionUUID->"841e50d7-f894-42e3-bdbc-510e41a49d7c"],
+Cell[67446, 1484, 6431, 139, 227, "Output",ExpressionUUID->"9afa433b-2e92-4025-b762-e820545af503"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[73938, 1630, 253, 4, 105, "Section",ExpressionUUID->"67b1bdf8-0404-4398-8e80-d21164675f60"],
+Cell[CellGroupData[{
+Cell[74216, 1638, 266, 6, 30, "Input",ExpressionUUID->"6ce76a6e-fd0c-46d0-ac85-b80642f5f400"],
+Cell[74485, 1646, 222, 4, 34, "Output",ExpressionUUID->"d9f34cba-aae6-4571-b205-a32da221e672"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[74744, 1655, 5720, 125, 661, "Code",ExpressionUUID->"ce96f5cb-1208-4819-8fdb-ec47c7b563c6"],
+Cell[80467, 1782, 3467, 71, 365, "Output",ExpressionUUID->"f80628fa-e919-475f-8d4d-ce3d42e14092"],
+Cell[83937, 1855, 552, 11, 42, "Message",ExpressionUUID->"6b721e0c-3d94-48e8-baf7-0c7b1fcc2eb6"],
+Cell[84492, 1868, 547, 10, 42, "Message",ExpressionUUID->"813f0616-ca4b-45c0-8e84-43b1dbbb5625"],
+Cell[85042, 1880, 552, 11, 42, "Message",ExpressionUUID->"77fc13ba-ec3f-4abe-9e4d-19d465858b92"],
+Cell[85597, 1893, 397, 9, 24, "Message",ExpressionUUID->"b5911c51-731d-4a5b-9f50-5c9c0b68420f"],
+Cell[85997, 1904, 551, 11, 42, "Message",ExpressionUUID->"e8024951-1f79-462e-9288-3432bb908eb2"],
+Cell[86551, 1917, 551, 11, 42, "Message",ExpressionUUID->"2e8c8095-5dd8-4f51-8d05-2ebb40e257c4"],
+Cell[87105, 1930, 551, 11, 42, "Message",ExpressionUUID->"767e724b-a6d5-46f6-9ab1-db7d612b4e39"],
+Cell[87659, 1943, 398, 9, 24, "Message",ExpressionUUID->"ce103801-a7ff-478d-83e3-ec2d9bd2575f"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[88106, 1958, 235, 4, 67, "Section",ExpressionUUID->"00c38c55-dfbb-4034-b48a-f47157749d89"],
+Cell[CellGroupData[{
+Cell[88366, 1966, 290, 4, 54, "Subsection",ExpressionUUID->"7fc8755d-d301-4bf6-b57b-13d592488043"],
+Cell[CellGroupData[{
+Cell[88681, 1974, 21499, 435, 2029, "Code",ExpressionUUID->"4dc1f321-809d-4a1c-9feb-c9ef11977e0d"],
+Cell[110183, 2411, 9990, 190, 865, "Output",ExpressionUUID->"a9222142-d138-41e3-a7d1-28fefa108787"],
+Cell[120176, 2603, 355, 8, 24, "Message",ExpressionUUID->"deb567c5-0192-407c-a008-42551682d69e"],
+Cell[120534, 2613, 358, 9, 24, "Message",ExpressionUUID->"98e54151-76d8-44db-aa9e-bdb50dfc15fd"],
+Cell[120895, 2624, 355, 8, 24, "Message",ExpressionUUID->"26603281-aecb-4cd9-8d32-fba4b5bcf4e9"],
+Cell[121253, 2634, 395, 8, 24, "Message",ExpressionUUID->"dc85d40d-8734-453e-b5a2-42c1885775da"],
+Cell[121651, 2644, 550, 11, 42, "Message",ExpressionUUID->"afbc24a7-e589-4aea-8c20-22208a27d4ab"],
+Cell[122204, 2657, 550, 11, 42, "Message",ExpressionUUID->"ffb89273-d33c-4d4d-9a6b-6ce66de57b90"],
+Cell[122757, 2670, 552, 11, 42, "Message",ExpressionUUID->"c4d57a62-bdc4-4f17-9af7-150beeed3b4c"],
+Cell[123312, 2683, 395, 8, 24, "Message",ExpressionUUID->"689a2ebc-1bb7-4123-a449-40357adf1557"],
+Cell[123710, 2693, 550, 11, 42, "Message",ExpressionUUID->"638def6f-75ac-4907-a9f8-ecd56199c639"],
+Cell[124263, 2706, 550, 11, 42, "Message",ExpressionUUID->"dfd8e935-119a-480d-abf3-ba3ac47f1f3c"],
+Cell[124816, 2719, 552, 11, 42, "Message",ExpressionUUID->"cdee1328-feb8-4d48-923a-c772e30d6c6f"],
+Cell[125371, 2732, 398, 9, 24, "Message",ExpressionUUID->"9e001478-2bed-43a0-a6de-ed949764f6a9"],
+Cell[125772, 2743, 550, 11, 42, "Message",ExpressionUUID->"5e79b432-6cbc-4947-a403-cacb86f89611"],
+Cell[126325, 2756, 550, 11, 42, "Message",ExpressionUUID->"3d7171d5-64af-4a52-b110-e49b679e9830"],
+Cell[126878, 2769, 552, 11, 42, "Message",ExpressionUUID->"f5452909-fc21-4b17-8c7c-de1b58d65539"],
+Cell[127433, 2782, 398, 9, 24, "Message",ExpressionUUID->"41f8397a-b9f1-4a6a-a567-321e87e59f9b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

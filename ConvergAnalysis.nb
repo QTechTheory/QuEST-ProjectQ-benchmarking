@@ -1,0 +1,224 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8380,        216]
+NotebookOptionsPosition[      7063,        184]
+NotebookOutlinePosition[      7698,        207]
+CellTagsIndexPosition[      7655,        204]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["File IO", "Subsubsection",
+ CellChangeTimes->{{3.7286461913162518`*^9, 3.7286461990494328`*^9}, {
+  3.7286463099919767`*^9, 
+  3.728646310528995*^9}},ExpressionUUID->"6cb940c0-0924-4868-a4c9-\
+2035b380a332"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SetDirectory", "@", 
+   RowBox[{"NotebookDirectory", "[", "]"}]}], ";"}]], "Code",ExpressionUUID->\
+"6ebafa6d-100c-4b1b-9548-c35e7b309cf7"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"fnPref", "[", 
+    RowBox[{
+    "numQb_Integer", ",", " ", "numEqu_Integer", ",", " ", "rand_Integer", 
+     ",", " ", "theta_"}], "]"}], " ", ":=", "\n", "\t", 
+   RowBox[{"StringJoin", "[", "\n", "\t\t", 
+    RowBox[{"\"\<rand_results/\>\"", ",", " ", 
+     RowBox[{"ToString", " ", "@", " ", "numQb"}], ",", " ", "\"\<qb/equ\>\"",
+      ",", " ", 
+     RowBox[{"ToString", " ", "@", " ", "numEqu"}], ",", "\n", "\t\t", 
+     "\"\</rc\>\"", ",", " ", 
+     RowBox[{"ToString", " ", "@", " ", "rand"}], ",", " ", "\"\</theta\>\"", 
+     ",", " ", 
+     RowBox[{"ToString", " ", "@", " ", "theta"}], ",", " ", "\"\<_\>\""}], 
+    "\n", "\t", "]"}]}], "\n", "\t"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"fn", "[", 
+    RowBox[{
+    "numQb_Integer", ",", " ", "numEqu_Integer", ",", " ", "rand_Integer", 
+     ",", " ", "theta_", ",", " ", "type_String"}], "]"}], " ", ":=", "\n", 
+   "\t", 
+   RowBox[{"StringJoin", "[", 
+    RowBox[{
+     RowBox[{"fnPref", "[", 
+      RowBox[{
+      "numQb", ",", " ", "numEqu", ",", " ", "rand", ",", " ", "theta"}], 
+      "]"}], ",", " ", "type", ",", " ", "\"\<.txt\>\""}], "]"}]}], "\n", 
+  "\t", "\n", 
+  RowBox[{"(*", " ", 
+   RowBox[{"reads", " ", "file", " ", "once", " ", "then", " ", 
+    RowBox[{"(", "optionally", ")"}], " ", "caches"}], " ", "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{"get", "[", 
+   RowBox[{
+   "numQb_Integer", ",", " ", "numEqu_Integer", ",", " ", "rand_Integer", ",",
+     " ", "theta_", ",", " ", "type_String", ",", " ", 
+    RowBox[{"cache_:", "1"}]}], "]"}], " ", ":=", "\n", "\t", 
+  RowBox[{"With", "[", "\n", "\t\t", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"data", " ", "=", " ", 
+      RowBox[{"Get", " ", "@", " ", 
+       RowBox[{"fn", "[", 
+        RowBox[{
+        "numQb", ",", " ", "numEqu", ",", " ", "rand", ",", " ", "theta", ",",
+          " ", "type"}], "]"}]}]}], "}"}], ",", "\n", "\t\t", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"cache", "===", "1"}], ",", " ", 
+      RowBox[{
+       RowBox[{"get", "[", 
+        RowBox[{
+        "numQb", ",", " ", "numEqu", ",", " ", "rand", ",", " ", "theta", ",",
+          " ", "type"}], "]"}], " ", "=", " ", "data"}], ",", " ", "data"}], 
+     "]"}]}], "\n", "\t", "]"}]}]}], "Code",
+ CellChangeTimes->{{3.724399172681979*^9, 3.7243992090687723`*^9}, {
+  3.7243992474299917`*^9, 3.724399500480349*^9}, {3.7243996600394077`*^9, 
+  3.724399703405705*^9}, {3.7243997681503696`*^9, 3.7243997972237377`*^9}, {
+  3.724399833702436*^9, 3.7243998393453913`*^9}, {3.724402330641568*^9, 
+  3.7244024082547617`*^9}, {3.724402477182917*^9, 3.724402499267976*^9}, {
+  3.724402533707201*^9, 3.724402535186473*^9}, {3.724402605174342*^9, 
+  3.7244026063741703`*^9}},ExpressionUUID->"6a2d8e7d-43fe-46ca-a1c1-\
+2c350928df42"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Aesthetic", "Subsubsection",
+ CellChangeTimes->{{3.7286461913162518`*^9, 
+  3.7286461990494328`*^9}},ExpressionUUID->"c6f2cdfa-5bfc-449a-9880-\
+cc08d77bd3ed"],
+
+Cell["\<\
+Modifying the background colour of input cells (for visual clarity)\
+\>", "Text",
+ CellChangeTimes->{{3.7244215002033167`*^9, 
+  3.7244215243013887`*^9}},ExpressionUUID->"dba28c45-884f-4ada-8b23-\
+4ab04a9586e5"],
+
+Cell[BoxData[
+ RowBox[{"SetOptions", "[", "\n", "\t", 
+  RowBox[{
+   RowBox[{"EvaluationNotebook", "[", "]"}], ",", "\n", "\t", 
+   RowBox[{"StyleDefinitions", " ", "\[Rule]", " ", 
+    RowBox[{"Notebook", "[", 
+     RowBox[{"{", "\n", "\t\t", 
+      RowBox[{
+       RowBox[{"Cell", "[", 
+        RowBox[{"StyleData", "[", 
+         RowBox[{"StyleDefinitions", "\[Rule]", "\"\<Default.nb\>\""}], "]"}],
+         "]"}], ",", "\n", "\t\t", 
+       RowBox[{"Cell", "[", 
+        RowBox[{
+         RowBox[{"StyleData", "[", "\"\<Input\>\"", "]"}], ",", 
+         RowBox[{"Background", "\[Rule]", 
+          RowBox[{"RGBColor", "[", 
+           RowBox[{"1", ",", " ", "1", ",", " ", ".8"}], "]"}]}]}], "]"}]}], 
+      "}"}], "]"}]}]}], "]"}]], "Code",
+ CellChangeTimes->{{3.72442122360203*^9, 3.7244212565736237`*^9}, {
+  3.7244212980799932`*^9, 3.724421306170739*^9}, {3.724421369390215*^9, 
+  3.724421412936532*^9}, {3.7244214622456293`*^9, 
+  3.724421514424313*^9}},ExpressionUUID->"99d54840-0256-4760-9325-\
+6300005cfff5"],
+
+Cell["Plotting single instance of qubit projections", "Text",
+ CellChangeTimes->{{3.728635759096531*^9, 
+  3.728635770458156*^9}},ExpressionUUID->"b31e1a65-151a-4305-b5b2-\
+14de0a2e7b07"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"plotProj", "[", 
+   RowBox[{"projs_", ",", " ", "csmooth_", ",", " ", "opts___"}], "]"}], " ", 
+  ":=", " ", "\n", "\t", 
+  RowBox[{"ListLinePlot", "[", "\[IndentingNewLine]", "\t\t", 
+   RowBox[{"projs", ",", " ", "\n", "\t\t", 
+    RowBox[{"GridLines", " ", "\[Rule]", " ", 
+     RowBox[{"{", 
+      RowBox[{"{", "csmooth", "}"}], "}"}]}], ",", " ", 
+    RowBox[{"GridLinesStyle", " ", "\[Rule]", " ", 
+     RowBox[{"Directive", "[", 
+      RowBox[{"Red", ",", " ", "Thick", ",", " ", "Dashed"}], "]"}]}], ",", 
+    "\n", "\t\t", 
+    RowBox[{"PlotRange", " ", "\[Rule]", " ", 
+     RowBox[{"{", 
+      RowBox[{"All", ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], ",", "\[IndentingNewLine]",
+     "\t\t", "opts"}], "\[IndentingNewLine]", "\t", "]"}]}], "\n", 
+ RowBox[{
+  RowBox[{"plotProj", "[", 
+   RowBox[{"projs_", ",", " ", "opts___"}], "]"}], " ", ":=", " ", "\n", "\t", 
+  RowBox[{"ListLinePlot", "[", "\[IndentingNewLine]", "\t\t", 
+   RowBox[{"projs", ",", " ", "\n", "\t\t", 
+    RowBox[{"PlotRange", " ", "\[Rule]", " ", 
+     RowBox[{"{", 
+      RowBox[{"All", ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], ",", "\[IndentingNewLine]",
+     "\t\t", "opts"}], "\[IndentingNewLine]", "\t", "]"}]}]}], "Code",
+ CellChangeTimes->{{3.724483651643833*^9, 3.7244836806392937`*^9}, {
+   3.724483838220796*^9, 3.7244838490263987`*^9}, {3.7244841928128223`*^9, 
+   3.724484199994175*^9}, 3.724582625802314*^9, {3.7286462263529577`*^9, 
+   3.728646263619534*^9}},ExpressionUUID->"dc4a6672-a1ed-4cc2-a629-\
+53cf4bdc6055"]
+}, Open  ]]
+},
+WindowSize->{720, 775},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+10, 2017)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Default.nb"]], 
+   Cell[
+    StyleData["Input"], Background -> RGBColor[1, 1, 0.8]]}, Visible -> False,
+   FrontEndVersion -> 
+  "11.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (September 10, 2017)", 
+  StyleDefinitions -> "Default.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 213, 4, 45, "Subsubsection",ExpressionUUID->"6cb940c0-0924-4868-a4c9-2035b380a332"],
+Cell[796, 28, 174, 4, 52, "Code",ExpressionUUID->"6ebafa6d-100c-4b1b-9548-c35e7b309cf7"],
+Cell[973, 34, 2800, 65, 319, "Code",ExpressionUUID->"6a2d8e7d-43fe-46ca-a1c1-2c350928df42"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3810, 104, 164, 3, 45, "Subsubsection",ExpressionUUID->"c6f2cdfa-5bfc-449a-9880-cc08d77bd3ed"],
+Cell[3977, 109, 221, 5, 35, "Text",ExpressionUUID->"dba28c45-884f-4ada-8b23-4ab04a9586e5"],
+Cell[4201, 116, 1021, 23, 129, "Code",ExpressionUUID->"99d54840-0256-4760-9325-6300005cfff5"],
+Cell[5225, 141, 187, 3, 35, "Text",ExpressionUUID->"b31e1a65-151a-4305-b5b2-14de0a2e7b07"],
+Cell[5415, 146, 1632, 35, 281, "Code",ExpressionUUID->"dc4a6672-a1ed-4cc2-a629-53cf4bdc6055"]
+}, Open  ]]
+}
+]
+*)
+

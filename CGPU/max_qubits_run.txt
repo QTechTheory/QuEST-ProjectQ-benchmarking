@@ -1,0 +1,10 @@
+Simulating random circuit with params:
+platform:	ARC
+framework:	QuEST
+filename:	test.txt
+numThreads:	16
+circuitDepth:	10
+numQubits:	29
+numRepetitions:	1
+randomSeed:	6031989782628286291
+dur: 11.139699s, error: 9e-15,  realMem: 8471128000b (peak: 8471128000b), virtMem: 96519132000b (peak: 96652904000b)
